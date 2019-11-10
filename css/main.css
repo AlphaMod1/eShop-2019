@@ -1,0 +1,124 @@
+.main-container {
+    background-color: rgb(213, 236, 221);
+}
+
+header {
+    width: 100%;
+}
+
+.logo > img{
+    width: 40px;
+    height: auto;
+    grid-column: 1;
+}
+
+nav {
+    height: 80px;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 25px 25px ;
+    background-color: rgb(213, 236, 221);
+    display: grid;
+    grid-row: 1;
+    grid-template-columns: auto 10fr 1fr 1fr 1fr 1.2fr;
+    justify-items: self-end;
+
+    /* justify-content: flex-end; */
+    /* grid-template-columns: 100px 4000px 100px 100px 100px 100px;
+    grid-column: 1fr 10fr 1fr 1fr 1fr 1fr; */
+}
+
+header :hover {
+    background-color: rgb(158, 207, 176);
+    color: #fff;
+}
+
+nav > a {
+    grid-auto-flow: column;
+    font-size: 22px;
+    line-height: 30px;
+    color: rgb(51, 49, 49);
+    text-decoration: none;
+    grid-row: 1;
+    text-transform: uppercase;
+    font-weight: 900;   
+}
+
+
+
+/* ...............................................
+            HERO
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.container {
+    width: 100%;
+}
+.hero > div {
+    max-width: 1600px;
+    display: grid;
+    grid-row: 1;
+    grid-column: 1fr auto 1fr;
+    /* grid-template-columns: 500px 500px 500px; */
+}
+
+.puzzle1 > img {
+    width: 400px;
+    height: auto;
+}
+
+.chopstick1 >  img, .chopstick2 > img {
+    width: 200px;
+    height: auto;
+}
+
+.chinese-man > img {
+    width: 400px;
+    height: auto;
+}
+
+
+.btn > a {
+    max-width: 240px;
+    max-height: 160px;
+    text-align: center;
+
+    color: rgb(44, 39, 39);
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #0FA22F;
+    padding: 20px 30px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ...............................................
+            CONTENT
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+
+/* ...............................................
+            FOOTER
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
