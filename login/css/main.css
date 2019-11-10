@@ -1,0 +1,23 @@
+.form{
+    display: inline-block;
+    width: 500px;
+    height: 250px;
+    background-color: gainsboro;
+}
+
+.form > span{
+    display: block;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.form > input{
+    display: block;
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+.form > div{
+    margin-top: 20px;
+    margin-left: 40px;
+}
