@@ -4,7 +4,7 @@ A group project for [BIT](https://bit.lt/) lecturer [Rimantas Belovas](https://g
 
 -------------------------------------------------------------------------
 
-Preview: https://alphamod1.github.io/eShop-2019/
+Preview: https://alphamod1.github.io/11-grupe-eShop/
 
 ### Made by:
 
