@@ -1,0 +1,26 @@
+table {
+    border-collapse: collapse;
+}
+
+th {
+    border: solid 2px black;
+    padding: 5px;
+    margin: 0;
+
+}
+
+tr{
+    width: 100%;
+}
+
+.order {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+td {
+    text-align: center;
+    border: solid 1px black;
+    padding: 10px;
+}
