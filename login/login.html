@@ -6,15 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <div class="form">
+        <h1>LOGO</h1>
         <span>E-mail:</span>
-        <input type="text">
+        <input id="email" type="email">
         <span>Password:</span>
-        <input type="password">
-        <div><input type="button" value="Login"> or <a href="#">register</a></div>
+        <input id="password" type="password">
+        <div class="login-bottom">
+            <input class="btn-main btn-login" onclick="login();" type="button" value="Login"><span> or <a href="#">register</a></span>
+        </div>
     </div>
+    <script src="js/login.js"></script>
 </body>
 </html>
