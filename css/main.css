@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(213, 236, 221);
+    background-color: #666666
 }
 
 header {
@@ -33,7 +33,7 @@ nav {
 }
 
 header :hover {
-    background-color: rgb(158, 207, 176);
+    background-color: black;
     color: #fff;
 }
 
@@ -59,6 +59,8 @@ nav > a {
 
 .hero {
     height: 100%;
+    width: 1000px;
+    margin-left: calc( ( 50% - 500px));
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;   
 }
