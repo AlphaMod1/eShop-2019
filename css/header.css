@@ -2,6 +2,7 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 2;   /*kadangi kitaip elementai lipa ant headerio */
 }
 
 .hero {
@@ -15,6 +16,7 @@ header {
     align-self: start;
     align-content: center;
     color: #fff;
+    width: 50px;   /* kad butu nustatytos logo ribos */
 }
 
 nav {
@@ -38,10 +40,9 @@ nav {
     text-transform: uppercase;
     font-weight: 900;  
 }
-
 header :hover {
     background-color: #000;
-    color: #666;
+    color: #666; 
 }
 
 .dropdown {
