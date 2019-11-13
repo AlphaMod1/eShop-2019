@@ -1,0 +1,9 @@
+.hero {}
+
+    div {}
+
+        div > .class {}
+
+            .hero > div > .img {
+                margin-left: calc(( 50% - 500px ));
+            }

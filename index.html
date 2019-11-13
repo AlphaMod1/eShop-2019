@@ -4,61 +4,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>kitaicai</title>
+    <title>Food truck</title>
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <div class="main-container">
-            <header>
-                <nav>
-                    <a class="logo"><img src="./img/logo.png" alt="Logo"></a>
-                    <a class="link-item" href="#" target="_blank">Apie mus</a>
-                    <a class="link-item" href="#" target="_blank">Meniu</a>
-                    <a class="link-item" href="#" target="_blank">Karjera</a>
-                    <a class="link-item" href="#" target="_blank">Kontaktai</a>
-                </nav>
-            </header>
-        <div class="container ">
-            <div class="hero">
-                <div class="puzzle1">
-                    <!-- <img src="./img/puzzle1.png" alt="Puzzle picture"> -->
-                </div>
-                
-                <div class="btn">
-                    <div>
-                        <a href="#">uzsakyti</a>
+
+<!-- **********HEADER NAVIGATION********** -->
+
+        <header>
+            <nav>
+                <a class="fa fa-truck fa-2x logo"></a>  
+                <div class="dropdown link-item">
+                    <a class="link-item" href="#" target="_blank">Food truck</a>
+                    <div class="dropdown-content">
+                        <a href="#">Truck 1</a>
+                        <a href="#">Truck 2</a>
+                        <a href="#">Truck 3</a>
                     </div>
-                    <div class="chopstick1" id="stick1"><img src="./img/chopstick.png"></div>
-                    <div class="chopstick2" id="stick2"><img src="./img/chopstick.png"></div>
                 </div>
-                <div class="chinese-man">
-                    <!-- <img src="./img/chinese.png" alt="Chinese picture"> -->
+                <a class="link-item" href="#">Apie mus</a>
+                <a class="link-item" href="#">Meniu</a>
+                <a class="link-item" href="#">Karjera</a>
+                <a class="link-item" href="#">Kontaktai</a>
+                <a class="link-item" href="#" target="_blank">Log in</a>
+            </nav>
+        </header>
+
+<!-- ******************** HERO ******************** -->
+
+        <div class="container hero">
+            <div class="bg-img">
+                <div class="gallery1"></div>
+            </div>
+        </div>
+
+<!-- ******************** MAP ******************** -->
+
+        <div class="container content">
+            <img class="map" src="#" alt="Google maps">
+            
+            <a href="#" title="Nuoroda">
+                <img src="#" alt="Nuotrauka T1">
+                <h6>T1 skanus meksikietiskas maistas</h6>
+            </a>           
+        </div>
+        
+<!--******************** APIE MUS ********************-->
+
+        <div class="container about">
+            <div class="aboutT1">
+                <img src="#" alt="Nuotrauka T1">
+                <p><span>T1</span>APIE MUS1</p>
+            </div>
+            <div class="aboutT2">
+                <img src="#" alt="Nuotrauka T2">
+                <p><span>T2</span>APIE MUS2</p>
+            </div>
+            <div class="aboutT3">
+                <img src="#" alt="Nuotrauka T3">
+                <p><span>T3</span>APIE MUS3</p>
+            </div>
+        </div>
+
+<!--******************** MENIU ********************-->
+
+        <div class="container menu">
+            <div class="container-left">
+                <div class="tab-navigation">
+                    <a>uzkandziai</a>
+                    <a>sriubos</a>
+                    <a>pagrindiniai patiekalai</a>
+                    <a>kita</a>
+                </div>
+                <div class="tab-content-uzkandziai">
+                    <img src="#">
+                    <h4></h4>
+                    <p></p>
+                </div>
+                <div class="tab-content-sriubos">
+                        <img src="#">
+                        <h4></h4>
+                        <p></p>
+                </div>
+                <div class="tab-content-pagrindiniai-patiekalai">
+                        <img src="#">
+                        <h4></h4>
+                        <p></p>
+                </div>
+                <div class="tab-content-kita">
+                        <img src="#">
+                        <h4></h4>
+                        <p></p>
+                </div>
+            </div>
+            <div class="container-right">
+                <div class="kontaktelis">
+                    <p>Mob.</p>
+                    <p>Adresas</p>
+                </div>
+                </div>
+                <div>KREPSELIS</div>
+            </div>
+        </div>
+
+<!--******************** KARJERA ********************-->
+        
+        <div class="container form">
+            <div class="column">
+                <p>Prijunk savo Food Truck</p>
+                <p>Prisijunk prie komandos</p>
+            </div>
+            <div class="column">
+                <form>
+                    <div class="form-row">
+                        <label for="name">Vardas</label>
+                        <input id="name" name="name" type="text">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">El. paštas</label>
+                        <input id="email" name="email" type="email">
+                    </div>
+                    <div class="form-row">
+                        <label for="mobile">Vardas</label>
+                        <input id="mobile" name="mobile" type="text">
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Vardas</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <input class="btn-submit" type="submit" name="btnSubmit" value="Siųsti">
+                    </div>
+                </form>
+            </div>
+            <div class="column">
+                <p>Prijunk ir Tu</p>
+            </div>
+
+<!--******************** KONTAKTAI ********************-->
+
+        <div>
+            <div class="admin-info">
+                <h5>Admin</h5>
+                <div class="tel">+370 687 34342</div>
+                <div class="el-past">foodtruck@gmail.com</div>
+                <p>LT23456789342</p>
+            </div>
+            <div class="truck-info-container">
+                <div class="truck-info">
+                    <h5>T1</h5>
+                    <div class="tel">+370 687 34341</div>
+                    <div class="el-past">foodtruck1@gmail.com</div>
+                    <p>LT23456789341</p>
+                </div>
+                <div class="truck-info">
+                        <h5>T2</h5>
+                        <div class="tel">+370 687 34342</div>
+                        <div class="el-past">foodtruck2@gmail.com</div>
+                        <p>LT23456789342</p>
+                </div>
+                <div class="truck-info">
+                        <h5>T3</h5>
+                        <div class="tel">+370 687 34343</div>
+                        <div class="el-past">foodtruck3@gmail.com</div>
+                        <p>LT23456789341</p>
                 </div>
             </div>
         </div>
-        <div class="container content">
-            
-        </div>
-        <div class="container">
-        
-        </div>
-        <div class="container">
-        
-        </div>
+
+        <!--******************** FOOTER ********************-->
 
         <footer>
             <div class="socials">
-                    <a href="#" target="_blank" class="fa fa-facebook"></a>
-                    <a href="#" target="_blank" class="fa fa-twitter"></a>
-                    <a href="#" target="_blank" class="fa fa-instagram"></a>
+                <a href="#" target="_blank" class="fa fa-facebook"></a>
+                <a href="#" target="_blank" class="fa fa-twitter"></a>
+                <a href="#" target="_blank" class="fa fa-instagram"></a>   
             </div>
+            <div class="line"></div>
+            <span><a href="#" target="_blank"></a>T1</span>
+            <span><a href="#" target="_blank">&nbsp; &#124; &nbsp; T2 &nbsp; &#124; &nbsp;</a></span>
+            <span><a href="#" target="_blank">T3</a></span>
+            <p>All rights reserved</p>
         </footer>
-
     </div>
     <script src="js/main.js"></script>
-</body>
-    
-
+</body>   
 </html>

@@ -1,155 +1,16 @@
 body {
-    background-color: rgb(213, 236, 221);
+    background-color: #666;
 }
 
-header {
-    width: 100%;
-}
-
-.logo {
-    display: grid;
-    align-self: start;
-    align-content: center;
-}
-
-.logo > img {
-    width: 40px;
-    height: auto;
-    
-}
-
-nav {
-    display: grid;
-    grid-template-columns: 4fr auto auto auto auto;
-    align-content: center;
-    height: 80px;
-    justify-content: end;
-    padding: 0 2rem;
-    grid-column-gap: 1.5rem;
-}
-
-.link-item {
-    align-self: end;
-}
-
-header :hover {
-    background-color: rgb(158, 207, 176);
-    color: #fff;
-}
-
-nav > a {
-    grid-auto-flow: column;
-    font-size: 22px;
-    line-height: 30px;
-    color: rgb(51, 49, 49);
-    text-decoration: none;
-    grid-row: 1;
-    text-transform: uppercase;
-    font-weight: 900;   
-}
 
 /* ...............................................
             HERO
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-.container {
-    width: 100%;
-    height: 100vh;
-    padding: 5rem 2rem;
-}
-
-.hero {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;   
-}
-
-.puzzle1 {
-    background-image: url('../img/puzzle1.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    justify-items: end;
-    background-position: left;
-}
-
-.chopstick1 >  img, .chopstick2 > img {
-    width: 200px;
-    height: auto;   
-}
-
-.chopstick1 {
-    position: absolute;
-    top: -20px;
-    left: -5px;
-    transition: 0.3s;
-}
-
-.chopstick2 {
-    position: absolute;
-    top: -20px;
-    left: 50px;
-    transition: 0.3s;
-}
-
-.chinese-man {
-    height: 100%;
-    justify-content: end;
-    justify-items: end;
-    background-image: url('../img/chinese.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-}
-
-
-.btn > div:first-child > a {
-    max-width: 240px;
-    max-height: 160px;
-    text-align: center;
-    color: rgb(44, 39, 39);
-    font-weight: 900;
-    font-size: 35px;
-    line-height: 40px;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: #0FA22F;
-    padding: 20px 30px;
-    cursor: pointer;
-    border-radius: 2px;
-}
-
-.btn {
-    position: relative;
-    display: grid;
-    align-content: center;
-    justify-content: center;
-    /* margin-top: 160px; */
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ...............................................
             CONTENT
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-
 
 
 /* ...............................................
