@@ -1,12 +1,11 @@
 header {
+    color: #666;
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 2;   /*kadangi kitaip elementai lipa ant headerio */
-}
-
-.hero {
-    padding-top: 80px;
+    z-index: 2;
+    /*kadangi kitaip elementai lipa ant headerio */
+    transition: 0.2s;
 }
 
 .logo {
@@ -16,7 +15,8 @@ header {
     align-self: start;
     align-content: center;
     color: #fff;
-    width: 50px;   /* kad butu nustatytos logo ribos */
+    width: 50px;
+    /* kad butu nustatytos logo ribos */
 }
 
 nav {
@@ -34,41 +34,43 @@ nav {
     grid-auto-flow: column;
     font-size: 18px;
     line-height: 30px;
-    color:  #fff;
+    color: #fff;
     text-decoration: none;
     grid-row: 1;
     text-transform: uppercase;
-    font-weight: 900;  
-}
-header :hover {
-    background-color: #000;
-    color: #666; 
+    font-weight: 900;
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
-  }
+}
 
-  .dropdown-content {
+#dropdown-trucks {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    font-size: 18px;
+    font-size: 12px;
     min-width: 80px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  
-  .dropdown-content a {
+}
+
+#dropdown-trucks a {
     color: grey;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
+}
 
-  .dropdown-content a:hover {background-color: #ddd; font-size: 18px;}
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  .dropdown:hover .dropbtn {background-color: #5d615d;}
+#dropdown-trucks a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover #dropdown-trucks {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #5d615d;
+}
