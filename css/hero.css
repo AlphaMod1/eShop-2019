@@ -1,3 +1,15 @@
 .hero{
-    
+    position: relative;
+    height: unset;
+    min-height: 100vh;
+    overflow: hidden;
 }
+
+    .heroSlideshow > img {
+        width: 400px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -500px;
+        transition: 2s;
+    }
