@@ -6,11 +6,6 @@ body {
     background-attachment: fixed;
 }
 
-.container {
-    display: block;
-    height: 800px;
-}
-
 .hero { /* pastumiu visa content nuo hederio pagal headerio auksti */
     margin-top: 80px;
 }
