@@ -38,7 +38,7 @@ function renderModal(id) {
 
     let kiekisHTML = '<p>Amount:</p>'
     let itemHTML = '<span onclick="closeModal();">X</span><p>Item:</p>'
-    let msgHTML = '';
+    let msgHTML = '<p class="msg-p">';
 
     for (let i = 0; i < data.length; i++) {
         if (data[i].orderID == id) {
@@ -50,7 +50,7 @@ function renderModal(id) {
             msgHTML += data[i].msg;
             contKiekis.innerHTML = kiekisHTML;
             contItem.innerHTML = itemHTML;
-            contMsg.innerHTML = msgHTML;
+            contMsg.innerHTML = msgHTML+"</p>";
         }
     }
 }
