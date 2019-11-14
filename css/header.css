@@ -1,0 +1,73 @@
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.hero {
+    padding-top: 80px;
+}
+
+.logo {
+    display: grid;
+    grid-auto-flow: column;
+    grid-row: 1;
+    align-self: start;
+    align-content: center;
+    color: #fff;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 4fr auto auto auto auto auto auto;
+    align-content: center;
+    height: 80px;
+    justify-content: end;
+    padding: 0 2rem;
+    grid-column-gap: 1.5rem;
+}
+
+.link-item {
+    align-self: end;
+    grid-auto-flow: column;
+    font-size: 18px;
+    line-height: 30px;
+    color:  #fff;
+    text-decoration: none;
+    grid-row: 1;
+    text-transform: uppercase;
+    font-weight: 900;  
+}
+
+header :hover {
+    background-color: #000;
+    color: #666;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    font-size: 18px;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: grey;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: #ddd; font-size: 18px;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #5d615d;}
