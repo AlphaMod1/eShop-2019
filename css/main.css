@@ -1,18 +1,11 @@
 body {
-    background-color: #666;
+    background-image: url("../img/bckg-truck.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-
-/* ...............................................
-            HERO
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-
-/* ...............................................
-            CONTENT
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-
-/* ...............................................
-            FOOTER
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.hero { /* pastumiu visa content nuo hederio pagal headerio auksti */
+    margin-top: 80px;
+}

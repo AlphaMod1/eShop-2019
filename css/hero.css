@@ -1,9 +1,15 @@
-.hero {}
+.hero{
+    position: relative;
+    height: unset;
+    min-height: 100vh;
+    overflow: hidden;
+}
 
-    div {}
-
-        div > .class {}
-
-            .hero > div > .img {
-                margin-left: calc(( 50% - 500px ));
-            }
+    .heroSlideshow > img {
+        width: 400px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -500px;
+        transition: 2s;
+    }
