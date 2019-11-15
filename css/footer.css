@@ -1,5 +1,6 @@
 .foot {
     height: 200px;
+    /* width: 100%; */
     text-align: center;
     margin: 0px calc((50% - 500px)) 20px;
     color: rgb(208, 208, 208);
@@ -7,7 +8,7 @@
 
 
     .foot > .socials {
-        padding-top: 10px;
+        padding: 10px 0 10px;
         border-bottom: 1px solid #fff;
         width: 100%;
                     }
@@ -23,14 +24,14 @@
 
 .foot > .socials > a:hover{
     background-color: #fff;
-    color: #6FB2F8 ;
+    color: rgb(0, 0, 0) ;
     border-radius: 50%;
     width: 40px;
 }
 
-    .foot > .contacts {
+  .foot > .contacts {
     display: inline-block;
-    width: 100%;
+    width: 80%;
     background-color: transparent;
     }
     
@@ -40,8 +41,13 @@
         font-size: 18px;
         line-height: 25px;
         width: 33%;
+        padding: 10px 0;
     }
     
+    .foot > .contacts > .truck-info  h5{
+        text-transform: uppercase;
+    }
+
 .foot > .copyright {
     display: inline-block;
     border-top: 1px solid #fff;
@@ -57,20 +63,13 @@
         }
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 700px) {
         .foot {
             width: 100%;
             margin: 0px 0px;
             padding: 20px 20px;
         }
-            }
-
-    @media (max-width: 600px) {
-        .foot {
-            width: 100%;
-            margin: 0px 0px;
-            padding: 20px 20px;
-        }
+                        
         .foot > .contacts > .truck-info {
             display: inline-block;
             text-align: center;
@@ -78,6 +77,7 @@
             line-height: 36px;
             width: 100%;
             margin: 5px 0;
+            border-bottom: 1px solid #fff;
         }
     }
     

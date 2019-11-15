@@ -44,3 +44,15 @@ function heroSlideshow() {
             break;
     }
 }
+
+function genFooterTruckContacts() {
+    let contacts = document.getElementById('truckContacts');
+    let HTML = '';
+    for (let i = 0; i < trucks.length; i++) {
+        HTML += `<div class="truck-info">
+        <h5>${trucks[i].name}</h5> 
+        <p>${trucks[i].tel}</p> 
+        <p>${trucks[i].email}</p></div>`;
+    }
+    contacts.innerHTML = HTML;   
+}

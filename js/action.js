@@ -2,6 +2,7 @@
 genHeaderDropdownTrucks();
 checkScroll();
 heroSlideshow();
+genFooterTruckContacts();
 
 
 window.addEventListener('scroll', function() {
