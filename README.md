@@ -10,5 +10,5 @@ Preview: https://alphamod1.github.io/11-grupe-eShop/
 
 - [Liutauras Vijeikis](https://github.com/AlphaMod1)
 - [Deividas Barbšys](https://github.com/DeividasBa)
-- [Zivile Batuleviciute](https://github.com/zivile-b)
-- [Martynas Vitenas](https://github.com/Martynasvitenas)
+- [Živilė Batulevičiute](https://github.com/zivile-b)
+- [Martynas Vitėnas](https://github.com/Martynasvitenas)
