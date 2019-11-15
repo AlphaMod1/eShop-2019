@@ -1,3 +1,97 @@
+
 .menu{
     background-color: #999;
 }
+
+.meniu_row {
+    display: inline-block;
+    text-align: center;
+    width: 500px;
+    margin: 50px calc((100% - 500px) / 2);
+}
+
+h3 {
+    display: inline-block;
+    font-family: monospace;
+    line-height: 40px;
+    font-size: 40px;
+    color: white;
+}
+
+.offerContainer {
+    display: inline-block;
+    width: 1200px;
+    margin-left: calc((100% - 1200px)/2);
+    text-align: center;
+}
+
+
+.meniu {
+    display: inline-block;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: rgb(236, 171, 141);
+    margin: 15px;
+    height: 500px;
+    width: 300px;
+}
+
+    .meniu > img {
+        display: inline-block;
+        height: 150px;
+        width: 150px;
+        margin: 15px calc((100% - 200px)/2);
+    }
+
+    .meniu > .offer {
+        font-weight: 900;
+        color: white;
+        line-height: 40px;
+        font-size: 40px;
+        text-align: center;
+        margin: 15px;
+        text-shadow:
+        2px 2px 0 #000,
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+          
+    }
+
+    .meniu > .price {
+        text-align: center;
+        margin: 15px;
+        line-height: 30px;
+        font-size: 30px;
+        font-weight: 900;
+        color: white;
+        text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+         -1px 1px 0 #000,
+          1px 1px 0 #000;
+    }
+    .meniu > .special {
+        display: block;
+        line-height: 30px;
+        font-size: 20px;
+        color: white;
+        letter-spacing: 1px;
+        text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+         -1px 1px 0 #000,
+          1px 1px 0 #000;
+    }
+    input {
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+        border: 1px solid black;
+        background-color: lightgrey;
+    }
+
+
+
