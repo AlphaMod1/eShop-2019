@@ -44,3 +44,61 @@ function heroSlideshow() {
             break;
     }
 }
+
+function genFooterTruckContacts() {
+    let contacts = document.getElementById('truckContacts');
+    let HTML = '';
+    for (let i = 0; i < trucks.length; i++) {
+        HTML += `<div class="truck-info">
+        <h5>${trucks[i].name}</h5> 
+        <p>${trucks[i].tel}</p> 
+        <p>${trucks[i].email}</p></div>`;
+    }
+    contacts.innerHTML = HTML;   
+}
+
+// ******************** ABOUT US start ********************
+
+let delayTime = 5000;
+
+function rotateImg (element, item) {
+    let imgHtml = document.getElementById("img-"+element);
+    let imagesLength = item.images.length;
+    let random = Math.floor(Math.random() * imagesLength);
+    let data = item.images[random];
+
+    imgHtml.src = data.img;
+    imgHtml.alt = data.alt;
+
+    setTimeout(function() {
+        rotateImg(element, item);
+    }, delayTime);
+}
+
+
+function renderAbout( items ) {
+    let HTML = '';
+
+    if ( !Array.isArray(items) ) {
+        return console.error('ERROR: Prasome pateikti duomenis');
+    }
+    if ( items.length === 0 ) {
+        return console.error('ERROR: Negali buti tuscia');
+    }
+
+    for ( let i=0; i<items.length; i++ ) {
+        const item = items[i];
+        HTML += `<div class="about-item">
+                    <img id="img-${i}" class="opaque" src="${item.images[0].img}" alt="${item.images[0].alt}">
+                    <p><span>${item.title}</span>${item.text}</p>
+                </div>`;
+
+        // Photo changed
+        setTimeout(function() {
+            rotateImg(i, item);
+        }, delayTime);
+    }
+    
+    return document.querySelector('#about-cont').innerHTML = HTML;
+}
+// ********************ABOUT US end********************

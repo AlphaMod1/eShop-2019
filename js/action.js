@@ -2,6 +2,7 @@
 genHeaderDropdownTrucks();
 checkScroll();
 heroSlideshow();
+genFooterTruckContacts();
 
 
 window.addEventListener('scroll', function() {
@@ -12,3 +13,10 @@ window.addEventListener('scroll', function() {
 setInterval(function(){
     heroSlideshow();
 },4000);
+
+// ******************** ABOUT US start ********************
+
+renderAbout( aboutus );
+
+// ******************** ABOUT US end ********************
+

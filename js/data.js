@@ -1,14 +1,20 @@
 const trucks = [
     {
-        name: "Pedro buritos",
+        name: "Burito Republic",
+        tel: "+37068734341",
+        email: "foodtruck1@gmail.com",
     },
 
     {
-        name: "Jon burgers",
+        name: "John's burgers",
+        tel: "+37068734342",
+        email: "foodtruck2@gmail.com",
     },
 
     {
         name: "Yoko sushi",
+        tel: "+37068734343",
+        email: "foodtruck3@gmail.com",
     },
 ];
 
@@ -130,3 +136,62 @@ const menu = {
 
 
 };
+
+
+// ******************** ABOUT US start ********************
+const aboutus = [
+    {
+        images: [
+            {img: './img/buritos/1.jpg', alt: 'Photo'},
+            {img: './img/buritos/2.jpg', alt: 'Photo'},
+            {img: './img/buritos/3.jpg', alt: 'Photo'},
+            {img: './img/buritos/4.jpg', alt: 'Photo'},
+            {img: './img/buritos/5.jpg', alt: 'Photo'},
+            {img: './img/buritos/6.jpg', alt: 'Photo'},
+            {img: './img/buritos/7.jpg', alt: 'Photo'},
+            {img: './img/buritos/8.jpg', alt: 'Photo'}
+        ],
+        title: 'Burito Republic   ',
+        text: 'Tacos, quesadillas, burritos, enchiladas... Made with love using the best ingredients to create authentic, home-style cuisine! We are waiting for YOU here!'
+    },
+    {
+        images: [
+            {img: './img/burger/1.jpg', alt: 'Photo'},
+            {img: './img/burger/2.jpg', alt: 'Photo'},
+            {img: './img/burger/3.jpg', alt: 'Photo'},
+            {img: './img/burger/4.jpg', alt: 'Photo'},
+            {img: './img/burger/5.jpg', alt: 'Photo'},
+            {img: './img/burger/6.jpg', alt: 'Photo'},
+            {img: './img/burger/7.jpg', alt: 'Photo'},
+            {img: './img/burger/8.jpg', alt: 'Photo'},
+            {img: './img/burger/9.jpg', alt: 'Photo'},
+            {img: './img/burger/10.jpg', alt: 'Photo'},
+            {img: './img/burger/11.jpg', alt: 'Photo'},
+            {img: './img/burger/12.jpg', alt: 'Photo'},
+            {img: './img/burger/13.jpg', alt: 'Photo'},
+            {img: './img/burger/14.jpg', alt: 'Photo'},
+            {img: './img/burger/15.jpg', alt: 'Photo'},
+            {img: './img/burger/16.jpg', alt: 'Photo'},
+            {img: './img/burger/17.jpg', alt: 'Photo'},
+            {img: './img/burger/18.jpg', alt: 'Photo'},
+            {img: './img/burger/19.jpg', alt: 'Photo'}
+        ],
+        title: "JOHN'S BURGERS   ",
+        text: 'Every Burger is made with fresh, never frozen beef and always seared after you order. Then we top it with a lightly buttered, toasted bun. Order your favorite in a Single, Double or Triple and we’ll build the perfect burger just for you. Your choice, our pleasure!'
+    },
+    {
+        images: [
+            {img: './img/sushi/1.jpg', alt: 'Photo'},
+            {img: './img/sushi/2.jpg', alt: 'Photo'},
+            {img: './img/sushi/3.jpg', alt: 'Photo'},
+            {img: './img/sushi/4.jpg', alt: 'Photo'},
+            {img: './img/sushi/5.jpg', alt: 'Photo'},
+            {img: './img/sushi/6.jpg', alt: 'Photo'},
+            {img: './img/sushi/7.jpg', alt: 'Photo'}
+        ],
+        title: 'Yoko Sushi   ',
+        text: ' was founded by our chef Mr Yoko Chhing N Shirman. After gaining experience at various restaurants in his younger years, he created Yoko Sushi. Yoko Sushi has continued serving high quality sushi to Vilnius, going on to win the award for Most Loved Sushi.'
+    }
+];
+// ********************ABOUT US end ********************
+
