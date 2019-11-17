@@ -102,3 +102,24 @@ function renderAbout( items ) {
     return document.querySelector('#about-cont').innerHTML = HTML;
 }
 // ********************ABOUT US end********************
+
+// ********************Special offers start******************
+function renderSpecial(specialList){
+    let HTML = '';
+       for (let i = 0; i < specialList.length; i++){
+        const meniu = specialList[i] 
+            HTML += `<div class="meniu">
+            <img src="${meniu.img}" alt="Logo">
+            <div class="offer">${meniu.name}</div>
+            <p class="price">${meniu.price} </p>
+            <p class="special">${meniu.special1}</p>
+            <p class="special">${meniu.special2}</p>
+            <p class="special">${meniu.special3}</p>
+            <input type="buttom" value=' Order Now'${meniu.input}>
+            <a class="fullmeniu" href="#"> ${meniu.FullMeniu}</a>
+            </div>`;
+       }       
+    return document.querySelector('#specialOffers').innerHTML = HTML;
+}
+
+// ********************Special offers end********************
