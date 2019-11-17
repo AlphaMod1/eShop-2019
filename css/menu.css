@@ -15,7 +15,7 @@
     display: inline-block;
     text-align: center;
     width: 500px;
-    margin: 20px calc((100% - 500px) / 2);
+    margin: 50px calc((100% - 500px) / 2) 20px;
 }
 
 h3 {
@@ -23,8 +23,8 @@ h3 {
     font-family: monospace;
     line-height: 50px;
     font-size: 50px;
-    color: white;
-    text-shadow:5px 5px 10px black;
+    color: gold;
+    text-shadow: 1px px 10px black;
 }
 
 .offerContainer {
