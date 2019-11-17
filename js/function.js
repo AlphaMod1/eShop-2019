@@ -1,9 +1,11 @@
+// ******************** HEADER start ********************
+
 function checkScroll() {
     if (window.scrollY < 150) {
-        document.querySelector("header").style.background = "transparent";
+        document.querySelector('header').style.background = 'transparent';
     }
     else {
-        document.querySelector("header").style.background = "black";
+        document.querySelector('header').style.background = 'black';
     }
 }
 
@@ -15,6 +17,20 @@ function genHeaderDropdownTrucks() {
     }
     dropdown.innerHTML = HTML;
 }
+
+function displayBurger() {
+    let mainNav = document.querySelector('#main-nav');
+    let burger = document.querySelector('#burger')
+    if (mainNav.classList.contains('open')) {
+        mainNav.classList.remove('open');
+        burger.classList.remove('open');
+    } else {
+        mainNav.classList.add('open');
+        burger.classList.add('open');
+    }
+}
+
+// ******************** HEADER end ********************
 
 var slide = 0;
 
@@ -102,24 +118,3 @@ function renderAbout( items ) {
     return document.querySelector('#about-cont').innerHTML = HTML;
 }
 // ********************ABOUT US end********************
-
-// ********************Special offers start******************
-function renderSpecial(specialList){
-    let HTML = '';
-       for (let i = 0; i < specialList.length; i++){
-        const meniu = specialList[i] 
-            HTML += `<div class="meniu">
-            <img src="${meniu.img}" alt="Logo">
-            <div class="offer">${meniu.name}</div>
-            <p class="price">${meniu.price} </p>
-            <p class="special">${meniu.special1}</p>
-            <p class="special">${meniu.special2}</p>
-            <p class="special">${meniu.special3}</p>
-            <input type="buttom" value=' Order Now'${meniu.input}>
-            <a class="fullmeniu" href="#"> ${meniu.FullMeniu}</a>
-            </div>`;
-       }       
-    return document.querySelector('#specialOffers').innerHTML = HTML;
-}
-
-// ********************Special offers end********************

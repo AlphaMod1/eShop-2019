@@ -2,43 +2,43 @@ header {
     color: #666;
     width: 100%;
     position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     top: 0;
     z-index: 2;
-    /*kadangi kitaip elementai lipa ant headerio */
     transition: 0.2s;
+    padding: 0 40px;
 }
 
 .logo {
-    display: grid;
-    grid-auto-flow: column;
-    grid-row: 1;
-    align-self: start;
+    display: inline-block;
+    float: left;
     align-content: center;
     color: #fff;
     width: 50px;
-    /* kad butu nustatytos logo ribos */
 }
 
 nav {
-    display: grid;
-    grid-template-columns: 4fr auto auto auto auto auto auto;
-    align-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     height: 80px;
-    justify-content: end;
-    padding: 0 2rem;
-    grid-column-gap: 1.5rem;
 }
 
 .link-item {
-    align-self: end;
-    grid-auto-flow: column;
     font-size: 18px;
     line-height: 30px;
     color: #fff;
     text-decoration: none;
-    grid-row: 1;
     text-transform: uppercase;
     font-weight: 900;
+    margin-right: 15px;
+}
+
+.link-item:last-child {
+    margin-right: 0px;
 }
 
 .dropdown {
@@ -73,4 +73,87 @@ nav {
 
 .dropdown:hover .dropbtn {
     background-color: #5d615d;
+}
+
+ /* **********BURGER start**********  */
+
+.burger-nav {
+    display: none;
+    float: right;
+}
+
+.burger {
+    height: 50px;
+	width: 50px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+    cursor: pointer;
+}
+
+.burger span{
+	width: 26px;
+	height: 2px;
+	background-color: #fff;
+	display: block;
+	margin: 2px auto;
+
+	transform-origin: left center;
+	transition: all 0.1s linear;
+	transition: 0.5s;
+}
+
+@media all and (max-width: 800px) {
+
+    header {
+        height: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px auto;
+    }
+
+    .logo {
+        grid-row: 1;
+        grid-column: 1;
+        justify-self: start;
+    }
+
+    .burger-nav {
+        grid-row: 1;
+        grid-column: 2;
+        justify-self: end;
+        display: block;
+    }
+    nav {
+        display: none;
+        height: auto;
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        justify-self: end;
+    }
+
+    nav.open {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .link-item {
+        margin-right: 0px;
+    }
+
+    #dropdown-trucks {
+        text-align: center;
+    }
+
+    .burger.open span:first-child {
+        display: block;
+        transform: rotate(45deg) translate(-4px, -4px);
+    }
+
+    .burger.open span:last-child {
+        transform: rotate(-45deg) translate(-4px, 4px);
+    }
+
 }
