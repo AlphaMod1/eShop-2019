@@ -4,7 +4,6 @@ checkScroll();
 heroSlideshow();
 genFooterTruckContacts();
 
-
 window.addEventListener('scroll', function() {
     checkScroll();    
 });
@@ -20,3 +19,11 @@ renderAbout( aboutus );
 
 // ******************** ABOUT US end ********************
 
+
+// ********************Special offers start******************
+
+// funkcijosname (dataname)//
+
+renderSpecial( specialOffers );
+
+// ********************Special offers end********************
