@@ -27,3 +27,9 @@ renderAbout( aboutus );
 renderSpecial( specialOffers );
 
 // ********************Special offers end********************
+
+// ********************Map start********************
+pinCoordinates();
+pinCoordinates1();
+pinCoordinates2();
+// ********************Map end********************

@@ -149,3 +149,23 @@ function renderSpecial(specialList) {
 
 // ********************Special offers end********************
 
+function pinCoordinates() {
+    let coord = document.getElementById('pingas1');
+    coord.style.position = 'absolute';
+    coord.style.left = x + 'px';
+    coord.style.top = y + 'px';
+}
+
+function pinCoordinates1() {
+    let coord = document.getElementById('pingas2');
+    coord.style.position = 'absolute';
+    coord.style.left = x1 + 'px';
+    coord.style.top = y1 + 'px';
+}
+
+function pinCoordinates2() {
+    let coord = document.getElementById('pingas3');
+    coord.style.position = 'absolute';
+    coord.style.left = x2 + 'px';
+    coord.style.top = y2 + 'px';
+}
