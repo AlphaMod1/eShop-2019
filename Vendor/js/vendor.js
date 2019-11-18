@@ -9,7 +9,16 @@ function checkUser() {
             return renderTable(userid);
         }
     }
-    location.replace('../login/login.html');
+    for(let i = 0; i < login_info.length; i++){
+        if(login_info[i].id == userid){
+            return renderError();
+        }
+    }
+    location.replace('../login/login.html'); // user not found
+}
+
+function renderError(){
+    document.querySelector('#stalas').innerHTML = "<h1 class='error'>No orders found</h1>";
 }
 
 function renderTable(userid) {
