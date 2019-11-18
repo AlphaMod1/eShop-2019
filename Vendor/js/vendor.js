@@ -4,20 +4,25 @@ checkUser();
 function checkUser() {
     let userid = window.location.href.split("#")[1];
 
+    for (let i = 0; i < login_info.length; i++) {
+        if (login_info[i].id == userid) {
+            document.querySelector("#display-name").innerHTML = login_info[i].username;
+        }
+    }
     for (let i = 0; i < orders.length; i++) {
         if (orders[i].id == userid) {
             return renderTable(userid);
         }
     }
-    for(let i = 0; i < login_info.length; i++){
-        if(login_info[i].id == userid){
+    for (let i = 0; i < login_info.length; i++) {
+        if (login_info[i].id == userid) {
             return renderError();
         }
     }
     location.replace('../login/login.html'); // user not found
 }
 
-function renderError(){
+function renderError() {
     document.querySelector('#stalas').innerHTML = "<h1 class='error'>No orders found</h1>";
 }
 
@@ -88,7 +93,7 @@ function incrementOrder(id) {
                 btn.value = changeBtnName(orders[i].status);
             }
             else {
-                orders.splice(i,1);
+                orders.splice(i, 1);
                 renderTable(window.location.href.split("#")[1]);
             }
         }
