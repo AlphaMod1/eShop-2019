@@ -24,8 +24,14 @@
     <!-- **********HEADER NAVIGATION********** -->
 
     <header>
-        <nav>
-            <a class="fa fa-truck fa-2x logo"></a>
+        <a class="fa fa-truck fa-2x logo"></a>
+        <div class="burger-nav" onclick="displayBurger();">
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav id="main-nav">
             <div class="dropdown link-item">
                 <a class="link-item" href="#">Food trucks</a>
                 <div id="dropdown-trucks"></div>
@@ -35,71 +41,48 @@
             <a class="link-item" href="index.html#about-cont">About us</a>
             <a class="link-item" href="#">Career</a>
             <a class="link-item" href="#">Contacts</a>
-            <a class="link-item" href="#">Log in</a>
+            <a class="link-item" href="login/login.html">Log in</a>
         </nav>
     </header>
 
     <!-- ******************** HERO ******************** -->
 
     <div class="container hero">
+        <a href="#dropdownToSpecialOffers">
             <div class="heroSlideshow">
                 <img id='slide0' src="./img/BuritoLogo.png" alt="Burito">
                 <img id='slide1' src="./img/BurgerLogo.png" alt="Burger">
                 <img id='slide2' src="./img/sushilogo.png" alt="Sushi">
             </div>
+        </a>
     </div>
 
+
     <!--******************** MENU ********************-->
-
-    <div class="container menu">
-        <div class="meniu_row">
-            <h3>Special offers</h3>
-        </div>
-        <div class="offerContainer">
-            <div class="meniu">
-            <img src="/img/BuritoLogo.png" alt="burito">
-            <div class="offer">Burito</div>
-            <p class="price"> 9.99 € </p>
-            <p class="special"> 2 x Buritos</p>
-            <p class="special"> 2 x 0,33L Coca-Cola</p>
-            <p class="special"> 2 x Desserts</p>
-            <input type="buttom" value=' Order Now' id="">
-            </div>
-
-            <div class="meniu">
-            <img src="/img/BurgerLogo.png" alt="burger">
-            <div class="offer">Burito</div>
-            <p class="price"> 9.99 € </p>
-            <p class="special"> 2 x Buritos</p>
-            <p class="special"> 2 x 0,33L Coca-Cola</p>
-            <p class="special"> 2 x Desserts</p> 
-            <input type="buttom" value=' Order Now' id="">
-            </div>
-            
-            <div class="meniu">
-            <img src="/img/sushilogo.png" alt="sushi">
-            <div class="offer">Burito</div>
-            <p class="price"> 9.99 € </p>
-            <p class="special"> 2 x Buritos</p>
-            <p class="special"> 2 x 0,33L Coca-Cola</p>
-            <p class="special"> 2 x Desserts</p>            
-            <input type="buttom" value=' Order Now' id="">
-        </div>
-        </div>
-            <!-- <div class="burgerOffer">Burger</div>
-            <div class="sushiOffer">Sushi</div> -->
+    <a id="dropdownToSpecialOffers">
+        <div class="container menu">
+    </a>
+    <div class="meniu_row">
+        <h3>Special offers</h3>
+    </div>
+    <div class="offerContainer" id='specialOffers'></div>
     </div>
 
     <!-- ******************** MAP ******************** -->
 
     <div class="container map">
-
+        <div class="map_row">
+            <h3> Places where you can find us!</h3>
+        </div>
+        <img class="pin1" src="./img/pin.png" alt="pin1">
+        <img class="pin2" src="./img/pin.png" alt="pin2">
+        <img class="pin3" src="./img/pin.png" alt="pin3">
     </div>
 
     <!--******************** ABOUT US ********************-->
 
     <div id="about-cont" class="about container">
-    <!-- <div class="about-item">
+        <!-- <div class="about-item">
             <img src="./img/mexicano.jpg" alt="Nuotrauka T1">
             <p><span></span></p>
         </div>
@@ -112,7 +95,7 @@
             <p><span></p>
         </div> -->
     </div>
-    
+
     <!--******************** CAREER ********************-->
 
     <div class="container career">
@@ -138,11 +121,11 @@
         </div>
         <div class="contacts" id="truckContacts"></div>
         <div class="copyright">
-            <p>&copy Muškienininkai</p>   
-            </div>
+            <p>&copy Muškienininkai</p>
         </div>
     </div>
-</div>
+    </div>
+    </div>
 
     <!--******************** SCRIPTS ********************-->
     <script src="./js/data.js"></script>

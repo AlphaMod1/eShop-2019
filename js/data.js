@@ -195,3 +195,40 @@ const aboutus = [
 ];
 // ********************ABOUT US end ********************
 
+
+// ********************Special offers start******************
+
+const specialOffers = [
+    {
+        img: './img/BuritoLogo.png',
+        name: 'Burito',
+        price: '9.99 €',
+        special1: '2 x Buritos',
+        special2: '2 x 0,33L Coca-Cola',
+        special3: '2 x Desserts',
+        input: 'Order Now',
+        FullMeniu: 'Visit full meniu'
+    },
+    {
+        img: './img/BurgerLogo.png',
+        name: 'Burger',
+        price: '8.99 €',
+        special1: '2 x Burgers',
+        special2: '2 x 0,33L Coca-Cola',
+        special3: '2 x Desserts',
+        input: 'Order Now',
+        FullMeniu: 'Visit full meniu'
+    },
+    {
+        img: './img/sushilogo.png',
+        name: 'Sushi',
+        price: '12.99 €',
+        special1: '20 x Sushi',
+        special2: '2 x 0,33L Coca-Cola',
+        special3: '2 x Desserts',
+        input: 'Order Now',
+        FullMeniu: 'Visit full meniu'
+    },
+];
+
+// ********************Special offers end********************
