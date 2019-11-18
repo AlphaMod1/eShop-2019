@@ -4,18 +4,14 @@
 }
 
 .menu{
-    background-color: #999;
-    background-image: url(../img/MeniuBackground.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    zoom: 90%;
 }
 
 .meniu_row {
     display: inline-block;
     text-align: center;
     width: 500px;
-    margin: 50px calc((100% - 500px) / 2) 20px;
+    margin: 100px calc((100% - 500px) / 2) 20px;
 }
 
 h3 {

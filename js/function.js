@@ -139,3 +139,12 @@ function renderSpecial(specialList) {
 }
 
 // ********************Special offers end********************
+
+// ********************Map ping points start******************
+
+function renderPings(pingPoints)
+
+
+
+
+// ********************Map ping points end********************
