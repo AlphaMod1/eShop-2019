@@ -1,7 +1,18 @@
 //on load:
-renderTable();
+checkUser();
 
-function renderTable() {
+function checkUser() {
+    let userid = window.location.href.split("#")[1];
+
+    for (let i = 0; i < orders.length; i++) {
+        if (orders[i].id == userid) {
+            return renderTable(userid);
+        }
+    }
+    location.replace('../login/login.html');
+}
+
+function renderTable(userid) {
     let HTML = `<tr>
                     <th>Order</th>
                     <th>Laikas</th>
@@ -9,12 +20,14 @@ function renderTable() {
                     <th>Telefonas</th> 
                     <th>Statusas</th> 
                 </tr>`;
-    for (let i = 0; i < data.length; i++) {
-        HTML += `<tr><td class='order' onclick='showModal(${data[i].orderID})'>${data[i].orderID}</td>
-                <td>${data[i].laikas}</td>
-                <td>${data[i].vardas}</td> 
-                <td>${data[i].telefonas}</td>
-                <td><input onclick='incrementOrder(${data[i].orderID});' class='btn-main status${data[i].status}' type='button' id='btnStatus-${data[i].orderID}' value='${changeBtnName(data[i].status)}'></td></tr>`;
+    for (let i = 0; i < orders.length; i++) {
+        if (orders[i].id == userid) {
+            HTML += `<tr><td class='order' onclick='showModal(${orders[i].orderID})'>${orders[i].orderID}</td>
+                <td>${orders[i].laikas}</td>
+                <td>${orders[i].vardas}</td> 
+                <td>${orders[i].telefonas}</td>
+                <td><input onclick='incrementOrder(${orders[i].orderID});' class='btn-main status${orders[i].status}' type='button' id='btnStatus-${orders[i].orderID}' value='${changeBtnName(orders[i].status)}'></td></tr>`;
+        }
     }
     document.querySelector('#stalas').innerHTML = HTML;
 }
@@ -38,31 +51,37 @@ function renderModal(id) {
 
     let kiekisHTML = '<p>Amount:</p>'
     let itemHTML = '<span onclick="closeModal();">X</span><p>Item:</p>'
-    let msgHTML = '';
+    let msgHTML = '<p class="msg-p">';
 
-    for (let i = 0; i < data.length; i++) {
-        if (data[i].orderID == id) {
-            for (let j = 0; j < data[i].item.length; j++) {
-                let temp = data[i].item[j].split('|');
+    for (let i = 0; i < orders.length; i++) {
+        if (orders[i].orderID == id) {
+            for (let j = 0; j < orders[i].item.length; j++) {
+                let temp = orders[i].item[j].split('|');
                 kiekisHTML += `<p>${temp[0]}</p>`;
                 itemHTML += `<p>${temp[1]}</p>`;
             }
-            msgHTML += data[i].msg;
+            msgHTML += orders[i].msg;
             contKiekis.innerHTML = kiekisHTML;
             contItem.innerHTML = itemHTML;
-            contMsg.innerHTML = msgHTML;
+            contMsg.innerHTML = msgHTML + "</p>";
         }
     }
 }
 
 function incrementOrder(id) {
-    let btn = document.getElementById('btnStatus-'+id);
-    for (let i = 0; i < data.length; i++) {
-        if (data[i].orderID == id) {
-            btn.classList.remove("status"+data[i].status);
-            data[i].status++;
-            btn.classList.add("status"+data[i].status);
-            btn.value = changeBtnName(data[i].status);
+    let btn = document.getElementById('btnStatus-' + id);
+    for (let i = 0; i < orders.length; i++) {
+        if (orders[i].orderID == id) {
+            if (orders[i].status <= 1) {
+                btn.classList.remove("status" + orders[i].status);
+                orders[i].status++;
+                btn.classList.add("status" + orders[i].status);
+                btn.value = changeBtnName(orders[i].status);
+            }
+            else {
+                orders.splice(i,1);
+                renderTable(window.location.href.split("#")[1]);
+            }
         }
     }
 }
@@ -80,7 +99,7 @@ function changeBtnName(status) {
             return "Ready";
             break;
         default:
-            return "NULL";
+            return "Ready";
             break;
     }
 

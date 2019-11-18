@@ -1,6 +1,6 @@
 table {
     border-collapse: collapse;
-    width:90%;
+    width: 90%;
     margin: 20px calc( 10% / 2);
 }
 
@@ -8,10 +8,9 @@ th {
     border-bottom: solid 2px lightgray;
     padding: 5px;
     margin: 0;
-
 }
 
-tr{
+tr {
     width: 100%;
 }
 
@@ -29,7 +28,7 @@ td {
 }
 
 .fa-truck {
-    color:white;
+    color: white;
     font-size: 40px;
     padding-top: 5px;
 }
@@ -44,6 +43,7 @@ td {
     text-decoration: none;
     color: white;
     font-weight: 900;
+    cursor: pointer;
 }
 
 nav {
@@ -57,28 +57,27 @@ nav {
     position: absolute;
     height: 100%;
     width: 100%;
-    top:0;
+    top: 0;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 2;
 }
 
 #modal {
-    position:absolute;
-    top:50%;
+    position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
     width: 400px;
     height: 400px;
     display: none;
     z-index: 3;
     background-color: white;
+    -webkit-box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.75);
 }
-/* .close {
-    height: 20px;
-    position: relative;
-} */
 
-#item > span {
+#item>span {
     position: absolute;
     top: -20px;
     right: -20px;
@@ -93,7 +92,6 @@ nav {
     height: 60%;
     border-right: dashed black 1px;
     padding: 5px;
-
 }
 
 #item {
@@ -103,7 +101,6 @@ nav {
     width: 80%;
     height: 60%;
     padding: 5px;
-
 }
 
 #msg {
@@ -115,7 +112,7 @@ nav {
     padding: 5px;
 }
 
-.btn-main{
+.btn-main {
     background-color: lightskyblue;
     text-transform: capitalize;
     vertical-align: top;
@@ -125,15 +122,14 @@ nav {
     outline: none;
 }
 
-.status0{
+.status0 {
     background-color: lemonchiffon;
 }
 
-.status1{
+.status1 {
     background-color: lightsalmon;
 }
 
-.status2{
+.status2 {
     background-color: lightgreen;
 }
-
