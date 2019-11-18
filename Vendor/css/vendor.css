@@ -43,6 +43,7 @@ td {
     text-decoration: none;
     color: white;
     font-weight: 900;
+    cursor: pointer;
 }
 
 nav {
