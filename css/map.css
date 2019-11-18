@@ -1,17 +1,17 @@
 .map {
-    background-color: lightskyblue;
-    background-image: url(../img/Googlemap.png);
+    /* background-color: lightskyblue; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+
 }
 
 .map_row {
     display: inline-block;
     text-align: center;
     width: 800px;
-    margin: 0px calc((100% - 800px) / 2) 20px;
+    margin: 100px calc((100% - 800px) / 2) 30px;
 
 }
 
@@ -41,3 +41,9 @@ h3 {
     top: 490px;
     left: 850px;
 } 
+
+.gmap {
+    width: 800px;
+    height: 450px;
+    margin-left: calc((100% - 800px) /2);
+}
