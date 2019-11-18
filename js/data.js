@@ -232,22 +232,3 @@ const specialOffers = [
 ];
 
 // ********************Special offers end********************
-
-// ********************Map ping points start******************
-
-const pings = [
-    {
-        
-    },
-    {
-        
-    },
-    {
-        
-    },
-];
-
-
-
-
-// ********************Map ping points end********************
