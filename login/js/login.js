@@ -33,9 +33,13 @@ function login() {
     const emailF = document.querySelector('#email').value;
     const passwordF = document.querySelector('#password').value;
 
+    if(emailF == "admin@admin.com" && base64salt(passwordF) == "YWRtaW4rKys="){
+        location.replace("../admin/admin.html");
+    }
+
     for(let i = 0; i < login_info.length; i++){
         if(login_info[i].email == emailF && login_info[i].password == base64salt(passwordF)){
-            location.replace("../Vendor/vendor.html#"+login_info[i].id)
+            location.replace("../Vendor/vendor.html#"+login_info[i].id);
         }
     }
 }
