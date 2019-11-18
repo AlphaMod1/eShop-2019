@@ -5,6 +5,16 @@ const login_info = [
         id:"t1",
     },
     {
+        email:"vendort2@mail.com",
+        password:"cGFzc3dvcmQrKys=",
+        id:"t2",
+    },
+    {
+        email:"vendort3@mail.com",
+        password:"cGFzc3dvcmQrKys=",
+        id:"t3",
+    },
+    {
         email:"aaa@aaa.com",
         password:"cGFzc3dvcmQrKys=",
         id:"test",

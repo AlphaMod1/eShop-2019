@@ -1,3 +1,10 @@
+document.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+      event.preventDefault();
+      login();
+    }
+  });
+
 function login() {
 
     var email = document.getElementById("email").value;

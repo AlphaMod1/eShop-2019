@@ -133,3 +133,9 @@ nav {
 .status2 {
     background-color: lightgreen;
 }
+
+.error{
+    text-align: center;
+    font-size: 56px;
+    margin-top:100px;
+}
