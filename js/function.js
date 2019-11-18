@@ -41,21 +41,30 @@ function heroSlideshow() {
 
     switch (slide) {
         case 0:
-            slide0.style.bottom = '200px';
-            slide1.style.bottom = '-1000px';
-            slide2.style.bottom = '-1000px';
+            slide0.style.left = '50%';
+            slide1.style.left = '-50%';
+            slide2.style.left = '150%';
+            slide0.style.opacity = '1';
+            slide1.style.opacity = '0';
+            slide2.style.opacity = '0';
             slide = 1;
             break;
         case 1:
-            slide0.style.bottom = '-1000px';
-            slide1.style.bottom = '200px';
-            slide2.style.bottom = '-1000px';
+            slide0.style.left = '150%';
+            slide1.style.left = '50%';
+            slide2.style.left = '-50%';
+            slide0.style.opacity = '0';
+            slide1.style.opacity = '1';
+            slide2.style.opacity = '0';
             slide = 2;
             break;
         case 2:
-            slide0.style.bottom = '-1000px';
-            slide1.style.bottom = '-1000px';
-            slide2.style.bottom = '200px';
+            slide0.style.left = '-50%';
+            slide1.style.left = '150%';
+            slide2.style.left = '50%';
+            slide0.style.opacity = '0';
+            slide1.style.opacity = '0';
+            slide2.style.opacity = '1';
             slide = 0;
             break;
     }

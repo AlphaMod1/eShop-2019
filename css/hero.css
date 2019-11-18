@@ -8,8 +8,9 @@
     .heroSlideshow > img {
         width: 400px;
         position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: -500px;
+        top: 40%;
+        left: -50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
         transition: 2s;
     }
