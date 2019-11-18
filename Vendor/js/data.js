@@ -1,7 +1,8 @@
 const statusNames = ['Start order','Finish order','Ready'];
 
-var data = [
+var orders = [
     {
+        id:"t1",
         orderID:'1230',
         laikas: '12:30',
         vardas: 'Rimantas',
@@ -11,6 +12,7 @@ var data = [
         msg:'msg...',
     },
     {
+        id:"t1",
         orderID:'1231',
         laikas: '12:30',
         vardas: 'Rimantas',
@@ -20,6 +22,7 @@ var data = [
         msg:'msg...',
     },
     {
+        id:"test",
         orderID:'1232',
         laikas: '12:30',
         vardas: 'Rimantas',
@@ -29,6 +32,7 @@ var data = [
         msg:'msg...',
     },
     {
+        id:"t1",
         orderID:'1233',
         laikas: '12:30',
         vardas: 'Rimantas',
@@ -38,6 +42,7 @@ var data = [
         msg:'msg...',
     },
     {
+        id:"t1",
         orderID:'1234',
         laikas: '12:30',
         vardas: 'Rimantas',
@@ -47,6 +52,7 @@ var data = [
         msg:'msg...',
     },
     {
+        id:"t1",
         orderID:'1235',
         laikas: '12:30',
         vardas: 'Rimantas',
@@ -56,6 +62,7 @@ var data = [
         msg:'msg...',
     },
     {
+        id:"t1",
         orderID:'7894',
         laikas: '18:40',
         vardas: 'Zmogus',
