@@ -1,3 +1,5 @@
+// ******************** HEADER start ********************
+
 function checkScroll() {
     if (window.scrollY < 150) {
         document.querySelector("header").style.background = "transparent";
@@ -15,6 +17,20 @@ function genHeaderDropdownTrucks() {
     }
     dropdown.innerHTML = HTML;
 }
+
+function displayBurger() {
+    let mainNav = document.querySelector('#main-nav');
+    let burger = document.querySelector('#burger')
+    if (mainNav.classList.contains('open')) {
+        mainNav.classList.remove('open');
+        burger.classList.remove('open');
+    } else {
+        mainNav.classList.add('open');
+        burger.classList.add('open');
+    }
+}
+
+// ******************** HEADER end ********************
 
 var slide = 0;
 
@@ -54,15 +70,15 @@ function genFooterTruckContacts() {
         <p>${trucks[i].tel}</p> 
         <p>${trucks[i].email}</p></div>`;
     }
-    contacts.innerHTML = HTML;   
+    contacts.innerHTML = HTML;
 }
 
 // ******************** ABOUT US start ********************
 
 let delayTime = 5000;
 
-function rotateImg (element, item) {
-    let imgHtml = document.getElementById("img-"+element);
+function rotateImg(element, item) {
+    let imgHtml = document.getElementById("img-" + element);
     let imagesLength = item.images.length;
     let random = Math.floor(Math.random() * imagesLength);
     let data = item.images[random];
@@ -70,23 +86,23 @@ function rotateImg (element, item) {
     imgHtml.src = data.img;
     imgHtml.alt = data.alt;
 
-    setTimeout(function() {
+    setTimeout(function () {
         rotateImg(element, item);
     }, delayTime);
 }
 
 
-function renderAbout( items ) {
+function renderAbout(items) {
     let HTML = '';
 
-    if ( !Array.isArray(items) ) {
+    if (!Array.isArray(items)) {
         return console.error('ERROR: Prasome pateikti duomenis');
     }
-    if ( items.length === 0 ) {
+    if (items.length === 0) {
         return console.error('ERROR: Negali buti tuscia');
     }
 
-    for ( let i=0; i<items.length; i++ ) {
+    for (let i = 0; i < items.length; i++) {
         const item = items[i];
         HTML += `<div class="about-item">
                     <img id="img-${i}" class="opaque" src="${item.images[0].img}" alt="${item.images[0].alt}">
@@ -94,21 +110,21 @@ function renderAbout( items ) {
                 </div>`;
 
         // Photo changed
-        setTimeout(function() {
+        setTimeout(function () {
             rotateImg(i, item);
         }, delayTime);
     }
-    
+
     return document.querySelector('#about-cont').innerHTML = HTML;
 }
 // ********************ABOUT US end********************
 
 // ********************Special offers start******************
-function renderSpecial(specialList){
+function renderSpecial(specialList) {
     let HTML = '';
-       for (let i = 0; i < specialList.length; i++){
-        const meniu = specialList[i] 
-            HTML += `<div class="meniu">
+    for (let i = 0; i < specialList.length; i++) {
+        const meniu = specialList[i]
+        HTML += `<div class="meniu">
             <img src="${meniu.img}" alt="Logo">
             <div class="offer">${meniu.name}</div>
             <p class="price">${meniu.price} </p>
@@ -118,7 +134,7 @@ function renderSpecial(specialList){
             <input type="buttom" value=' Order Now'${meniu.input}>
             <a class="fullmeniu" href="#"> ${meniu.FullMeniu}</a>
             </div>`;
-       }       
+    }
     return document.querySelector('#specialOffers').innerHTML = HTML;
 }
 
