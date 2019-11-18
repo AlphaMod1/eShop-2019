@@ -27,3 +27,9 @@ renderAbout( aboutus );
 renderSpecial( specialOffers );
 
 // ********************Special offers end********************
+
+// ********************Map ping points start******************
+
+renderPings( pings );
+
+// ********************Map ping points end********************
