@@ -25,6 +25,8 @@ h3 {
     margin-left: calc((100% - 800px) /2);
     position: relative;
     background-image: url('../img/Googlemap.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #pingas1, #pingas2, #pingas3{
