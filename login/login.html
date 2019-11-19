@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,18 +11,22 @@
     <link rel="stylesheet" href="../css/button.css">
     <link rel="stylesheet" href="css/login.css">
 </head>
+
 <body>
     <div class="form">
-        <h1>LOGO</h1>
+        <h1><a href="../index.html">LOGO</a></h1>
         <span>E-mail:</span>
-        <input id="email" placeholder="Enter your email" type="email">
+        <input id="email" placeholder="Enter your email..." type="email">
         <span>Password:</span>
-        <input id="password" placeholder="Enter your password" type="password">
+        <input id="password" placeholder="Enter your password..." type="password">
         <div class="login-bottom">
-            <input class="btn-main btn-login" onclick="login();" type="button" value="Login"><span> or <a href="#">register</a></span>
+            <span id="error-msg">Error</span>
+            <input class="btn-main btn-login" onclick="login();" type="button" value="Login">
+            <!-- <span> or <a href="#">register</a></span> -->
         </div>
     </div>
     <script src="js/data.js"></script>
     <script src="js/login.js"></script>
 </body>
+
 </html>
