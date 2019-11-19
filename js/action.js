@@ -30,6 +30,4 @@ renderSpecial( specialOffers );
 
 // ********************Map start********************
 pinCoordinates();
-pinCoordinates1();
-pinCoordinates2();
 // ********************Map end********************

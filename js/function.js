@@ -150,10 +150,8 @@ function renderSpecial(specialList) {
 // ********************Special offers end********************
 
 function pinCoordinates() {
-    for(let i = 0; i < cor.lenght; i++){
-        document.getElementById('pingas'+(i+1)).style.left = cor[i].x;
-        document.getElementById('pingas'+(i+1)).style.top = cor[i].y;
+    for(let i = 0; i < cor.length; i++){
+        document.querySelector('#pingas'+(i+1)).style.left = cor[i].x;
+        document.querySelector('#pingas'+(i+1)).style.top = cor[i].y;
     }
-    
-    
 }
