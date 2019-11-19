@@ -44,6 +44,7 @@ nav {
 .dropdown {
     position: relative;
     display: inline-block;
+    margin-right: 0px;
 }
 
 #dropdown-trucks {
