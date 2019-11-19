@@ -148,3 +148,4 @@ function renderSpecial(specialList) {
 }
 
 // ********************Special offers end********************
+
