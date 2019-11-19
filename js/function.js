@@ -66,6 +66,7 @@ function genFooterTruckContacts() {
     let HTML = '';
     for (let i = 0; i < trucks.length; i++) {
         HTML += `<div class="truck-info">
+        <img src="${specialOffers[i].img}" alt="Logo">
         <h5>${trucks[i].name}</h5> 
         <p>${trucks[i].tel}</p> 
         <p>${trucks[i].email}</p></div>`;

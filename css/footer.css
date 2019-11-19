@@ -1,6 +1,5 @@
 .foot {
     height: 200px;
-    /* width: 100%; */
     text-align: center;
     margin: 0px calc((50% - 500px)) 20px;
     color: rgb(208, 208, 208);
@@ -29,24 +28,14 @@
     width: 40px;
 }
 
-  .foot > .contacts {
-    display: inline-block;
-    width: 80%;
-    background-color: transparent;
-    }
-    
-    .foot > .contacts > .truck-info {
-        display: inline-block;
-        text-align: center;
-        font-size: 18px;
-        line-height: 25px;
-        width: 33%;
-        padding: 10px 0;
-    }
-    
-    .foot > .contacts > .truck-info  h5{
-        text-transform: uppercase;
-    }
+.foot > .fcontacts {
+    color: white;
+    padding: 20px;
+}
+
+.foot p {
+    padding: 3px 0;
+}
 
 .foot > .copyright {
     display: inline-block;
@@ -55,29 +44,3 @@
     line-height: 30px;
     text-align: center;
 }
-
-    @media (max-width: 1000px) {
-        .foot {
-            width: 700px;
-            margin: 0 calc( (100% - 700px) / 2 );
-        }
-    }
-
-    @media (max-width: 700px) {
-        .foot {
-            width: 100%;
-            margin: 0px 0px;
-            padding: 20px 20px;
-        }
-                        
-        .foot > .contacts > .truck-info {
-            display: inline-block;
-            text-align: center;
-            font-size: 18px;
-            line-height: 36px;
-            width: 100%;
-            margin: 5px 0;
-            border-bottom: 1px solid #fff;
-        }
-    }
-    
