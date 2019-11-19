@@ -55,3 +55,30 @@
     }
 
 }
+
+@media all and (max-width: 900px) {
+
+    .about-item {
+        width: 100%;
+    }
+
+    .about {
+        width: 80%;
+        margin-left: calc((100% - 80%) / 2);
+    }
+}
+
+@media all and (max-width: 800px) {
+
+    .about-item {
+        width: 100%;
+        display: block;
+        text-align: center;
+        float: unset;
+    }
+
+    .about-item > p {
+        margin-top: 20px;
+        text-align: justify;
+    }
+}

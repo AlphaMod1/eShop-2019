@@ -1,29 +1,55 @@
-//on load:
-genHeaderDropdownTrucks();
-checkScroll();
-heroSlideshow();
-genFooterTruckContacts();
+// ******************** Body start ********************
 
-window.addEventListener('scroll', function() {
-    checkScroll();    
+checkScroll();
+window.addEventListener('scroll', function () {
+    checkScroll();
 });
 
+// ******************** Body end ********************
 
-setInterval(function(){
+// ******************** Header start ********************
+
+genHeaderDropdownTrucks();
+
+// ******************** Header end ********************
+
+// ******************** Hero start ********************
+
+heroSlideshow();
+setInterval(function () {
     heroSlideshow();
-},4000);
+}, 4000);
+
+// ******************** Hero end ********************
+
+// ******************** Menu start ********************
+
+renderSpecial(specialOffers);
+
+// ******************** Menu end ********************
+
+// ******************** Map start ********************
+
+pinCoordinates();
+
+// ******************** Map end ********************
 
 // ******************** ABOUT US start ********************
 
-renderAbout( aboutus );
+renderAbout(aboutus);
 
 // ******************** ABOUT US end ********************
 
+// ******************** Carrer start ********************
 
-// ********************Special offers start******************
+// ******************** Carrer end ********************
 
-// funkcijosname (dataname)//
+// ******************** Contact Us start ********************
 
-renderSpecial( specialOffers );
+genFooterTruckContacts();
 
-// ********************Special offers end********************
+// ******************** Contact Us end ********************
+
+// ******************** Footer start ********************
+
+// ******************** Footer end ********************

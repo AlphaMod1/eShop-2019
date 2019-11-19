@@ -41,21 +41,30 @@ function heroSlideshow() {
 
     switch (slide) {
         case 0:
-            slide0.style.bottom = '200px';
-            slide1.style.bottom = '-1000px';
-            slide2.style.bottom = '-1000px';
+            slide0.style.left = '50%';
+            slide1.style.left = '-50%';
+            slide2.style.left = '150%';
+            slide0.style.opacity = '1';
+            slide1.style.opacity = '0';
+            slide2.style.opacity = '0';
             slide = 1;
             break;
         case 1:
-            slide0.style.bottom = '-1000px';
-            slide1.style.bottom = '200px';
-            slide2.style.bottom = '-1000px';
+            slide0.style.left = '150%';
+            slide1.style.left = '50%';
+            slide2.style.left = '-50%';
+            slide0.style.opacity = '0';
+            slide1.style.opacity = '1';
+            slide2.style.opacity = '0';
             slide = 2;
             break;
         case 2:
-            slide0.style.bottom = '-1000px';
-            slide1.style.bottom = '-1000px';
-            slide2.style.bottom = '200px';
+            slide0.style.left = '-50%';
+            slide1.style.left = '150%';
+            slide2.style.left = '50%';
+            slide0.style.opacity = '0';
+            slide1.style.opacity = '0';
+            slide2.style.opacity = '1';
             slide = 0;
             break;
     }
@@ -66,6 +75,7 @@ function genFooterTruckContacts() {
     let HTML = '';
     for (let i = 0; i < trucks.length; i++) {
         HTML += `<div class="truck-info">
+        <img src="${specialOffers[i].img}" alt="Logo">
         <h5>${trucks[i].name}</h5> 
         <p>${trucks[i].tel}</p> 
         <p>${trucks[i].email}</p></div>`;
@@ -139,3 +149,10 @@ function renderSpecial(specialList) {
 }
 
 // ********************Special offers end********************
+
+function pinCoordinates() {
+    for(let i = 0; i < cor.length; i++){
+        document.querySelector('#pingas'+(i+1)).style.left = cor[i].x;
+        document.querySelector('#pingas'+(i+1)).style.top = cor[i].y;
+    }
+}
