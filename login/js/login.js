@@ -1,47 +1,74 @@
-document.addEventListener("keyup", function(event) {
+document.addEventListener('keyup', function (event) {
     if (event.keyCode === 13) {
-      event.preventDefault();
-      login();
+        event.preventDefault();
+        login();
     }
-  });
+});
+
+const error = document.querySelector('#error-msg');
+
+function showError(code) {
+
+    error.style.display = 'inline-block';
+
+    switch (code) {
+        case 0:
+            error.innerHTML = 'Error: Email is empty';
+            break;
+        case 1:
+            error.innerHTML = 'Error: It\'s not an email';
+            break;
+        case 2:
+            error.innerHTML = 'Error: Password is empty';
+            break;
+        case 3:
+            error.innerHTML = 'Error: Password is too short';
+            break;
+        case 4:
+            error.innerHTML = 'Error: Bad email or password';
+            break;
+        default:
+            error.innerHTML = 'Error: Unknown error';
+            break;
+    }
+
+    return code;
+}
 
 function login() {
 
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
 
     if (!email || email.length == 0) {
-        console.log("email is empty"); //pop up warning is coming soon
-        return 0; // email is empty
+        return showError(0);
     }
 
-    if(!validateEmail(email)){
-        console.log("email is invalid");//pop up warning is coming soon
-        return 0; // email is invalid
+    if (!validateEmail(email)) {
+        return showError(1);
     }
 
-    if(!password || password.length == 0){
-        console.log("password is empty");//pop up warning is coming soon
-        return 0; // password is empty
+    if (!password || password.length == 0) {
+        return showError(2);
     }
 
-    if(password.length <= 4){
-        console.log("password is short");//pop up warning is coming soon
-        return 0; // password is too short
+    if (password.length <= 4) {
+        return showError(3);
     }
 
     const emailF = document.querySelector('#email').value;
     const passwordF = document.querySelector('#password').value;
 
-    if(emailF == "admin@admin.com" && base64salt(passwordF) == "YWRtaW4rKys="){
-        location.replace("../admin/admin.html");
+    if (emailF == 'admin@admin.com' && base64salt(passwordF) == 'YWRtaW4rKys=') {
+        location.replace('../admin/admin.html');
     }
 
-    for(let i = 0; i < login_info.length; i++){
-        if(login_info[i].email == emailF && login_info[i].password == base64salt(passwordF)){
-            location.replace("../Vendor/vendor.html#"+login_info[i].id);
+    for (let i = 0; i < login_info.length; i++) {
+        if (login_info[i].email == emailF && login_info[i].password == base64salt(passwordF)) {
+            location.replace('../Vendor/vendor.html#' + login_info[i].id);
         }
     }
+    return showError(4);
 }
 
 function validateEmail(email) {
@@ -49,6 +76,6 @@ function validateEmail(email) {
     return re.test(String(email).toLowerCase());
 }
 
-function base64salt(string){
-    return btoa(string+"+++");
+function base64salt(string) {
+    return btoa(string + '+++');
 }
