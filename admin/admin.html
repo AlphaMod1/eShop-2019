@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +12,70 @@
     <link rel="stylesheet" href="../css/button.css">
     <link rel="stylesheet" href="./css/admin.css">
 </head>
+
 <body>
 
-    
+    <div class="nav top-menu">
+        <a href="../index.html" class="btn-main btn-logout">Logout</a>
+        <div id="today">2030 Jan 01</div>
+        <div id="current-container">Dashboard</div>
+    </div>
 
-<script src="./js/admin.js"></script>
+    <div class="nav left-menu" id="left-menu">
+        <div class="left_list-logo">
+            <i class="fa fa-truck"></i>
+            <span>Food Trucks</span>
+        </div>
+        <div class="left_list-item" id="item-dashboard" onclick="loadCont('dashboard');">
+            <i class="fa fa-info-circle"></i>
+            <span>Dashboard</span>
+        </div>
+        <div class="left_list-item" id="item-users" onclick="loadCont('users');">
+            <i class="fa fa-user"></i>
+            <span>Users</span>
+        </div>
+        <div class="left_list-item" id="item-vendors" onclick="loadCont('vendors');">
+            <i class="fa fa-shopping-cart"></i>
+            <span>Vendors</span>
+        </div>
+        <div class="left_list-item" id="item-edit" onclick="loadCont('edit');">
+            <i class="fa fa-pencil"></i>
+            <span>Edit Vendors</span>
+        </div>
+        <div class="left_list-item" id="item-inbox" onclick="loadCont('inbox');">
+            <i class="fa fa-inbox"></i>
+            <span>Inbox</span>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="container cont-dashboard">
+            <h1>Dashboard</h1>
+        </div>
+
+        <div class="container cont-users">
+            <h1>Users</h1>
+        </div>
+
+        <div class="container cont-vendors">
+            <h1>Vendors</h1>
+        </div>
+
+        <div class="container cont-edit">
+            <h1>Edit</h1>
+        </div>
+
+        <div class="container cont-inbox">
+            <h1>Inbox</h1>
+        </div>
+    </div>
+
+    <footer class="container footer">
+
+    </footer>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/admin.js"></script>
 </body>
+
 </html>
