@@ -1,0 +1,51 @@
+body {
+    color: #fff;
+    background-image: url(../../img/bckg-truck.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: monospace;
+}
+
+.receipt {
+    width: 800px;
+    margin: 0 calc((50% / 2));
+    padding: 50px;
+   
+}
+
+.receipt > .progbar {
+    display: inline-block;
+    width: 100%;
+
+}
+
+.receipt > .ordernum {
+    display: inline-block;
+    width: 100%;
+    margin-top: 50px;
+    padding: 30px 0;
+    font-size: 45px;
+    line-height: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    color: #fff;
+}
+
+.OrNr {
+
+}
+
+.receipt > .faq {
+    display: inline-block;
+    width: 100%;
+    padding: 30px 0;
+    font-size: 45px;
+    line-height: 60px;
+    font-weight: bold;
+    text-align: center;
+}
