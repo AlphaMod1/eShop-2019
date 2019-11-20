@@ -173,6 +173,7 @@ function popFunction() {
     pin1.classList.toggle("show");
   }
 
+
   function popFunction1() {
     var pin2 = document.getElementById("popupas1");
     pin2.classList.toggle("show");
