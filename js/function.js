@@ -90,7 +90,7 @@ let delayTime = 5000;
 function rotateImg(element, item) {
     let imgHtml = document.getElementById("img-" + element);
     let imagesLength = item.images.length;
-    let random = Math.floor(Math.random() * imagesLength);
+    let random = generateRandom(imagesLength);
     let data = item.images[random];
 
     imgHtml.src = data.img;
@@ -101,6 +101,16 @@ function rotateImg(element, item) {
     }, delayTime);
 }
 
+var lastNumber = Infinity;
+
+function generateRandom(imagesLength) {
+    let random = Math.floor(Math.random() * imagesLength);
+    if(random === lastNumber) {
+        generateRandom(imagesLength);
+    }
+    lastNumber = random;
+    return random;
+}
 
 function renderAbout(items) {
     let HTML = '';
@@ -156,3 +166,20 @@ function pinCoordinates() {
         document.querySelector('#pingas'+(i+1)).style.top = cor[i].y;
     }
 }
+
+
+function popFunction() {
+    var pin1 = document.getElementById("popupas");
+    pin1.classList.toggle("show");
+  }
+
+
+  function popFunction1() {
+    var pin2 = document.getElementById("popupas1");
+    pin2.classList.toggle("show");
+  }
+
+  function popFunction2() {
+    var pin3 = document.getElementById("popupas2");
+    pin3.classList.toggle("show");
+  }
