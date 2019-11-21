@@ -1,5 +1,5 @@
 updateHeaderTime();
-loadCont('edit');
+loadCont('dashboard');
 
 function updateHeaderTime() {
 
