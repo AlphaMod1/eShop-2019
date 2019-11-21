@@ -29,6 +29,7 @@ body {
     font-size: 20px;
     margin-left: 50px;
     float: left;
+    text-transform: capitalize;
 }
 
 .left-menu {
@@ -39,7 +40,7 @@ body {
     background-color: #1A1A27;
     height: 100vh;
     width: 250px;
-    color: #ffffff;
+    color: #888888;
 }
 
 .left-menu * {
@@ -53,10 +54,11 @@ body {
 }
 
 .left_list-logo {
-    border-bottom: #f0f0f0 solid 1px;
+    border-bottom: #333333 solid 1px;
     height: 60px;
     background-color: #4a516b;
     padding-left: 10px;
+    color:#ffffff;
 }
 
 .left_list-logo, .left_list-logo * {
@@ -68,7 +70,7 @@ body {
     line-height: 55px;
 }
 
-.left_list-logo .fa {
+.left_list-logo > .fa {
     font-size: 35px;
     line-height: 50px;
 }
@@ -76,9 +78,11 @@ body {
 .left_list-item {
     height: 50px;
     text-align: left;
-    font-size: 24px;
+    /* font-size: 24px; */
     padding-left: 10px;
     transition: 0.3s;
+    position: relative;
+    background-color: #1A1A27;
 }
 
 .left_list-item span {
@@ -87,11 +91,18 @@ body {
 }
 
 .left_list-item .fa {
+    font-size: 24px;
     line-height: 45px;
 }
 
 .left_list-item-active {
     background: #545f8c;
+    color:#ffffff;
+}
+
+.left_list-item:hover{
+    background: #545f8c;
+    color:#ffffff;
 }
 
 .btn-logout {
@@ -106,6 +117,39 @@ body {
 .show-container{
     display: inline-block!important;
 }
+
+.fa-plus{
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Footer */
+
+.foot{
+    position: fixed;
+    bottom: 0;
+    left:calc(50% + 100px);
+    transform: translateX(-50%);
+    margin: 0;
+    height: auto;
+    width: 100%;
+    z-index: -1;
+}
+
+.foot .socials{
+    border-bottom: 1px solid #333;
+    width: 100%;
+}
+
+.foot .fcontacts{
+    color:#333;
+}
+
+@media only screen and (max-width: 700px) {
+    .foot {
+      display: none;
+    }
+  }
 
 /* Content */
 

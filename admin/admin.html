@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="./css/admin.css">
 </head>
 
@@ -48,32 +49,77 @@
         </div>
     </div>
 
+    <!-- https://keenthemes.com/metronic/preview/demo1/index.html -->
     <div id="content">
         <div class="container cont-dashboard">
-            <h1>Dashboard</h1>
+
         </div>
 
         <div class="container cont-users">
-            <h1>Users</h1>
+            <div class="users-title">Users</div>
+            <table id="users-table">
+                <tr>
+                    <th>ID:</th>
+                    <th>Name:</th>
+                    <th>Email:</th>
+                    <th>Phone:</th>
+                </tr>
+            </table>
         </div>
 
         <div class="container cont-vendors">
-            <h1>Vendors</h1>
+            <div class="vendor-title">Vendors</div>
+            <i onclick="loadCont('edit');" class="fa fa-plus"></i>
+            <table id="vendor-table">
+                <tr>
+                    <th>ID:</th>
+                    <th>Name:</th>
+                    <th>Email:</th>
+                    <th>Phone:</th>
+                </tr>
+            </table>
         </div>
 
         <div class="container cont-edit">
-            <h1>Edit</h1>
+            <div class="edit-title">Edit</div>
+            <i onclick="addNewUserModal();" class="fa fa-plus"></i>
+            <table id="edit-table">
+                <tr>
+                    <th>ID:</th>
+                    <th>Name:</th>
+                    <th>Email:</th>
+                    <th>Phone:</th>
+                    <th>-</th>
+                </tr>
+            </table>
         </div>
 
         <div class="container cont-inbox">
-            <h1>Inbox</h1>
+            <div class="inbox-title">Inbox</div>
+            <i onclick="sendMailModal();" class="fa fa-plus"></i>
+            <table id="inbox-table">
+                <tr>
+                    <th>From:</th>
+                    <th>Email:</th>
+                    <th>-</th>
+                </tr>
+            </table>
         </div>
     </div>
 
-    <footer class="container footer">
+    <div class="foot">
+        <div class="socials">
 
-    </footer>
+        </div>
+        <div class="fcontacts">
+            <h4>UAB "Maisto furgonai"</h4>
+            <p>Telefonas: +37061000000</p>
+            <p>El.Paštas: <a href="emailto:info@foodtrucks.lt"></a>info@foodtrucks.lt</p>
+            <p>Įm.kodas: 302964057 PVM Kodas: LT100008128215</p>
+        </div>
+    </div>
 
+    <script src="../js/data.js"></script>
     <script src="./js/data.js"></script>
     <script src="./js/admin.js"></script>
 </body>
