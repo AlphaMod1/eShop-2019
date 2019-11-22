@@ -166,3 +166,90 @@ function pinCoordinates() {
         document.querySelector('#pingas'+(i+1)).style.top = cor[i].y;
     }
 }
+
+// ********************Career start********************
+
+var car = 0;
+
+function careerSlideshow() {
+    let car0 = document.querySelector('#car0');
+    let car1 = document.querySelector('#car1');
+    let car2 = document.querySelector('#car2');
+    let car3 = document.querySelector('#car3');
+    let car4 = document.querySelector('#car4');
+    let car5 = document.querySelector('#car5');
+
+    car0.style.opacity = '0';
+    car1.style.opacity = '0';
+    car2.style.opacity = '0';
+    car3.style.opacity = '0';
+    car4.style.opacity = '0';
+    car5.style.opacity = '0';
+
+    switch (car) {
+        case 0:
+            car0.style.left = '50%';
+            car1.style.left = '-50%';
+            car2.style.left = '150%';
+            car3.style.left = '150%';
+            car4.style.left = '150%';
+            car5.style.left = '150%';
+            car0.style.opacity = '1';
+           
+            car = 1;
+            break;
+        case 1:
+            car0.style.left = '150%';
+            car1.style.left = '50%';
+            car2.style.left = '-50%';
+            car3.style.left = '50%';
+            car4.style.left = '150%';
+            car5.style.left = '150%';
+            car1.style.opacity = '1';
+            car = 2;
+            break;
+        case 2:
+            car0.style.left = '150%';
+            car1.style.left = '150%';
+            car2.style.left = '50%';
+            car3.style.left = '-50%';
+            car4.style.left = '150%';
+            car5.style.left = '150%';
+            car2.style.opacity = '1';
+            car = 3;
+            break;
+        case 3:
+            car0.style.left = '150%';
+            car1.style.left = '150%';
+            car2.style.left = '150%';
+            car3.style.left = '50%';
+            car4.style.left = '-50%';
+            car5.style.left = '150%';
+            car3.style.opacity = '1';
+            car = 4;
+            break;
+
+        case 4:
+            car0.style.left = '150%';
+            car1.style.left = '150%';
+            car2.style.left = '150%';
+            car3.style.left = '150%';
+            car4.style.left = '50%';
+            car5.style.left = '-50%';
+            car4.style.opacity = '1';
+            car = 5;
+            break;
+
+        case 5:
+            car0.style.left = '-50%';
+            car1.style.left = '150%';
+            car2.style.left = '150%';
+            car3.style.left = '150%';
+            car4.style.left = '150%';
+            car5.style.left = '50%';
+            car5.style.opacity = '1';
+            car = 0;
+            break;
+    }
+}
+// ********************Career end********************

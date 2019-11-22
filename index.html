@@ -40,8 +40,8 @@
             <a class="link-item" href="index.html#meniuId">Meniu</a>
             <a class="link-item" href="index.html#mapId">Map</a>
             <a class="link-item" href="index.html#about-cont">About us</a>
-            <a class="link-item" href="#">Career</a>
-            <a class="link-item" href="#">Contacts</a>
+            <a class="link-item" href="index.html#career-cont">Career</a>
+            <a class="link-item" href="index.html#contacts">Contacts</a>
             <a class="link-item" href="login/login.html">Log in</a>
         </nav>
     </header>
@@ -111,13 +111,54 @@
 
     <!--******************** CAREER ********************-->
 
-    <div class="container career">
-
+    <div id="career-cont" class="container career">
+        <h3 class="title-career">Contacts</h3>
+        <div class="container-career">
+            <div class="column circle circle1">
+                <p >Join with your Food Truck</p>
+                <!-- <p>You could be one of us</p> -->
+            </div>
+            <div class="column">   
+                <form>
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">E-mail</label>
+                        <input id="email" name="email" type="email">
+                    </div>
+                    <div class="form-row">
+                        <label for="mobile">Phone</label>
+                        <input id="mobile" name="mobile" type="text">
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <input id="submit-career" class="btn-submit" type="submit" name="btnSubmit" value="Submit">
+                    </div>
+                </form>
+            </div>
+            <div class="column circle">
+                <p>Join us!!!</p>
+                <p>We are waiting You!</p>
+            </div>
+            <!-- <div class="careerSlideshow"> -->
+                <img id='car0' src="./img/trucks/t1.png" alt="Truck">
+                <img id='car1' src="./img/trucks/t2.png" alt="Truck">
+                <img id='car2' src="./img/trucks/t3.png" alt="Truck">
+                <img id='car3' src="./img/trucks/t4.png" alt="Truck">
+                <img id='car4' src="./img/trucks/t5.png" alt="Truck">
+                <img id='car5' src="./img/trucks/t6.png" alt="Truck">
+            <!-- </div> -->
+        </div>
     </div>
 
     <!--******************** CONTACTS ********************-->
 
-    <div class="contacts">
+    <div class="contacts" id="contacts">
         <div class="titleCon"> <h1>Contacts</h1> </div>
        <div class="contactsCon" id="truckContacts"></div>
     </div>
