@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="./CSS/ProgressBar.css">
 </head>
 <body>
-     <!-- **********HEADER NAVIGATION********** -->
-        <!-- <header>
+        <header>
                 <a class="fa fa-truck fa-2x logo"></a>
                 <div class="burger-nav" onclick="displayBurger();">
                     <div class="burger" id="burger">
@@ -35,8 +34,8 @@
                     <a class="link-item" href="#">Contacts</a>
                     <a class="link-item" href="login/login.html">Log in</a>
                 </nav>
-            </header> -->
-            <div class="receipt">
+            </header>
+            <div id="receipt">
                 <div class="progbar">
                         <div class="progress-bar">
                                 <div class="texts">
@@ -49,18 +48,26 @@
                                 <div class="state">In the oven</div>
                                 <div class="state">En route</div>
                                 <div class="state" style="text-align: right;">Delivered</div>
-
-                            </div>
+                        </div>
                 </div>
                 <div class="ordernum">
                     <h3>Order number </h1>
-                    <div class="OrNr">003</div>
-                </div>
-                <div class="faq">Got issues?</div>
-            </div>
+                    <div class="OrNr">0</div>
+                    <div class="OrNr">0</div>
+                    <div class="OrNr">3</div>
 
+                </div>
+                <div class="issues">Got issues?</div>
+                <div class="overlay">
+                   <p> Skambinkite +37061000000 </p>
+                </div>
+            </div>
+            
             <script src="../js/data.js"></script>
             <script src="../js/function.js"></script>
-            <script src="../js/action.js"></script>
+            <script src="./js/actions.js"></script>
+   
+
+
 </body>
 </html>
