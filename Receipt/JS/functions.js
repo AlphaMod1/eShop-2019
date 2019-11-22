@@ -1,18 +1,18 @@
-function renderAll(){
+function renderAll() {
     killPage(getInfo());
-    
+
 }
 
-function getInfo(){
+function getInfo() {
     return window.location.href.split('#')[1];
 }
 
-function getInfoArray(){
+function getInfoArray() {
     return getInfo().split['&'];
 }
 
-function killPage(info){
-    if(info == 'undefined' || !info || info == ''){
+function killPage(info) {
+    if (info == 'undefined' || !info || info == '') {
         window.location.replace('../index.html');
     }
 }

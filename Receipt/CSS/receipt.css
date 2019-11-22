@@ -14,12 +14,12 @@ body {
     padding: 50px;
 }
 
-#receipt > .progbar {
+#receipt>.progbar {
     display: inline-block;
     width: 100%;
 }
 
-#receipt > .ordernum {
+#receipt>.ordernum {
     display: inline-block;
     width: 100%;
     margin-top: 0px;
@@ -41,13 +41,13 @@ h3 {
     width: 60px;
     line-height: 60px;
     margin-top: 20px;
-    border: solid 2px #fff ;
+    border: solid 2px #fff;
     font-size: 45px;
 }
 
-#receipt > .issues {
+#receipt>.issues {
     display: inline-block;
-    width:50%;
+    width: 50%;
     margin: 50px 25%;
     padding: 15px 0;
     font-size: 40px;
@@ -59,7 +59,7 @@ h3 {
     cursor: pointer;
 }
 
-#receipt > .overlay {
+#receipt>.overlay {
     display: none;
     position: fixed;
     top: 0;
@@ -69,7 +69,8 @@ h3 {
     z-index: 1;
     background-color: #000c;
 }
-.overlay p{
+
+.overlay p {
     width: 500px;
     display: inline-block;
     font-size: 70px;
@@ -78,7 +79,7 @@ h3 {
     text-align: center;
 }
 
-#receipt.showOverlay > .overlay {
+#receipt.showOverlay>.overlay {
     display: inline-block;
 }
 
@@ -105,14 +106,14 @@ h3 {
         margin-top: 20px;
         font-size: 35px;
     }
-    #receipt > .issues {
+    #receipt>.issues {
         margin: 0px 25%;
         padding: 30px;
         font-size: 30px;
         line-height: 25px;
-        border-radius: 50%;        
+        border-radius: 50%;
     }
-    .overlay p{
+    .overlay p {
         width: 200px;
         font-size: 35px;
         font-weight: 900;
@@ -120,4 +121,3 @@ h3 {
         text-align: center;
     }
 }
-
