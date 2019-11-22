@@ -254,3 +254,147 @@ let cor = [
 
 
 // ********************Map end********************
+
+
+var hiddenMenu = {
+    FoodTruck1:
+    {
+        HotDishes: [
+            {
+                pav: 'menke1',
+                img: 'photo1',
+                price: '3.20'
+            },
+            {
+                pav: 'vista1',
+                img: 'photo2',
+                price: '3.20'
+            },
+            {
+                pav: 'jautiena1',
+                img: 'photo3',
+                price: '3.20'
+            },
+            {
+                pav: 'menke2',
+                img: 'photo4',
+                price: '3.20'
+            },
+            {
+                pav: 'vista2',
+                img: 'photo5',
+                price: '3.20'
+            },
+            {
+                pav: 'jautiena2',
+                img: 'photo6',
+                price: '3.20'
+            },
+        ],
+        Tacos: [
+            {
+                pav: 'taco1',
+                img: 'tphoto1',
+                price: '3.20'
+            },
+            {
+                pav: 'taco2',
+                img: 'tphoto2',
+                price: '3.20'
+            },
+            {
+                pav: 'taco3',
+                img: 'tphoto3',
+                price: '3.20'
+            },
+        ],
+        Drinks: [
+            {
+                pav: 'drink1',
+                img: 'dphoto1',
+                price: '3.20'
+            },
+            {
+                pav: 'drink2',
+                img: 'dphoto2',
+                price: '3.20'
+            },
+            {
+                pav: 'drink3',
+                img: 'dphoto3',
+                price: '3.20'
+            },
+        ],
+    },
+
+    FoodTruck2:
+    {
+        Burgers: [
+            {
+                pav: 'menke1',
+                img: 'photo1',
+                price: '3.20'
+            },
+            {
+                pav: 'vista1',
+                img: 'photo2',
+                price: '3.20'
+            },
+            {
+                pav: 'jautiena1',
+                img: 'photo3',
+                price: '3.20'
+            },
+            {
+                pav: 'menke2',
+                img: 'photo4',
+                price: '3.20'
+            },
+            {
+                pav: 'vista2',
+                img: 'photo5',
+                price: '3.20'
+            },
+            {
+                pav: 'jautiena2',
+                img: 'photo6',
+                price: '3.20'
+            },
+        ],
+        Snacks: [
+            {
+                pav: 'taco1',
+                img: 'tphoto1',
+                price: '3.20'
+            },
+            {
+                pav: 'taco2',
+                img: 'tphoto2',
+                price: '3.20'
+            },
+            {
+                pav: 'taco3',
+                img: 'tphoto3',
+                price: '3.20'
+            },
+        ],
+        Drinks: [
+            {
+                pav: 'drink1',
+                img: 'dphoto1',
+                price: '3.20'
+            },
+            {
+                pav: 'drink2',
+                img: 'dphoto2',
+                price: '3.20'
+            },
+            {
+                pav: 'drink3',
+                img: 'dphoto3',
+                price: '3.20'
+            },
+        ],
+    }
+
+}

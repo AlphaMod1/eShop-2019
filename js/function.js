@@ -183,3 +183,37 @@ function popFunction() {
     var pin3 = document.getElementById("popupas2");
     pin3.classList.toggle("show");
   }
+
+  /////Hidden part////
+
+  function hiddenFunction(nav) {
+     var dropdown = document.querySelector("#hid"+nav);
+    try {
+        document.querySelector('.menu-show').classList.remove('menu-show');
+    } 
+    catch  { }
+    dropdown.classList.add('menu-show');
+  } 
+
+  function renderMenu(truck, cat){
+      var HTML= '';
+      if( truck === 'truck1' && cat ==='HotDishes'){
+        for(var i=0; i<hiddenMenu.FoodTruck1.HotDishes.length; i++){
+            HTML += `
+            <div class='menuName' >${hiddenMenu.FoodTruck1.HotDishes[i].pav}</div>
+            <div class='menuImg' >${hiddenMenu.FoodTruck1.HotDishes[i].img}</div>
+            <div class='menuPrices'>${hiddenMenu.FoodTruck1.HotDishes[i].price}</div>
+            `
+
+        }
+      } else if ( truck === 'truck1' && cat ==='Tacos'){
+        for(var i=0; i<hiddenMenu.FoodTruck1.Tacos.length; i++){
+
+        }
+      } else if ( truck === 'truck1' && cat ==='Drinks'){
+        for(var i=0; i<hiddenMenu.FoodTruck1.Drinks.length; i++){
+
+        }
+      }
+      document.querySelector('#left-menu').innerHTML = HTML;
+  }

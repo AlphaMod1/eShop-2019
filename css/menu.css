@@ -109,9 +109,122 @@ h3 {
         font-size: 15px;
         font-family: monospace;
         color: black;
-        /* background-color: lightgray; */
-        /* border: 1px solid black; */
-        /* text-decoration: none; */
+       }
+
+
+    .hidden {
+        display: inline-block;
+        width: 1000px;
+        height: 440px;
+        margin: 0 calc((100% - 1000px) / 2);
+        background-color: yellow;
+
+    }
+    
+    .hidden > .hidden-right {
+        display: inline-block;
+        float: right;
+        width: 270px;
+        height: 100%;
+        background-color: lime;
     }
 
+        .hidden > .hidden-left {
+            display: inline-block;
+            float: left;
+            width: 730px;
+            height: 100%;
+            background-color: red;
+            
+        }
+        .hidden-navigation {
+            display: inline-block;
+            width: 730px;
+            height: 70px;
+            background-color: cornsilk;
+            position: relative;
+        }
+
+        /**************mygtukai ********************/ 
+
+        .hidden-btn {
+            display: inline-block;
+            padding: 20px;
+            text-align: center;
+            background-color: yellow;
+            position: absolute;
+            top: 7px;
+            cursor: pointer;
+        }
+
+        .menubtn1 {
+            left: 50px;
+        }
+
+        .menubtn2 {
+            left: 305px;
+        }
+
+        .menubtn3 {
+            left: 560px;
+        }
+
+        #hid1 {
+            position: absolute;
+            top: 60px;
+            left: -50px;
+        }
+
+        #hid2 {
+            position: absolute;
+            top: 60px;
+            left: -305px;
+        }
+
+        #hid3 {
+            position: absolute;
+            top: 60px;
+            left: -560px;
+        }
+
+/**************mygtukai ********************/ 
+/**************hoveriai ********************/ 
+.hidden-btn:hover {
+    background-color: #666;
+    color:white;
+    font-size: 18px;
+}
+
+/**************hoveriai ********************/ 
+
+/**************dropai ********************/ 
+
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 730px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.685);
+    z-index: 1;
+  }
+
+
+  .menu-dropdown > a {
+    color: white;
+    padding: 20px 70px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+  }
+
+
+    .hidden a:hover {
+      color: white;
+      background-color: #ccc;
+
+    }
+       
+    .menu-show {
+        display: inline-block!important;
+    }
 
