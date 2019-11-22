@@ -261,140 +261,236 @@ var hiddenMenu = {
     {
         HotDishes: [
             {
-                pav: 'menke1',
-                img: 'photo1',
-                price: '3.20'
+                pav: 'Buritaz',
+                img:'./img/buritos/5.jpg', alt: 'Photo' ,
+                price: '4.20€'
             },
             {
-                pav: 'vista1',
-                img: 'photo2',
-                price: '3.20'
+                pav: 'Buritazilla',
+                img:'./img/buritos/6.jpg', alt: 'Photo' ,
+                price: '5.60€'
             },
             {
-                pav: 'jautiena1',
-                img: 'photo3',
-                price: '3.20'
+                pav: 'NiamNiam',
+                img:'./img/buritos/8.jpg', alt: 'Photo' ,
+                price: '3.20€'
             },
             {
-                pav: 'menke2',
-                img: 'photo4',
-                price: '3.20'
+                pav: 'StashMash',
+                img:'./img/buritos/7.jpg', alt: 'Photo' ,
+                price: '1.60€'
             },
             {
-                pav: 'vista2',
-                img: 'photo5',
-                price: '3.20'
+                pav: 'Lalavyva',
+                img:'./img/buritos/5.jpg', alt: 'Photo' ,
+                price: '3.80€'
             },
             {
-                pav: 'jautiena2',
-                img: 'photo6',
-                price: '3.20'
+                pav: 'Bumbana',
+                img: './img/buritos/6.jpg', alt: 'Photo' ,
+                price: '3.20€'
             },
         ],
         Tacos: [
             {
-                pav: 'taco1',
-                img: 'tphoto1',
-                price: '3.20'
+                pav: 'Tacosas',
+                img:'./img/buritos/1.jpg', alt: 'Photo',
+                price: '2.20€'
             },
             {
-                pav: 'taco2',
-                img: 'tphoto2',
-                price: '3.20'
+                pav: 'Tacyza',
+                img:'./img/buritos/2.jpg', alt: 'Photo',
+                price: '3.20€'
             },
             {
-                pav: 'taco3',
-                img: 'tphoto3',
-                price: '3.20'
+                pav: 'Tacyza',
+                img:'./img/buritos/2.jpg', alt: 'Photo',
+                price: '3.20€'
+            },
+            {
+                pav: 'Plumpa',
+                img:'./img/buritos/8.jpg', alt: 'Photo',
+                price: '2.70€'
             },
         ],
         Drinks: [
             {
-                pav: 'drink1',
                 img: 'dphoto1',
-                price: '3.20'
+                pav: 'Coca-Cola',
+                price: '1.20€'
             },
             {
-                pav: 'drink2',
-                img: 'dphoto2',
-                price: '3.20'
+                img: 'dphoto1',
+                pav: 'Coca-Cola',
+                price: '1.20€'
             },
             {
-                pav: 'drink3',
-                img: 'dphoto3',
-                price: '3.20'
+                img: 'dphoto1',
+                pav: 'Coca-Cola',
+                price: '1.20€'
+            },
+            {
+                img: 'dphoto1',
+                pav: 'Coca-Cola',
+                price: '1.20€'
             },
         ],
     },
-
     FoodTruck2:
     {
         Burgers: [
             {
-                pav: 'menke1',
-                img: 'photo1',
-                price: '3.20'
+                pav: 'Buritaz',
+                img:'./img/buritos/5.jpg', alt: 'Photo' ,
+                price: '4.20€'
             },
             {
-                pav: 'vista1',
-                img: 'photo2',
-                price: '3.20'
+                pav: 'Buritazilla',
+                img:'./img/buritos/6.jpg', alt: 'Photo' ,
+                price: '5.60€'
             },
             {
-                pav: 'jautiena1',
-                img: 'photo3',
-                price: '3.20'
+                pav: 'NiamNiam',
+                img:'./img/buritos/8.jpg', alt: 'Photo' ,
+                price: '3.20€'
             },
             {
-                pav: 'menke2',
-                img: 'photo4',
-                price: '3.20'
+                pav: 'StashMash',
+                img:'./img/buritos/7.jpg', alt: 'Photo' ,
+                price: '1.60€'
             },
             {
-                pav: 'vista2',
-                img: 'photo5',
-                price: '3.20'
+                pav: 'Lalavyva',
+                img:'./img/buritos/5.jpg', alt: 'Photo' ,
+                price: '3.80€'
             },
             {
-                pav: 'jautiena2',
-                img: 'photo6',
-                price: '3.20'
+                pav: 'Bumbana',
+                img: './img/buritos/6.jpg', alt: 'Photo' ,
+                price: '3.20€'
             },
         ],
         Snacks: [
             {
-                pav: 'taco1',
-                img: 'tphoto1',
-                price: '3.20'
+                pav: 'Tacosas',
+                img:'./img/buritos/1.jpg', alt: 'Photo',
+                price: '2.20€'
             },
             {
-                pav: 'taco2',
-                img: 'tphoto2',
-                price: '3.20'
+                pav: 'Tacyza',
+                img:'./img/buritos/2.jpg', alt: 'Photo',
+                price: '3.20€'
             },
             {
-                pav: 'taco3',
-                img: 'tphoto3',
-                price: '3.20'
+                pav: 'Tacyza',
+                img:'./img/buritos/2.jpg', alt: 'Photo',
+                price: '3.20€'
+            },
+            {
+                pav: 'Plumpa',
+                img:'./img/buritos/8.jpg', alt: 'Photo',
+                price: '2.70€'
             },
         ],
         Drinks: [
             {
-                pav: 'drink1',
                 img: 'dphoto1',
-                price: '3.20'
+                pav: 'Coca-Cola',
+                price: '1.20€'
             },
             {
-                pav: 'drink2',
-                img: 'dphoto2',
-                price: '3.20'
+                img: 'dphoto1',
+                pav: 'Coca-Cola',
+                price: '1.20€'
             },
             {
-                pav: 'drink3',
-                img: 'dphoto3',
-                price: '3.20'
+                img: 'dphoto1',
+                pav: 'Coca-Cola',
+                price: '1.20€'
+            },
+            {
+                img: 'dphoto1',
+                pav: 'Coca-Cola',
+                price: '1.20€'
             },
         ],
-    }
-
-}
+    },
+    FoodTruck3:
+    {
+        Sushi: [
+            {
+                pav: 'Buritaz',
+                img:'./img/buritos/5.jpg', alt: 'Photo' ,
+                price: '4.20€'
+            },
+            {
+                pav: 'Buritazilla',
+                img:'./img/buritos/6.jpg', alt: 'Photo' ,
+                price: '5.60€'
+            },
+            {
+                pav: 'NiamNiam',
+                img:'./img/buritos/8.jpg', alt: 'Photo' ,
+                price: '3.20€'
+            },
+            {
+                pav: 'StashMash',
+                img:'./img/buritos/7.jpg', alt: 'Photo' ,
+                price: '1.60€'
+            },
+            {
+                pav: 'Lalavyva',
+                img:'./img/buritos/5.jpg', alt: 'Photo' ,
+                price: '3.80€'
+            },
+            {
+                pav: 'Bumbana',
+                img: './img/buritos/6.jpg', alt: 'Photo' ,
+                price: '3.20€'
+            },
+        ],
+        Soups: [
+            {
+                pav: 'Tacosas',
+                img:'./img/buritos/1.jpg', alt: 'Photo',
+                price: '2.20€'
+            },
+            {
+                pav: 'Tacyza',
+                img:'./img/buritos/2.jpg', alt: 'Photo',
+                price: '3.20€'
+            },
+            {
+                pav: 'Tacyza',
+                img:'./img/buritos/2.jpg', alt: 'Photo',
+                price: '3.20€'
+            },
+            {
+                pav: 'Plumpa',
+                img:'./img/buritos/8.jpg', alt: 'Photo',
+                price: '2.70€'
+            },
+        ],
+        Drinks: [
+            {
+                img: 'dphoto1',
+                pav: 'Coca-Cola',
+                price: '1.20€'
+            },
+            {
+                img: 'dphoto1',
+                pav: 'Coca-Cola',
+                price: '1.20€'
+            },
+            {
+                img: 'dphoto1',
+                pav: 'Coca-Cola',
+                price: '1.20€'
+            },
+            {
+                img: 'dphoto1',
+                pav: 'Coca-Cola',
+                price: '1.20€'
+            },
+        ],
+    }}
