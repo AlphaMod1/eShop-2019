@@ -19,3 +19,7 @@ document.addEventListener('keypress', ()=>{
 close.addEventListener('click', () => {
     faq.classList.remove('showOverlay');
 });
+
+//render
+
+//renderAll();
