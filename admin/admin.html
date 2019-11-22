@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='shortcut icon' type='image/x-icon' href='../img/favicon.ico' />
+    <title>Admin</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="./css/admin.css">
+</head>
+
+<body>
+
+    <div class="nav top-menu">
+        <a href="../index.html" class="btn-main btn-logout">Logout</a>
+        <div id="today">2030 Jan 01</div>
+        <div id="current-container">Dashboard</div>
+    </div>
+
+    <div class="nav left-menu" id="left-menu">
+        <div class="left_list-logo">
+            <i class="fa fa-truck"></i>
+            <span>Food Trucks</span>
+        </div>
+        <div class="left_list-item" id="item-dashboard" onclick="loadCont('dashboard');">
+            <i class="fa fa-info-circle"></i>
+            <span>Dashboard</span>
+        </div>
+        <div class="left_list-item" id="item-users" onclick="loadCont('users');">
+            <i class="fa fa-user"></i>
+            <span>Users</span>
+        </div>
+        <div class="left_list-item" id="item-vendors" onclick="loadCont('vendors');">
+            <i class="fa fa-shopping-cart"></i>
+            <span>Vendors</span>
+        </div>
+        <div class="left_list-item" id="item-edit" onclick="loadCont('edit');">
+            <i class="fa fa-pencil"></i>
+            <span>Edit Vendors</span>
+        </div>
+        <div class="left_list-item" id="item-inbox" onclick="loadCont('inbox');">
+            <i class="fa fa-inbox"></i>
+            <span>Inbox</span>
+        </div>
+    </div>
+
+    <!-- https://keenthemes.com/metronic/preview/demo1/index.html -->
+    <div id="content">
+        <div class="container cont-dashboard">
+            <div class="dash-box"></div>
+            <div class="dash-box"></div>
+            <div class="dash-box"></div>
+        </div>
+
+        <div class="container cont-users">
+            <div class="users-title">Users</div>
+            <table id="users-table">
+                <tr>
+                    <th>ID:</th>
+                    <th>Name:</th>
+                    <th>Email:</th>
+                    <th>Phone:</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container cont-vendors">
+            <div class="vendor-title">Vendors</div>
+            <i onclick="loadCont('edit');" class="fa fa-plus"></i>
+            <table id="vendor-table">
+                <tr>
+                    <th>ID:</th>
+                    <th>Name:</th>
+                    <th>Email:</th>
+                    <th>Phone:</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container cont-edit">
+            <div class="edit-title">Edit</div>
+            <i onclick="addNewUserModal();" class="fa fa-plus"></i>
+            <table id="edit-table">
+                <tr>
+                    <th>ID:</th>
+                    <th>Name:</th>
+                    <th>Email:</th>
+                    <th>Phone:</th>
+                    <th>-</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container cont-inbox">
+            <div class="inbox-title">Inbox</div>
+            <i onclick="sendMailModal();" class="fa fa-plus"></i>
+            <table id="inbox-table">
+                <tr>
+                    <th>From:</th>
+                    <th>Email:</th>
+                    <th>-</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- <div class="foot">
+        <div class="socials">
+
+        </div>
+        <div class="fcontacts">
+            <h4>UAB "Maisto furgonai"</h4>
+            <p>Telefonas: +37061000000</p>
+            <p>El.Paštas: <a href="emailto:info@foodtrucks.lt"></a>info@foodtrucks.lt</p>
+            <p>Įm.kodas: 302964057 PVM Kodas: LT100008128215</p>
+        </div>
+    </div> -->
+
+    <script src="../js/data.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/admin.js"></script>
+</body>
+
+</html>

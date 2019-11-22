@@ -16,7 +16,7 @@ h3 {
     font-family: monospace;
     line-height: 50px;
     font-size: 50px;
-    color: gold;
+    color: #fff;
     text-shadow:1px 1px 10px black;
 }
 .gmap {
@@ -31,4 +31,55 @@ h3 {
 
 #pingas1, #pingas2, #pingas3{
     position: absolute;
+    
 }
+
+span > img {
+    width: 80px;
+    height: 80px;
+    
+}
+
+.pinPop {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.pinPop .popUpWindow {
+    visibility: hidden;
+    width: 160px;
+    height: 100px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+
+  .pinPop .popUpWindow::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+
+  .pinPop .show {
+    visibility: visible;
+    animation: fadeIn 1s;
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }

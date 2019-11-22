@@ -254,3 +254,243 @@ let cor = [
 
 
 // ********************Map end********************
+
+
+var hiddenMenu = {
+    FoodTruck1:
+    {
+        HotDishes: [
+            {
+                pav: 'Buritaz',
+                img:'./img/buritos/5.jpg', alt: 'Photo' ,
+                price: '4.20€'
+            },
+            {
+                pav: 'Buritazilla',
+                img:'./img/buritos/6.jpg', alt: 'Photo' ,
+                price: '5.60€'
+            },
+            {
+                pav: 'NiamNiam',
+                img:'./img/buritos/8.jpg', alt: 'Photo' ,
+                price: '3.20€'
+            },
+            {
+                pav: 'StashMash',
+                img:'./img/buritos/7.jpg', alt: 'Photo' ,
+                price: '1.60€'
+            },
+            {
+                pav: 'Lalavyva',
+                img:'./img/buritos/5.jpg', alt: 'Photo' ,
+                price: '3.80€'
+            },
+            {
+                pav: 'Bumbana',
+                img: './img/buritos/6.jpg', alt: 'Photo' ,
+                price: '3.20€'
+            },
+        ],
+        Tacos: [
+            {
+                pav: 'Tacosas',
+                img:'./img/buritos/1.jpg', alt: 'Photo',
+                price: '2.20€'
+            },
+            {
+                pav: 'Tacyza',
+                img:'./img/buritos/2.jpg', alt: 'Photo',
+                price: '3.20€'
+            },
+            {
+                pav: 'Tacyza',
+                img:'./img/buritos/2.jpg', alt: 'Photo',
+                price: '3.20€'
+            },
+            {
+                pav: 'Plumpa',
+                img:'./img/buritos/8.jpg', alt: 'Photo',
+                price: '2.70€'
+            },
+        ],
+        Drinks: [
+            {
+                img: 'dphoto1',
+                pav: 'Coca-Cola',
+                price: '1.20€'
+            },
+            {
+                img: 'dphoto1',
+                pav: 'Coca-Cola',
+                price: '1.20€'
+            },
+            {
+                img: 'dphoto1',
+                pav: 'Coca-Cola',
+                price: '1.20€'
+            },
+            {
+                img: 'dphoto1',
+                pav: 'Coca-Cola',
+                price: '1.20€'
+            },
+        ],
+    },
+    FoodTruck2:
+    {
+        Burgers: [
+            {
+                pav: 'Buritaz',
+                img:'./img/buritos/5.jpg', alt: 'Photo' ,
+                price: '4.20€'
+            },
+            {
+                pav: 'Buritazilla',
+                img:'./img/buritos/6.jpg', alt: 'Photo' ,
+                price: '5.60€'
+            },
+            {
+                pav: 'NiamNiam',
+                img:'./img/buritos/8.jpg', alt: 'Photo' ,
+                price: '3.20€'
+            },
+            {
+                pav: 'StashMash',
+                img:'./img/buritos/7.jpg', alt: 'Photo' ,
+                price: '1.60€'
+            },
+            {
+                pav: 'Lalavyva',
+                img:'./img/buritos/5.jpg', alt: 'Photo' ,
+                price: '3.80€'
+            },
+            {
+                pav: 'Bumbana',
+                img: './img/buritos/6.jpg', alt: 'Photo' ,
+                price: '3.20€'
+            },
+        ],
+        Snacks: [
+            {
+                pav: 'Tacosas',
+                img:'./img/buritos/1.jpg', alt: 'Photo',
+                price: '2.20€'
+            },
+            {
+                pav: 'Tacyza',
+                img:'./img/buritos/2.jpg', alt: 'Photo',
+                price: '3.20€'
+            },
+            {
+                pav: 'Tacyza',
+                img:'./img/buritos/2.jpg', alt: 'Photo',
+                price: '3.20€'
+            },
+            {
+                pav: 'Plumpa',
+                img:'./img/buritos/8.jpg', alt: 'Photo',
+                price: '2.70€'
+            },
+        ],
+        Drinks: [
+            {
+                img: 'dphoto1',
+                pav: 'Coca-Cola',
+                price: '1.20€'
+            },
+            {
+                img: 'dphoto1',
+                pav: 'Coca-Cola',
+                price: '1.20€'
+            },
+            {
+                img: 'dphoto1',
+                pav: 'Coca-Cola',
+                price: '1.20€'
+            },
+            {
+                img: 'dphoto1',
+                pav: 'Coca-Cola',
+                price: '1.20€'
+            },
+        ],
+    },
+    FoodTruck3:
+    {
+        Sushi: [
+            {
+                pav: 'Buritaz',
+                img:'./img/buritos/5.jpg', alt: 'Photo' ,
+                price: '4.20€'
+            },
+            {
+                pav: 'Buritazilla',
+                img:'./img/buritos/6.jpg', alt: 'Photo' ,
+                price: '5.60€'
+            },
+            {
+                pav: 'NiamNiam',
+                img:'./img/buritos/8.jpg', alt: 'Photo' ,
+                price: '3.20€'
+            },
+            {
+                pav: 'StashMash',
+                img:'./img/buritos/7.jpg', alt: 'Photo' ,
+                price: '1.60€'
+            },
+            {
+                pav: 'Lalavyva',
+                img:'./img/buritos/5.jpg', alt: 'Photo' ,
+                price: '3.80€'
+            },
+            {
+                pav: 'Bumbana',
+                img: './img/buritos/6.jpg', alt: 'Photo' ,
+                price: '3.20€'
+            },
+        ],
+        Soups: [
+            {
+                pav: 'Tacosas',
+                img:'./img/buritos/1.jpg', alt: 'Photo',
+                price: '2.20€'
+            },
+            {
+                pav: 'Tacyza',
+                img:'./img/buritos/2.jpg', alt: 'Photo',
+                price: '3.20€'
+            },
+            {
+                pav: 'Tacyza',
+                img:'./img/buritos/2.jpg', alt: 'Photo',
+                price: '3.20€'
+            },
+            {
+                pav: 'Plumpa',
+                img:'./img/buritos/8.jpg', alt: 'Photo',
+                price: '2.70€'
+            },
+        ],
+        Drinks: [
+            {
+                img: 'dphoto1',
+                pav: 'Coca-Cola',
+                price: '1.20€'
+            },
+            {
+                img: 'dphoto1',
+                pav: 'Coca-Cola',
+                price: '1.20€'
+            },
+            {
+                img: 'dphoto1',
+                pav: 'Coca-Cola',
+                price: '1.20€'
+            },
+            {
+                img: 'dphoto1',
+                pav: 'Coca-Cola',
+                price: '1.20€'
+            },
+        ],
+    }}

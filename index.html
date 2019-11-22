@@ -70,7 +70,43 @@
     </div>
     <div class="offerContainer" id='specialOffers'></div>
     </div>
-
+   <!--******************** HIDDEN MENU ********************-->
+   <div class="container">
+   <div class="hidden">
+       <div class="hidden-left">
+        <div class="hidden-navigation">
+            <div onclick="hiddenFunction(1)" class="hidden-btn menubtn1">FoodTruck1  
+                 <div id="hid1" class="menu-dropdown">
+                    <a onclick="renderMenu('truck1', 'HotDishes')">Hot Dishes</a>
+                    <a onclick="renderMenu('truck1', 'Tacos')" >Tacos</a>
+                    <a onclick="renderMenu('truck1', 'Drinks')" >Drinks</a>
+                </div>
+            </div>
+            <div onclick="hiddenFunction(2)" class="hidden-btn menubtn2">FoodTruck2  
+                <div id="hid2" class="menu-dropdown">
+                   <a onclick="renderMenu('truck2', 'Burgers')" >Burgers</a>
+                   <a onclick="renderMenu('truck2', 'Snacks')" >Snacks</a>
+                   <a onclick="renderMenu('truck2', 'Drinks')">Drinks</a>
+               </div>
+           </div>
+           <div onclick="hiddenFunction(3)" class="hidden-btn menubtn3">FoodTruck3  
+            <div id="hid3" class="menu-dropdown">
+                    <a onclick="renderMenu('truck3', 'Sushi')" >Sushi</a>
+                    <a onclick="renderMenu('truck3', 'Soups')" >Soups</a>
+                    <a onclick="renderMenu('truck3', 'Drinks')">Drinks</a>
+           </div>
+       </div>
+       <div id="left-menu"></div>
+       <!-- <div id="left-menu2"></div>
+       <div id="left-menu3"></div> -->
+            
+            </div>
+            
+            </div>
+            
+            <div class="hidden-right"></div>        
+        </div>
+    </div> 
     <!-- ******************** MAP ******************** -->
 
     <div class="container map">
@@ -78,24 +114,28 @@
             <div class="map_row">
         </a>
         <h3> Places where you can find us!</h3>
-    </div>
-    <div class="gmap">
-        <div id="pingas1">
-            <img class="pin1" src="./img/pin.png" alt="pin1">
+        <div class="gmap">
+            <div class="pinPop" id="pingas1" onclick="popFunction()">
+                    <img class="pin1" src="./img/pin.png" alt="pin1">
+                    <span class="popUpWindow" id="popupas"><img src="img/BuritoLogo.png" alt="logo"> </span>
+            </div>
+            <div class="pinPop" id="pingas2" onclick="popFunction1()">
+                        <img class="pin1" src="./img/pin.png" alt="pin2">
+                        <span class="popUpWindow" id="popupas1"><img src="img/BurgerLogo.png" alt="logo"> </span>
+            </div>
+            <div class="pinPop" id="pingas3" onclick="popFunction2()">
+                        <img class="pin1" src="./img/pin.png" alt="pin3">
+                    <span class="popUpWindow" id="popupas2"><img src="img/sushilogo.png" alt="logo"> </span>
+                </div>
+            </div>
         </div>
-        <div id="pingas2">
-            <img class="pin2" src="./img/pin.png" alt="pin2">
-        </div>
-        <div id="pingas3">
-            <img class="pin3" src="./img/pin.png" alt="pin3">
-        </div>
-    </div>
     </div>
 
-    <!--******************** ABOUT US ********************-->
 
-    <div id="about-cont" class="about container">
-        <!-- <div class="about-item">
+        <!--******************** ABOUT US ********************-->
+
+        <div id="about-cont" class="about container">
+            <!-- <div class="about-item">
             <img src="./img/mexicano.jpg" alt="Nuotrauka T1">
             <p><span></span></p>
         </div>
@@ -107,9 +147,9 @@
             <img src="./img/mexicano.jpg" alt="Nuotrauka T3">
             <p><span></p>
         </div> -->
-    </div>
+        </div>
 
-    <!--******************** CAREER ********************-->
+        <!--******************** CAREER ********************-->
 
     <div id="career-cont" class="container career">
         <h3 class="title-career">Contacts</h3>
@@ -156,34 +196,39 @@
         </div>
     </div>
 
-    <!--******************** CONTACTS ********************-->
 
-    <div class="contacts" id="contacts">
-        <div class="titleCon"> <h1>Contacts</h1> </div>
-       <div class="contactsCon" id="truckContacts"></div>
-    </div>
+        <!--******************** CONTACTS ********************-->
 
-    <!--******************** FOOTER ********************-->
 
-    <div class="container foot">
-        <div class="socials">
-            <a href="#" target="_blank" class="fa fa-facebook"></a>
-            <a href="#" target="_blank" class="fa fa-twitter"></a>
-            <a href="#" target="_blank" class="fa fa-dribbble"></a>
-            <a href="#" target="_blank" class="fa fa-tumblr"></a>
-            <a href="#" target="_blank" class="fa fa-instagram"></a>
-            <a href="#" target="_blank" class="fa fa-rss"></a>
+        <div class="contacts">
+            <div class="titleCon">
+                <h1>Contacts</h1>
+            </div>
+            <div class="contactsCon" id="truckContacts"></div>
         </div>
-        <div class="fcontacts">
+
+
+        <!--******************** FOOTER ********************-->
+
+        <div class="container foot">
+            <div class="socials">
+                <a href="#" target="_blank" class="fa fa-facebook"></a>
+                <a href="#" target="_blank" class="fa fa-twitter"></a>
+                <a href="#" target="_blank" class="fa fa-dribbble"></a>
+                <a href="#" target="_blank" class="fa fa-tumblr"></a>
+                <a href="#" target="_blank" class="fa fa-instagram"></a>
+                <a href="#" target="_blank" class="fa fa-rss"></a>
+            </div>
+            <div class="fcontacts">
                 <h4>UAB "Maisto furgonai"</h4>
                 <p>Telefonas: +37061000000</p>
                 <p>El.Paštas: <a href="emailto:info@foodtrucks.lt"></a>info@foodtrucks.lt</p>
                 <p>Įm.kodas: 302964057 PVM Kodas: LT100008128215</p>
             </div>
-        <div class="copyright">
-            <p>&copy Muškienininkai</p>
+            <div class="copyright">
+                <p>&copy Muškienininkai</p>
+            </div>
         </div>
-    </div>
     </div>
     </div>
 
