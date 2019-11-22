@@ -22,4 +22,4 @@ close.addEventListener('click', () => {
 
 //render
 
-//renderAll();
+renderAll();

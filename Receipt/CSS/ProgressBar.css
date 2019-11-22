@@ -23,11 +23,11 @@
 
 .progress-bar>.full>.bar {
     display: inline-block;
-    width: 63%;
+    width: 0%;
     height: 100%;
     background-color: #6FB2F8;
     float: left;
-    animation: loading;
+    animation: loading5;
     animation-duration: 3s;
     animation-iteration-count: 1;
 }
@@ -40,12 +40,39 @@
     margin: 0 0;
 }
 
-@keyframes loading {
+@keyframes loading5 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 5%;
+    }
+}
+
+@keyframes loading36 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 36%;
+    }
+}
+
+@keyframes loading63 {
     0% {
         width: 0%;
     }
     100% {
         width: 63%;
+    }
+}
+
+@keyframes loading100 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
     }
 }
 
