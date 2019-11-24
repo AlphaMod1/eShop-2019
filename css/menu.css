@@ -313,6 +313,7 @@
  .rightTop {
      background-color:aqua;
      height: 150px;
+     width: 100%;
 
  }
 
@@ -337,7 +338,7 @@
 
  .truckMenu1 {
     margin-bottom: 5px;
-    background-color: red;
+    height: 50px;
  }
 
  .truckMenu2 {
