@@ -120,7 +120,7 @@
         width: 1000px;
         height: 440px;
         margin: 0 calc((100% - 1000px) / 2);
-        background-color: yellow;
+        /* background-color: yellow; */
 
     }
     
@@ -128,8 +128,11 @@
         display: inline-block;
         float: right;
         width: 270px;
-        height: 600px;;
-        background-color: lime;
+        height: 600px;
+        border: 1px white solid;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        /* background-color: lime; */
     }
 
         .hidden > .hidden-left {
@@ -137,7 +140,10 @@
             float: left;
             width: 730px;
             height: 600px;
-            background-color: red;
+            border: white 1px solid;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            overflow: hidden;
             
         }
         .hidden-navigation {
@@ -157,7 +163,8 @@
             display: inline-block;
             padding: 20px;
             text-align: center;
-            background-color: yellow;
+            border:1px solid black;
+            border-radius: 15px;
             position: absolute;
             top: 7px;
             cursor: pointer;
@@ -235,29 +242,39 @@
     }
 
     .menuImg {
-        /* display: inline-block; */
-        /* background-color: yellow; */
         margin: 2px;
-        /* width: 30%; */
+        border: 1px solid white;
+        border-radius: 20px;
+        overflow: hidden;
     }
 
 .menuName {
     display: block;
-    /* background-color: blanchedalmond; */
     margin: 2px;
     text-align: center;
     line-height: 45px;
     font-size: 20px;
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+         -1px 1px 0 #000,
+          1px 1px 0 #000;
 }
 
 .menuPrices {
     display:block;
-    /* background-color: violet; */
     margin: 2px;
     text-align: center;
     line-height: 30px;
     font-size: 20px;
-    margin-top: -30px;
+    margin-top: -25px;
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+         -1px 1px 0 #000,
+          1px 1px 0 #000;
     
     
 }
@@ -285,3 +302,48 @@
          tacos   
             tacos';
   }
+
+
+ /************** HiddenRight ********************/ 
+
+.hidden-right {
+    overflow:hidden;
+}
+
+ .rightTop {
+     background-color:aqua;
+     height: 150px;
+
+ }
+
+ .rightBottom {
+     background-color: violet;
+     height: 450px;
+
+ }
+
+ .menuContacts {
+    text-align: center;
+    padding-top: 15px;
+    line-height: 20px;
+    font-size: 20px;
+ }
+
+ .rightPosition {
+     text-align: center;
+     margin-top: 15px;
+     padding: 7px;
+ }
+
+ .truckMenu1 {
+    margin-bottom: 5px;
+    background-color: red;
+ }
+
+ .truckMenu2 {
+    padding: 5px;
+ }
+
+ .truckMenu3 {
+    padding: 5px;
+ }
