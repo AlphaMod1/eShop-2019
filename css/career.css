@@ -165,3 +165,60 @@ textarea {
         border-top-left-radius: 50%;
     }
 }
+
+@media all and (max-width: 1000px) {
+    .container-career {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .column {
+        display: block;
+        padding: 8px;
+    }
+
+    .form-row {
+         width: 300px;
+    }
+
+    .form-row > label {
+        width: 70px;
+        margin-right: 8px;
+    }
+    
+    .form-row > input, .form-row > textarea {
+        width: 200px;
+        height: 50px ;
+        font-size: 14px;
+        line-height: 16px;
+        margin: 8px 0px;
+    }
+
+    textarea {
+        min-width: 200px;
+    }
+
+    #submit-career {
+        margin-right: 160px;
+   }
+    
+    .circle  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0 100px 0;
+    }
+    
+    .circle1  {
+        
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    };
+    
+    
+}
