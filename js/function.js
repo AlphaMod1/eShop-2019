@@ -151,7 +151,7 @@ function renderSpecial(specialList) {
             <p class="special">${meniu.special1}</p>
             <p class="special">${meniu.special2}</p>
             <p class="special">${meniu.special3}</p>
-            <input type="buttom" value=' Order Now'${meniu.input}>
+            <input type="buttom" class='btn-main btn-ice' value=' Order Now'${meniu.input}>
             <a class="fullmeniu" href="#"> ${meniu.FullMeniu}</a>
             </div>`;
     }
