@@ -71,26 +71,50 @@
 @media all and (max-width: 900px) {
 
     .about-item {
-        width: 100%;
+        width: 700px;
     }
 
     .about {
-        width: 80%;
-        margin-left: calc((100% - 80%) / 2);
+        width: 700px;
+        margin-left: calc((100% - 700px) / 2);
     }
 }
 
 @media all and (max-width: 800px) {
 
     .about-item {
-        width: 100%;
+        width: 500px;
         display: block;
         text-align: center;
         float: unset;
+    }
+
+    .about {
+        width: 500px;
+        margin-left: calc((100% - 500px) / 2);
     }
 
     .about-item > p {
         margin-top: 20px;
         text-align: justify;
     }
+
+    @media all and (max-width: 500px) {
+
+        .about-item {
+            width: 300px;
+            display: block;
+            text-align: center;
+            float: unset;
+        }
+    
+        .about {
+            width: 300px;
+            margin-left: calc((100% - 300px) / 2);
+        }
+    
+        .about-item > p {
+            margin-top: 20px;
+            text-align: justify;
+        }
 }
