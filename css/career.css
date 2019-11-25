@@ -2,8 +2,9 @@
     background-color: #302E31;
     position: relative;
     height: unset;
-    min-height: calc(100vh + 90px);
+    min-height: 700px;
     overflow: hidden;
+    padding-top: 30px;
 }
 
 .container-career {
@@ -96,6 +97,7 @@ textarea {
     animation-iteration-count: infinite;
     background-color: transparent;
     box-shadow: inset 0px 0px 50px #fff;
+    color:#fff;
 }
 
 .circle1 {
