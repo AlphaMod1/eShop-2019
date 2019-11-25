@@ -390,8 +390,6 @@ function renderMenu(truck, cat) {
     document.querySelector('#left-menu').innerHTML = HTML;
 }
 
-
-
 function genMenuTruckContacts(i) {
     let contacts = document.getElementById('truckMenu1');
     let HTML = '';
