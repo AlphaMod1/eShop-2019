@@ -181,7 +181,6 @@
 .hidden-btn:hover {
     background-color: #666;
     color: white;
-    font-size: 18px;
 }
 
 /**************hoveriai ********************/
@@ -219,6 +218,7 @@
     border: 1px solid white;
     border-radius: 20px;
     overflow: hidden;
+    height: 120px;
 }
 
 .menuName {
@@ -281,6 +281,7 @@
 .rightBottom {
     background-color: violet;
     height: 450px;
+    position: relative;
 }
 
 .menuContacts {
@@ -334,4 +335,12 @@
                 1px -1px 0 #000, 
                 -1px 1px 0 #000, 
                 1px 1px 0 #000;
+}
+
+.shopPlace {
+    width: 100%;
+    overflow: hidden;
+    position:absolute;
+    bottom: 0;
+    padding: 5px 0px;
 }
