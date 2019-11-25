@@ -70,11 +70,12 @@
         <div class="offerContainer" id="specialOffers"></div>
     </div>
 
- <!--******************** HIDDEN MENU ********************-->
+    <!--******************** HIDDEN MENU ********************-->
 
     <div class="container">
         <div class="hidden">
             <div class="hidden-left">
+
              <div class="hidden-navigation">
                  <div onclick="hiddenFunction(1); genMenuTruckContacts(0)" class="hidden-btn menubtn1">FoodTruck1  
                       <div id="hid1" class="menu-dropdown">
@@ -88,15 +89,36 @@
                         <a onclick="renderMenu('truck2', 'Burgers')" >Burgers</a>
                         <a onclick="renderMenu('truck2', 'Snacks')" >Snacks</a>
                         <a onclick="renderMenu('truck2', 'Drinks')">Drinks</a>
+
                     </div>
+                    <div onclick="hiddenFunction(2)" class="hidden-btn menubtn2">FoodTruck2
+                        <div id="hid2" class="menu-dropdown">
+                            <a onclick="renderMenu('truck2', 'Burgers')">Burgers</a>
+                            <a onclick="renderMenu('truck2', 'Snacks')">Snacks</a>
+                            <a onclick="renderMenu('truck2', 'Drinks')">Drinks</a>
+                        </div>
+                    </div>
+                    <div onclick="hiddenFunction(3)" class="hidden-btn menubtn3">FoodTruck3
+                        <div id="hid3" class="menu-dropdown">
+                            <a onclick="renderMenu('truck3', 'Sushi')">Sushi</a>
+                            <a onclick="renderMenu('truck3', 'Soups')">Soups</a>
+                            <a onclick="renderMenu('truck3', 'Drinks')">Drinks</a>
+                        </div>
+                    </div>
+                    <div id="left-menu"></div>
+
                 </div>
+
                 <div  onclick="hiddenFunction(3); genMenuTruckContacts(2)" class="hidden-btn menubtn3">FoodTruck3  
                  <div id="hid3" class="menu-dropdown">
                          <a onclick="renderMenu('truck3', 'Sushi')" >Sushi</a>
                          <a onclick="renderMenu('truck3', 'Soups')" >Soups</a>
                          <a onclick="renderMenu('truck3', 'Drinks')">Drinks</a>
+
                 </div>
+                <div class='rightBottom'>ShopingCart</div>
             </div>
+
             <div id="left-menu"></div>
                  
                  </div>
@@ -114,11 +136,14 @@
                  </div>        
              </div>
          </div> 
+
     <!-- ******************** MAP ******************** -->
 
     <div class="container map">
         <a id="mapId">
-            <div class="map_row"><h3> Places where you can find us!</h3></div>
+            <div class="map_row">
+                <h3> Places where you can find us!</h3>
+            </div>
         </a>
         <div class="gmap">
             <div class="pinPop" id="pingas1" onclick="popFunction()">
@@ -191,6 +216,7 @@
             <p>&copy Muškienininkai</p>
         </div>
     </div>
+
 
     <!--******************** SCRIPTS ********************-->
     <script src="./js/data.js"></script>
