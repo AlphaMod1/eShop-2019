@@ -402,3 +402,17 @@ function genMenuTruckContacts(i) {
 
     contacts.innerHTML = HTML;
 }
+
+function checkout() {
+    id = Math.floor(Math.random() * 1000);
+    status = Math.floor(Math.random() * 4);
+
+    if (id <= 9) {
+        id = '00' + id;
+    }
+    else if (id <= 99) {
+        id = '0' + id;
+    }
+
+    window.location.replace('/Receipt/Receipt.html#' + id + '&' + status);
+}
