@@ -58,7 +58,7 @@
             </div>
         </a>
         <div>
-            <input type="button" class="btn-ice btn-main seemore" value="Visit full menu">
+            <input type="button" onclick="showHiddenMenu();" class="btn-ice btn-main seemore" value="Visit full menu">
         </div>
     </div>
 
@@ -76,46 +76,45 @@
 
     <!--******************** HIDDEN MENU ********************-->
 
-    <div class="container">
-        <div class="hidden">
-            <div class="hidden-left">
-                <div class="hidden-navigation">
-                    <div onclick="hiddenFunction(1); genMenuTruckContacts(0)" class="hidden-btn menubtn1">FoodTruck1
-                        <div id="hid1" class="menu-dropdown">
-                            <a onclick="renderMenu('truck1', 'HotDishes')">Hot Dishes</a>
-                            <a onclick="renderMenu('truck1', 'Tacos')">Tacos</a>
-                            <a onclick="renderMenu('truck1', 'Drinks')">Drinks</a>
-                        </div>
-                    </div>
-                    <div onclick="hiddenFunction(2); genMenuTruckContacts(1)" class="hidden-btn menubtn2">FoodTruck2
-                        <div id="hid2" class="menu-dropdown">
-                            <a onclick="renderMenu('truck2', 'Burgers')">Burgers</a>
-                            <a onclick="renderMenu('truck2', 'Snacks')">Snacks</a>
-                            <a onclick="renderMenu('truck2', 'Drinks')">Drinks</a>
-                        </div>
-                    </div>
-                    <div onclick="hiddenFunction(3); genMenuTruckContacts(2)" class="hidden-btn menubtn3">FoodTruck3
-                        <div id="hid3" class="menu-dropdown">
-                            <a onclick="renderMenu('truck3', 'Sushi')">Sushi</a>
-                            <a onclick="renderMenu('truck3', 'Soups')">Soups</a>
-                            <a onclick="renderMenu('truck3', 'Drinks')">Drinks</a>
-                        </div>
-                    </div>
-                    <div id="left-menu"></div>
+    <div class="container hidden" id="hdMenu">
 
+        <div class="hidden-left">
+            <div class="hidden-navigation">
+                <div onclick="hiddenFunction(1); genMenuTruckContacts(0)" class="hidden-btn menubtn1">FoodTruck1
+                    <div id="hid1" class="menu-dropdown">
+                        <a onclick="renderMenu('truck1', 'HotDishes')">Hot Dishes</a>
+                        <a onclick="renderMenu('truck1', 'Tacos')">Tacos</a>
+                        <a onclick="renderMenu('truck1', 'Drinks')">Drinks</a>
+                    </div>
                 </div>
+                <div onclick="hiddenFunction(2); genMenuTruckContacts(1)" class="hidden-btn menubtn2">FoodTruck2
+                    <div id="hid2" class="menu-dropdown">
+                        <a onclick="renderMenu('truck2', 'Burgers')">Burgers</a>
+                        <a onclick="renderMenu('truck2', 'Snacks')">Snacks</a>
+                        <a onclick="renderMenu('truck2', 'Drinks')">Drinks</a>
+                    </div>
+                </div>
+                <div onclick="hiddenFunction(3); genMenuTruckContacts(2)" class="hidden-btn menubtn3">FoodTruck3
+                    <div id="hid3" class="menu-dropdown">
+                        <a onclick="renderMenu('truck3', 'Sushi')">Sushi</a>
+                        <a onclick="renderMenu('truck3', 'Soups')">Soups</a>
+                        <a onclick="renderMenu('truck3', 'Drinks')">Drinks</a>
+                    </div>
+                </div>
+                <div id="left-menu"></div>
 
             </div>
 
-            <div class="hidden-right">
-                <div class='rightTop'>
-                    <div class="menuContacts">Contacts</div>
-                    <div class="rightPosition">
-                        <div id='truckMenu1'> </div>
-                    </div>
+        </div>
+
+        <div class="hidden-right">
+            <div class='rightTop'>
+                <div class="menuContacts">Contacts</div>
+                <div class="rightPosition">
+                    <div id='truckMenu1'> </div>
                 </div>
-                <div class='rightBottom'>ShopingCart</div>
             </div>
+            <div class='rightBottom'>ShopingCart</div>
         </div>
     </div>
     <!-- ******************** MAP ******************** -->
@@ -180,12 +179,12 @@
 
     <div class="container foot">
         <div class="socials">
-            <a href="#" target="_blank" class="fa fa-facebook"></a>
-            <a href="#" target="_blank" class="fa fa-twitter"></a>
-            <a href="#" target="_blank" class="fa fa-dribbble"></a>
-            <a href="#" target="_blank" class="fa fa-tumblr"></a>
-            <a href="#" target="_blank" class="fa fa-instagram"></a>
-            <a href="#" target="_blank" class="fa fa-rss"></a>
+            <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://www.youtube.com" target="_blank" class="fa fa-youtube-play"></a>
+            <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://www.google.com/search?sxsrf=ACYBGNSZ5yjEtfLtScpsj9T9InWvveRMtA%3A1574686019812&ei=Q83bXfuNMYWcsAf7vL_wCg&q=why+people+don%27t+use+rss&oq=why+people+don%27t+use+rss&gs_l=psy-ab.3..35i39.9123.10119..10452...1.0..0.109.109.0j1......0....1j2..gws-wiz.....10..35i362i39._GRcGyWFabs&ved=0ahUKEwi7u9_GsoXmAhUFDuwKHXveD64Q4dUDCAs&uact=5" target="_blank" class="fa fa-rss"></a>
         </div>
         <div class="fcontacts">
             <h4>UAB "Maisto furgonai"</h4>

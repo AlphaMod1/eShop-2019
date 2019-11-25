@@ -105,7 +105,7 @@ var lastNumber = Infinity;
 
 function generateRandom(imagesLength) {
     let random = Math.floor(Math.random() * imagesLength);
-    if(random === lastNumber) {
+    if (random === lastNumber) {
         generateRandom(imagesLength);
     }
     lastNumber = random;
@@ -151,8 +151,8 @@ function renderSpecial(specialList) {
             <p class="special">${meniu.special1}</p>
             <p class="special">${meniu.special2}</p>
             <p class="special">${meniu.special3}</p>
-            <input type="buttom" class='btn-main btn-ice' value=' Order Now'${meniu.input}>
-            <a class="fullmeniu" href="#"> ${meniu.FullMeniu}</a>
+            <input type="buttom" onclick="showHiddenMenu();" class='btn-main btn-ice' value=' Order Now'${meniu.input}>
+            <a class="fullmeniu" onclick="showHiddenMenu();"> ${meniu.FullMeniu}</a>
             </div>`;
     }
     return document.querySelector('#specialOffers').innerHTML = HTML;
@@ -161,9 +161,9 @@ function renderSpecial(specialList) {
 // ********************Special offers end********************
 
 function pinCoordinates() {
-    for(let i = 0; i < cor.length; i++){
-        document.querySelector('#pingas'+(i+1)).style.left = cor[i].x;
-        document.querySelector('#pingas'+(i+1)).style.top = cor[i].y;
+    for (let i = 0; i < cor.length; i++) {
+        document.querySelector('#pingas' + (i + 1)).style.left = cor[i].x;
+        document.querySelector('#pingas' + (i + 1)).style.top = cor[i].y;
     }
 }
 
@@ -196,7 +196,7 @@ function careerSlideshow() {
             car4.style.left = '150%';
             car5.style.left = '150%';
             car0.style.opacity = '1';
-           
+
             car = 1;
             break;
         case 1:
@@ -259,35 +259,61 @@ function careerSlideshow() {
 function popFunction() {
     var pin1 = document.getElementById("popupas");
     pin1.classList.toggle("show");
-  }
+}
 
 
-  function popFunction1() {
+function popFunction1() {
     var pin2 = document.getElementById("popupas1");
     pin2.classList.toggle("show");
-  }
+}
 
-  function popFunction2() {
+function popFunction2() {
     var pin3 = document.getElementById("popupas2");
     pin3.classList.toggle("show");
-  }
+}
 
-  /////Hidden part////
+/////Hidden part////
+var menuIsHidden = true;
 
-  function hiddenFunction(nav) {
+function toggleHiddenMenu() {
+    let menuDiv = document.getElementById('hdMenu');
+    if (menuIsHidden) {
+        menuDiv.style.display = "inline-block";
+        menuIsHidden = false;
+    }
+    else {
+        menuDiv.style.display = "none";
+        menuIsHidden = true;
+    }
+}
 
-     var dropdown = document.querySelector("#hid"+nav);
+function hideHiddenMenu() {
+    let menuDiv = document.getElementById('hdMenu');
+    menuDiv.style.display = "none";
+    menuIsHidden = true;
+}
+
+function showHiddenMenu() {
+    let menuDiv = document.getElementById('hdMenu');
+    menuDiv.style.display = "inline-block";
+    menuIsHidden = false;
+    menuDiv.scrollIntoView(false);
+}
+
+function hiddenFunction(nav) {
+
+    var dropdown = document.querySelector("#hid" + nav);
     try {
         document.querySelector('.menu-show').classList.remove('menu-show');
-    } 
+    }
     catch  { }
     dropdown.classList.add('menu-show');
-  } 
+}
 
-  function renderMenu(truck, cat){
-      var HTML= '';
-      if( truck === 'truck1' && cat ==='HotDishes'){
-        for(var i=0; i<hiddenMenu.FoodTruck1.HotDishes.length; i++){
+function renderMenu(truck, cat) {
+    var HTML = '';
+    if (truck === 'truck1' && cat === 'HotDishes') {
+        for (var i = 0; i < hiddenMenu.FoodTruck1.HotDishes.length; i++) {
             HTML += `<div class='hiddenClass'>
             <div class='menuImg' ><img class='imgsize' src="${hiddenMenu.FoodTruck1.HotDishes[i].img}"></div>
             <div class='menuName' >${hiddenMenu.FoodTruck1.HotDishes[i].pav}</div>
@@ -295,73 +321,73 @@ function popFunction() {
             </div>`;
 
         }
-      } else if ( truck === 'truck1' && cat ==='Tacos'){
-        for(var i=0; i<hiddenMenu.FoodTruck1.Tacos.length; i++){
+    } else if (truck === 'truck1' && cat === 'Tacos') {
+        for (var i = 0; i < hiddenMenu.FoodTruck1.Tacos.length; i++) {
             HTML += `<div class='hiddenClass'>
             <div class='menuImg' ><img class='imgsize' src="${hiddenMenu.FoodTruck1.Tacos[i].img}"></div>
             <div class='menuName' >${hiddenMenu.FoodTruck1.Tacos[i].pav}</div>
             <div class='menuPrices'>${hiddenMenu.FoodTruck1.Tacos[i].price}</div>
             </div>`;
         }
-      } else if ( truck === 'truck1' && cat ==='Drinks'){
-        for(var i=0; i<hiddenMenu.FoodTruck1.Drinks.length; i++){
+    } else if (truck === 'truck1' && cat === 'Drinks') {
+        for (var i = 0; i < hiddenMenu.FoodTruck1.Drinks.length; i++) {
             HTML += `<div class='hiddenClass'>
             <div class='menuImg' ><img class='imgsize' src="${hiddenMenu.FoodTruck1.Drinks[i].img}"></div>
             <div class='menuName' >${hiddenMenu.FoodTruck1.Drinks[i].pav}</div>
             <div class='menuPrices'>${hiddenMenu.FoodTruck1.Drinks[i].price}</div>
             </div>`;
         }
-      } else if ( truck === 'truck2' && cat ==='Burgers'){
-        for(var i=0; i<hiddenMenu.FoodTruck2.Burgers.length; i++){
+    } else if (truck === 'truck2' && cat === 'Burgers') {
+        for (var i = 0; i < hiddenMenu.FoodTruck2.Burgers.length; i++) {
             HTML += `<div class='hiddenClass'>
             <div class='menuImg' ><img class='imgsize' src="${hiddenMenu.FoodTruck2.Burgers[i].img}"></div>
             <div class='menuName' >${hiddenMenu.FoodTruck2.Burgers[i].pav}</div>   
             <div class='menuPrices'>${hiddenMenu.FoodTruck2.Burgers[i].price}</div>
             </div>`;
         }
-    } else if ( truck === 'truck2' && cat ==='Snacks'){
-        for(var i=0; i<hiddenMenu.FoodTruck2.Snacks.length; i++){
+    } else if (truck === 'truck2' && cat === 'Snacks') {
+        for (var i = 0; i < hiddenMenu.FoodTruck2.Snacks.length; i++) {
             HTML += `<div class='hiddenClass'>
             <div class='menuImg'><img class='imgsize' src='${hiddenMenu.FoodTruck2.Snacks[i].img}'></div>
             <div class='menuName' >${hiddenMenu.FoodTruck2.Snacks[i].pav}</div>
             <div class='menuPrices'>${hiddenMenu.FoodTruck2.Snacks[i].price}</div>
             </div>`;
         }
-    } else if ( truck === 'truck2' && cat ==='Drinks'){
-        for(var i=0; i<hiddenMenu.FoodTruck2.Drinks.length; i++){
+    } else if (truck === 'truck2' && cat === 'Drinks') {
+        for (var i = 0; i < hiddenMenu.FoodTruck2.Drinks.length; i++) {
             HTML += `<div class='hiddenClass'>
             <div class='menuImg'><img class='imgsize' src="${hiddenMenu.FoodTruck2.Drinks[i].img}"></div>
             <div class='menuName' >${hiddenMenu.FoodTruck2.Drinks[i].pav}</div>
             <div class='menuPrices'>${hiddenMenu.FoodTruck2.Drinks[i].price}</div>
             </div>`;
         }
-    } else if ( truck === 'truck3' && cat ==='Sushi'){
-        for(var i=0; i<hiddenMenu.FoodTruck3.Sushi.length; i++){
+    } else if (truck === 'truck3' && cat === 'Sushi') {
+        for (var i = 0; i < hiddenMenu.FoodTruck3.Sushi.length; i++) {
             HTML += `<div class='hiddenClass'>
             <div class='menuImg' ><img class='imgsize' src='${hiddenMenu.FoodTruck3.Sushi[i].img}'></div>
             <div class='menuName' >${hiddenMenu.FoodTruck3.Sushi[i].pav}</div>
             <div class='menuPrices'>${hiddenMenu.FoodTruck3.Sushi[i].price}</div>
             </div>`;
         }
-    } else if ( truck === 'truck3' && cat ==='Soups'){
-        for(var i=0; i<hiddenMenu.FoodTruck3.Soups.length; i++){
+    } else if (truck === 'truck3' && cat === 'Soups') {
+        for (var i = 0; i < hiddenMenu.FoodTruck3.Soups.length; i++) {
             HTML += `<div class='hiddenClass'>
             <div class='menuImg' ><img class='imgsize' src='${hiddenMenu.FoodTruck3.Soups[i].img}'></div>
             <div class='menuName' >${hiddenMenu.FoodTruck3.Soups[i].pav}</div>
             <div class='menuPrices'>${hiddenMenu.FoodTruck3.Soups[i].price}</div>
             </div>`;
         }
-    } else if ( truck === 'truck3' && cat ==='Drinks'){
-        for(var i=0; i<hiddenMenu.FoodTruck3.Drinks.length; i++){
+    } else if (truck === 'truck3' && cat === 'Drinks') {
+        for (var i = 0; i < hiddenMenu.FoodTruck3.Drinks.length; i++) {
             HTML += `<div class='hiddenClass'>
             <div class='menuImg' ><img class='imgsize' src='${hiddenMenu.FoodTruck3.Drinks[i].img}'></div>
             <div class='menuName' >${hiddenMenu.FoodTruck3.Drinks[i].pav}</div>
             <div class='menuPrices'>${hiddenMenu.FoodTruck3.Drinks[i].price}</div>
             </div>`;
         }
-      }
+    }
 
-      document.querySelector('#left-menu').innerHTML = HTML;  
+    document.querySelector('#left-menu').innerHTML = HTML;
 }
 
 
@@ -370,11 +396,11 @@ function genMenuTruckContacts(i) {
     let contacts = document.getElementById('truckMenu1');
     let HTML = '';
 
-        HTML += `<div class="truck-info">
+    HTML += `<div class="truck-info">
         <img src="${specialOffers[i].img}" alt="Logo">
         <h5>${trucks[i].name}</h5> 
         <p>${trucks[i].tel}</p> 
         <p>${trucks[i].email}</p></div>`;
-    
+
     contacts.innerHTML = HTML;
 }

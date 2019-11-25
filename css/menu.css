@@ -88,13 +88,15 @@
     font-size: 15px;
     font-family: monospace;
     color: white;
+    cursor: pointer;
 }
 
 .hidden {
-    display: inline-block;
+    display: none;
     width: 1000px;
-    height: 440px;
-    margin: 0 calc((100% - 1000px) / 2);
+    height: unset;
+    min-height: 600px;
+    margin: 0 calc((100% - 1000px) / 2) 150px;
     /* background-color: yellow; */
 }
 
