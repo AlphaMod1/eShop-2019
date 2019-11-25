@@ -315,24 +315,24 @@ var hiddenMenu = {
         ],
         Drinks: [
             {
-                img: 'dphoto1',
-                pav: 'Coca-Cola',
-                price: '1.20€'
+                img: './img/arbata.png',
+                pav: 'Arbata',
+                price: '1.00€'
             },
             {
-                img: 'dphoto1',
+                img: './img/cola.png',
                 pav: 'Coca-Cola',
-                price: '1.20€'
+                price: '1.00€'
             },
             {
-                img: 'dphoto1',
-                pav: 'Coca-Cola',
-                price: '1.20€'
+                img: './img/sprite.png',
+                pav: 'Sprite',
+                price: '1.00€'
             },
             {
-                img: 'dphoto1',
-                pav: 'Coca-Cola',
-                price: '1.20€'
+                img: './img/sultys.png',
+                pav: 'Juice',
+                price: '0.80€'
             },
         ],
     },
@@ -394,24 +394,24 @@ var hiddenMenu = {
         ],
         Drinks: [
             {
-                img: 'dphoto1',
+                img: './img/arbata.png',
+                pav: 'Arbata',
+                price: '1.00€'
+            },
+            {
+                img: './img/cola.png',
                 pav: 'Coca-Cola',
                 price: '1.00€'
             },
             {
-                img: 'dphoto1',
+                img: './img/sprite.png',
                 pav: 'Sprite',
                 price: '1.00€'
             },
             {
-                img: 'dphoto1',
-                pav: 'Fanta',
-                price: '1.00€'
-            },
-            {
-                img: 'dphoto1',
+                img: './img/sultys.png',
                 pav: 'Juice',
-                price: '0.90€'
+                price: '0.80€'
             },
         ],
     },
@@ -473,22 +473,22 @@ var hiddenMenu = {
         ],
         Drinks: [
             {
-                img: 'dphoto1',
+                img: './img/arbata.png',
+                pav: 'Arbata',
+                price: '1.00€'
+            },
+            {
+                img: './img/cola.png',
                 pav: 'Coca-Cola',
                 price: '1.00€'
             },
             {
-                img: 'dphoto1',
+                img: './img/sprite.png',
                 pav: 'Sprite',
                 price: '1.00€'
             },
             {
-                img: 'dphoto1',
-                pav: 'Fanta',
-                price: '1.00€'
-            },
-            {
-                img: 'dphoto1',
+                img: './img/sultys.png',
                 pav: 'Juice',
                 price: '0.80€'
             },

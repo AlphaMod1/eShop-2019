@@ -363,3 +363,18 @@ function popFunction() {
 
       document.querySelector('#left-menu').innerHTML = HTML;  
 }
+
+
+
+function genMenuTruckContacts(i) {
+    let contacts = document.getElementById('truckMenu1');
+    let HTML = '';
+
+        HTML += `<div class="truck-info">
+        <img src="${specialOffers[i].img}" alt="Logo">
+        <h5>${trucks[i].name}</h5> 
+        <p>${trucks[i].tel}</p> 
+        <p>${trucks[i].email}</p></div>`;
+    
+    contacts.innerHTML = HTML;
+}
