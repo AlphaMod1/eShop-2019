@@ -1,5 +1,7 @@
 .map {
     position: relative;
+    height: unset;
+    min-height: 600px;
 
 }
 
@@ -7,8 +9,7 @@
     display: inline-block;
     text-align: center;
     width: 800px;
-    margin: 100px calc((100% - 800px) / 2) 20px;
-
+    margin: 0 calc((100% - 800px) / 2) 20px;
 }
 
 h3 {
@@ -16,7 +17,7 @@ h3 {
     font-family: monospace;
     line-height: 50px;
     font-size: 50px;
-    color: gold;
+    color: #fff;
     text-shadow:1px 1px 10px black;
 }
 .gmap {

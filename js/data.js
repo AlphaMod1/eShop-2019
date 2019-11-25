@@ -254,3 +254,243 @@ let cor = [
 
 
 // ********************Map end********************
+
+
+var hiddenMenu = {
+    FoodTruck1:
+    {
+        HotDishes: [
+            {
+                pav: 'Buritaz',
+                img:'./img/buritos/5.jpg', alt: 'Photo' ,
+                price: '4.20€'
+            },
+            {
+                pav: 'Buritazilla',
+                img:'./img/buritos/6.jpg', alt: 'Photo' ,
+                price: '5.60€'
+            },
+            {
+                pav: 'NiamNiam',
+                img:'./img/buritos/8.jpg', alt: 'Photo' ,
+                price: '3.20€'
+            },
+            {
+                pav: 'StashMash',
+                img:'./img/buritos/7.jpg', alt: 'Photo' ,
+                price: '1.60€'
+            },
+            {
+                pav: 'Lalavyva',
+                img:'./img/buritos/5.jpg', alt: 'Photo' ,
+                price: '3.80€'
+            },
+            {
+                pav: 'Bumbana',
+                img: './img/buritos/6.jpg', alt: 'Photo' ,
+                price: '3.20€'
+            },
+        ],
+        Tacos: [
+            {
+                pav: 'Tacosas',
+                img:'./img/buritos/1.jpg', alt: 'Photo',
+                price: '2.20€'
+            },
+            {
+                pav: 'Tacyza',
+                img:'./img/buritos/2.jpg', alt: 'Photo',
+                price: '3.20€'
+            },
+            {
+                pav: 'Tacyza',
+                img:'./img/buritos/2.jpg', alt: 'Photo',
+                price: '3.20€'
+            },
+            {
+                pav: 'Plumpa',
+                img:'./img/buritos/8.jpg', alt: 'Photo',
+                price: '2.70€'
+            },
+        ],
+        Drinks: [
+            {
+                img: './img/arbata.png',
+                pav: 'Arbata',
+                price: '1.00€'
+            },
+            {
+                img: './img/cola.png',
+                pav: 'Coca-Cola',
+                price: '1.00€'
+            },
+            {
+                img: './img/sprite.png',
+                pav: 'Sprite',
+                price: '1.00€'
+            },
+            {
+                img: './img/sultys.png',
+                pav: 'Juice',
+                price: '0.80€'
+            },
+        ],
+    },
+    FoodTruck2:
+    {
+        Burgers: [
+            {
+                pav: 'Firminis',
+                img:'./img/burger/1.jpg', alt: 'Photo' ,
+                price: '3.80€'
+            },
+            {
+                pav: 'Skanusis',
+                img:'./img/burger/2.jpg', alt: 'Photo' ,
+                price: '4.60€'
+            },
+            {
+                pav: 'Jautienos',
+                img:'./img/burger/3.jpg', alt: 'Photo' ,
+                price: '5.20€'
+            },
+            {
+                pav: 'Vistienos',
+                img:'./img/burger/4.jpg', alt: 'Photo' ,
+                price: '3.60€'
+            },
+            {
+                pav: 'Kotletainis',
+                img:'./img/burger/5.jpg', alt: 'Photo' ,
+                price: '2.80€'
+            },
+            {
+                pav: 'Arizonos',
+                img:'./img/burger/6.jpg', alt: 'Photo' ,
+                price: '3.90€'
+            },
+        ],
+        Snacks: [
+            {
+                pav: 'Bulvytes',
+                img:'./img/burger/7.jpg', alt: 'Photo' ,
+                price: '1.20€'
+            },
+            {
+                pav: 'Chips',
+                img:'./img/burger/8.jpg', alt: 'Photo' ,
+                price: '1.20€'
+            },
+            {
+                pav: 'Chicken Nuggets',
+                img:'./img/burger/8.jpg', alt: 'Photo' ,
+                price: '1.80€'
+            },
+            {
+                pav: 'Grilled Cheese',
+                img:'./img/burger/9.jpg', alt: 'Photo' ,
+                price: '2.70€'
+            },
+        ],
+        Drinks: [
+            {
+                img: './img/arbata.png',
+                pav: 'Arbata',
+                price: '1.00€'
+            },
+            {
+                img: './img/cola.png',
+                pav: 'Coca-Cola',
+                price: '1.00€'
+            },
+            {
+                img: './img/sprite.png',
+                pav: 'Sprite',
+                price: '1.00€'
+            },
+            {
+                img: './img/sultys.png',
+                pav: 'Juice',
+                price: '0.80€'
+            },
+        ],
+    },
+    FoodTruck3:
+    {
+        Sushi: [
+            {
+                img:'./img/sushi/1.jpg', alt: 'Photo' ,
+                pav: 'Smashy',
+                price: '5.20€'
+            },
+            {
+                img:'./img/sushi/2.jpg', alt: 'Photo' ,
+                pav: 'Yoko Simple',
+                price: '3.20€'
+            },
+            {
+                img:'./img/sushi/3.jpg', alt: 'Photo' ,
+                pav: 'Party',
+                price: '9.20€'
+            },
+            {
+                pav: 'Gourmet',
+                img:'./img/sushi/4.jpg', alt: 'Photo' ,
+                price: '5.60€'
+            },
+            {
+                pav: 'GreenBoyz',
+                img:'./img/sushi/5.jpg', alt: 'Photo' ,
+                price: '3.80€'
+            },
+            {
+                pav: 'Festival',
+                img:'./img/sushi/6.jpg', alt: 'Photo' ,
+                price: '12.20€'
+            },
+        ],
+        Soups: [
+            {
+                pav: 'Hoto',
+                img:'./img/buritos/1.jpg', alt: 'Photo',
+                price: '1.60€'
+            },
+            {
+                pav: 'Jiru',
+                img:'./img/buritos/2.jpg', alt: 'Photo',
+                price: '1.80€'
+            },
+            {
+                pav: 'Zoni',
+                img:'./img/buritos/2.jpg', alt: 'Photo',
+                price: '1.70€'
+            },
+            {
+                pav: 'Sukiyaki',
+                img:'./img/buritos/8.jpg', alt: 'Photo',
+                price: '1.90€'
+            },
+        ],
+        Drinks: [
+            {
+                img: './img/arbata.png',
+                pav: 'Arbata',
+                price: '1.00€'
+            },
+            {
+                img: './img/cola.png',
+                pav: 'Coca-Cola',
+                price: '1.00€'
+            },
+            {
+                img: './img/sprite.png',
+                pav: 'Sprite',
+                price: '1.00€'
+            },
+            {
+                img: './img/sultys.png',
+                pav: 'Juice',
+                price: '0.80€'
+            },
+        ],
+    }}

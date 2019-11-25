@@ -1,62 +1,81 @@
-.contacts{
+.contacts {
+    width: 800px;
     color: white;
+    margin: 0 calc(( 100% - 800px) / 2);
 }
 
-.contacts > .titleCon {
+.contacts>.titleCon {
     text-align: center;
     background-color: transparent;
     padding-top: 10px;
 }
 
-.contacts > .contactsCon {
+.contacts>.contactsCon {
     display: inline-block;
     width: 800px;
-    margin: 0 calc(( 100% - 800px ) / 2 );
     background-color: transparent;
     padding: 10px;
+}
+
+.contacts>.contactsCon img {
+    height: 40px;
+}
+
+.contacts>.contactsCon>.truck-info {
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+    width: 30%;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: black 0px 0px 10px;
+}
+
+.contacts>.contactsCon>.truck-info h5 {
+    text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+    .contacts {
+        width: 600px;
+        margin: 0 calc(( 100% - 600px) / 2);
     }
-    
-    .contacts > .contactsCon img {
-        height: 40px;
-    }
-    .contacts > .contactsCon > .truck-info {
+    .contacts>.contactsCon {
         display: inline-block;
-        text-align: center;
-        font-size: 18px;
-        line-height: 25px;
-        width: 30%;
-        margin: 0px 10px;
-        padding: 10px 10px;
-        background-color:rgba(0, 0, 0, 0.6);
+        width: 100%;
+        background-color: transparent;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 750px) {
+    .contacts {
+        width: 500px;
+        margin: 0 calc( (50% - 250px));
+    }
+    .contacts>.contactsCon {
+        width: 100%;
+        margin: 0 0;
+        padding: 10px 0px;
+    }
+    .contacts>.contactsCon>.truck-info {
+        display: inline-block;
+        width: 100%;
+        margin: 0px 0px;
+        padding: 10px 0px;
+        background-color: rgba(0, 0, 0, 0.6);
         border-radius: 15px;
         box-shadow: black 0px 0px 10px;
     }
-    
-    .contacts > .contactsCon > .truck-info  h5{
-        text-transform: uppercase;
-    }
+}
 
-    @media (max-width: 1000px) {
-        .contacts {
-            width: 700px;
-            margin: 0 calc( (100% - 700px) / 2 );
-        }
+@media (max-width: 500px) {
+    .contacts {
+        width: 400px;
+        margin: 0 calc( (50% - 200px));
+        /* height: 500px; */
     }
-
-    @media (max-width: 700px) {
-        .contacts {
-            width: 100%;
-            margin: 0px 0px;
-            padding: 20px 20px;
-        }
-                        
-        .contacts > .contactsCon > .truck-info {
-            display: inline-block;
-            text-align: center;
-            font-size: 18px;
-            line-height: 36px;
-            width: 100%;
-            margin: 5px 0;
-            border-bottom: 1px solid #fff;
-        }
-    }
+}

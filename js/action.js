@@ -12,7 +12,6 @@ window.addEventListener('scroll', function () {
 genHeaderDropdownTrucks();
 
 // ******************** Header end ********************
-
 // ******************** Hero start ********************
 
 heroSlideshow();
@@ -41,7 +40,10 @@ renderAbout(aboutus);
 // ******************** ABOUT US end ********************
 
 // ******************** Carrer start ********************
-
+careerSlideshow();
+setInterval(function () {
+    careerSlideshow();
+}, 6000);
 // ******************** Carrer end ********************
 
 // ******************** Contact Us start ********************
