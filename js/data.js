@@ -282,12 +282,12 @@ var hiddenMenu = {
             },
             {
                 pav: 'Lalavyva',
-                img:'./img/buritos/5.jpg', alt: 'Photo' ,
+                img:'./img/buritos/9.jpg', alt: 'Photo' ,
                 price: '3.80€'
             },
             {
                 pav: 'Bumbana',
-                img: './img/buritos/6.jpg', alt: 'Photo' ,
+                img: './img/buritos/10.jpg', alt: 'Photo' ,
                 price: '3.20€'
             },
         ],
@@ -299,34 +299,34 @@ var hiddenMenu = {
             },
             {
                 pav: 'Tacyza',
-                img:'./img/buritos/2.jpg', alt: 'Photo',
+                img:'./img/buritos/tacos2.png', alt: 'Photo',
                 price: '3.20€'
             },
             {
                 pav: 'Tacyza',
-                img:'./img/buritos/2.jpg', alt: 'Photo',
+                img:'./img/buritos/tacos3.jpg', alt: 'Photo',
                 price: '3.20€'
             },
             {
                 pav: 'Plumpa',
-                img:'./img/buritos/8.jpg', alt: 'Photo',
+                img:'./img/buritos/4.jpg', alt: 'Photo',
                 price: '2.70€'
             },
         ],
         Drinks: [
             {
                 img: './img/arbata.png',
-                pav: 'Arbata',
-                price: '1.00€'
-            },
-            {
-                img: './img/cola.png',
-                pav: 'Coca-Cola',
+                pav: 'Ice Tea',
                 price: '1.00€'
             },
             {
                 img: './img/sprite.png',
                 pav: 'Sprite',
+                price: '1.00€'
+            },
+            {
+                img: './img/cola.png',
+                pav: 'Coca-Cola',
                 price: '1.00€'
             },
             {
@@ -373,30 +373,30 @@ var hiddenMenu = {
         Snacks: [
             {
                 pav: 'Bulvytes',
-                img:'./img/burger/7.jpg', alt: 'Photo' ,
+                img:'./img/burger/fri.jpg', alt: 'Photo' ,
                 price: '1.20€'
             },
             {
                 pav: 'Chips',
-                img:'./img/burger/8.jpg', alt: 'Photo' ,
+                img:'./img/burger/chips.jpg', alt: 'Photo' ,
                 price: '1.20€'
             },
             {
                 pav: 'Chicken Nuggets',
-                img:'./img/burger/8.jpg', alt: 'Photo' ,
+                img:'./img/burger/Chicken.jpg', alt: 'Photo' ,
                 price: '1.80€'
             },
             {
                 pav: 'Grilled Cheese',
-                img:'./img/burger/9.jpg', alt: 'Photo' ,
+                img:'./img/burger/Cheese.jpg', alt: 'Photo' ,
                 price: '2.70€'
             },
         ],
         Drinks: [
             {
                 img: './img/arbata.png',
-                pav: 'Arbata',
-                price: '1.00€'
+                pav: 'Ice Tea',
+                price: '0.70€'
             },
             {
                 img: './img/cola.png',
@@ -452,45 +452,45 @@ var hiddenMenu = {
         Soups: [
             {
                 pav: 'Hoto',
-                img:'./img/buritos/1.jpg', alt: 'Photo',
+                img:'./img/sushi/Hoto.jpg', alt: 'Photo',
                 price: '1.60€'
             },
             {
                 pav: 'Jiru',
-                img:'./img/buritos/2.jpg', alt: 'Photo',
+                img:'./img/sushi/Jiru.jpg', alt: 'Photo',
                 price: '1.80€'
             },
             {
                 pav: 'Zoni',
-                img:'./img/buritos/2.jpg', alt: 'Photo',
+                img:'./img/sushi/Zoni.jpg', alt: 'Photo',
                 price: '1.70€'
             },
             {
                 pav: 'Sukiyaki',
-                img:'./img/buritos/8.jpg', alt: 'Photo',
+                img:'./img/sushi/Sukiyaki.jpg', alt: 'Photo',
                 price: '1.90€'
             },
         ],
         Drinks: [
             {
-                img: './img/arbata.png',
-                pav: 'Arbata',
+                img: './img/sultys.png',
+                pav: 'Juice',
                 price: '1.00€'
             },
             {
                 img: './img/cola.png',
                 pav: 'Coca-Cola',
-                price: '1.00€'
+                price: '1.10€'
             },
             {
                 img: './img/sprite.png',
                 pav: 'Sprite',
-                price: '1.00€'
+                price: '1.10€'
             },
             {
-                img: './img/sultys.png',
-                pav: 'Juice',
-                price: '0.80€'
+                img: './img/arbata.png',
+                pav: 'Ice Tea',
+                price: '0.90€'
             },
         ],
     }}
