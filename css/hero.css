@@ -18,5 +18,6 @@
 @media only screen and (max-width: 460px) {
     .heroSlideshow > img {
         width: 300px;
+        
     }
 }
