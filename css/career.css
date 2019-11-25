@@ -2,8 +2,7 @@
     background-color: #302E31;
     position: relative;
     height: unset;
-    /* min-height: 800px; */
-    min-height: calc(100vh + 90px);
+    min-height: calc(100vh + 80px);
     overflow: hidden;
     padding-top: 30px;
 }
@@ -20,7 +19,7 @@ h3.title-career {
     display: inline-block;
     width: 100%;
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 .column {
@@ -114,7 +113,8 @@ textarea {
     background-color: transparent;
     box-shadow: inset 0px 0px 50px #fff;
 }
-#career-cont img {
+
+.cars img {
     width: 100px;
     height: 60px;
     position: absolute;
@@ -124,6 +124,10 @@ textarea {
     opacity: 0;
     transition: 8s;
 }
+
+.cars {
+    height: 100px;
+} 
 
 
 
@@ -176,6 +180,63 @@ textarea {
         justify-content: center;
     }
 
+    h3.title-career {
+        padding-bottom: 0px;
+    }
+
+    .circle  { 
+        margin: 30px 0;
+    } 
+
+    .cars {
+        height: 100px;
+    } 
+
+/* 
+    
+
+    .column {
+        padding: 0px;
+    }
+ 
+    .form-row {
+        width: 300px;
+    }
+
+    .form-row > label {
+        width: 70px;
+        margin-right: 8px;
+    }
+    
+    .form-row > input, .form-row > textarea {
+        width: 200px;
+        height: 50px ;
+        font-size: 14px;
+        line-height: 16px;
+        margin: 8px 0px;
+    }
+
+    textarea {
+        min-width: 200px;
+    }
+
+    #submit-career {
+        margin-right: 160px;
+    }
+    
+    
+
+    */
+
+}
+
+@media all and (max-width: 600px) {
+
+    .container-career {
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .column {
         display: block;
         padding: 8px;
@@ -211,16 +272,7 @@ textarea {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 20px 0 100px 0;
-    }
-    
-    .circle1  {
-        
-    }
-    
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+        margin: 20px 0;
+    }  
+
 }
