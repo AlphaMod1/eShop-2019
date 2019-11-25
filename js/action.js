@@ -40,10 +40,10 @@ renderAbout(aboutus);
 // ******************** ABOUT US end ********************
 
 // ******************** Carrer start ********************
-careerSlideshow();
-setInterval(function () {
-    careerSlideshow();
-}, 6000);
+// careerSlideshow();
+// setInterval(function () {
+//     careerSlideshow();
+// }, 6000);
 // ******************** Carrer end ********************
 
 // ******************** Contact Us start ********************
