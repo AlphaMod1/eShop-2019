@@ -12,7 +12,6 @@ window.addEventListener('scroll', function () {
 genHeaderDropdownTrucks();
 
 // ******************** Header end ********************
-
 // ******************** Hero start ********************
 
 heroSlideshow();
