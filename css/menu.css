@@ -272,9 +272,10 @@
 }
 
 .rightTop {
-    background-color: aqua;
+    /* background-color: aqua; */
     height: 150px;
     width: 100%;
+    color: white;
 }
 
 .rightBottom {
@@ -284,14 +285,17 @@
 
 .menuContacts {
     text-align: center;
-    padding-top: 15px;
+    padding-top: 12px;
     line-height: 20px;
     font-size: 20px;
+    text-shadow: -1px -1px 0 #000, 
+    1px -1px 0 #000, 
+    -1px 1px 0 #000, 
+    1px 1px 0 #000;
 }
 
 .rightPosition {
     text-align: center;
-    margin-top: 15px;
     padding: 7px;
 }
 
@@ -300,10 +304,34 @@
     height: 50px;
 }
 
-.truckMenu2 {
-    padding: 5px;
+.ContLogo {
+    width: 40px;
+    height: 40px;
+
 }
 
-.truckMenu3 {
-    padding: 5px;
+.ContName {
+    line-height: 20px;
+    font-size: 18px;
+    text-shadow: -1px -1px 0 #000, 
+                1px -1px 0 #000, 
+                -1px 1px 0 #000, 
+                1px 1px 0 #000;
+}
+
+.ContTel {
+    font-size: 20px;
+    text-shadow: -1px -1px 0 #000, 
+                1px -1px 0 #000, 
+                -1px 1px 0 #000, 
+                1px 1px 0 #000;
+}
+
+
+.ContEmail {
+    font-size: 12px;
+    text-shadow: -1px -1px 0 #000, 
+                1px -1px 0 #000, 
+                -1px 1px 0 #000, 
+                1px 1px 0 #000;
 }

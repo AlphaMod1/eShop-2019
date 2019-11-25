@@ -142,6 +142,8 @@ function renderAbout(items) {
 // ********************Special offers start******************
 function renderSpecial(specialList) {
     let HTML = '';
+    let hidtru = [ 'truck1', 'truck2','truck3'];
+    let hidtru2 = [ 'HotDishes', 'Burgers','Sushi'];
     for (let i = 0; i < specialList.length; i++) {
         const meniu = specialList[i]
         HTML += `<div class="meniu">
@@ -152,7 +154,7 @@ function renderSpecial(specialList) {
             <p class="special">${meniu.special2}</p>
             <p class="special">${meniu.special3}</p>
             <input type="buttom" onclick="showHiddenMenu();" class='btn-main btn-ice' value=' Order Now'${meniu.input}>
-            <a class="fullmeniu" onclick="showHiddenMenu();"> ${meniu.FullMeniu}</a>
+            <a class="fullmeniu" onclick="showHiddenMenu(); renderMenu(${hidtru[i]}, ${hidtru2[i]}); hiddenFunction(${i+1});"> ${meniu.FullMeniu}</a>
             </div>`;
     }
     return document.querySelector('#specialOffers').innerHTML = HTML;
@@ -395,10 +397,10 @@ function genMenuTruckContacts(i) {
     let HTML = '';
 
     HTML += `<div class="truck-info">
-        <img src="${specialOffers[i].img}" alt="Logo">
-        <h5>${trucks[i].name}</h5> 
-        <p>${trucks[i].tel}</p> 
-        <p>${trucks[i].email}</p></div>`;
+        <img class='ContLogo' src="${specialOffers[i].img}" alt="Logo">
+        <h5 class='ContName'>${trucks[i].name}</h5> 
+        <p class='ContTel'>${trucks[i].tel}</p> 
+        <p class='ContEmail'>${trucks[i].email}</p></div>`;
 
     contacts.innerHTML = HTML;
 }
