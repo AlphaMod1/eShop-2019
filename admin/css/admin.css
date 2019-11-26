@@ -4,6 +4,23 @@ body {
     background-color: #f0f0f0;
 }
 
+span {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#current-container {
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+#today {
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .top-menu {
     padding-top: 10px;
     padding-right: 270px;
@@ -106,6 +123,9 @@ body {
 }
 
 .btn-logout {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
     border: #000 2px solid;
     border-radius: 10px;
 }
@@ -122,6 +142,85 @@ body {
     cursor: pointer;
     font-size: 24px;
 }
+/* Tables*/
+.cont-users {
+width: 100%;
+padding: 20px;
+}
+
+th {
+    font-size: 25px;
+
+    margin: 3px 10px;
+    padding: 5px 10px;
+}
+
+td {
+    font-size: 25px;
+    padding: 3px 10px;
+    margin: 0px 10px;
+    border-bottom: solid 1px #000;
+    /* border-left: solid 1px #000; */
+
+}
+
+.btn-delete {
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: #ccc;
+}
+
+.btn-open {
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: #ccc;
+}
+
+
+.cont-vendors > .fa-plus {
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 20px 290px;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: #ccc;
+}
+
+.cont-vendors {
+    padding: 20px;
+}
+
+.cont-edit > .fa-plus {
+    text-transform: uppercase;
+    padding: 10px;
+    align-content: center;
+    margin: 20px 290px;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: #ccc;
+}
+
+.cont-edit {
+    padding: 20px;
+}
+
+.cont-inbox > .sendm {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 230px;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.cont-inbox {
+    padding: 30px;
+}
+
+/* Tables end*/
 
 /* Footer */
 
@@ -155,10 +254,22 @@ body {
 
 .dash-box{
     display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
     background-color: #fff;
+    background-image: url(../../img/chart.png);
     border-radius: 10px;
-    border: 2px solid #ccc;
+    border: 2px solid #ccc;    
     width: 300px;
     height: 500px;
     margin: 50px 0px 50px 90px;
+}
+
+.dash-box2 {
+    background-image: url(../../img/chart2.png);
+}
+
+.dash-box3 {
+    background-image: url(../../img/chart3.png);
 }

@@ -24,6 +24,7 @@ setInterval(function () {
 // ******************** Menu start ********************
 
 renderSpecial(specialOffers);
+updateCheckout();
 
 // ******************** Menu end ********************
 

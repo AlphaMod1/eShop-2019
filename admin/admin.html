@@ -17,7 +17,7 @@
 <body>
 
     <div class="nav top-menu">
-        <a href="../index.html" class="btn-main btn-logout">Logout</a>
+        <a href="../index.html" class="btn-main btn-logout">Log out</a>
         <div id="today">2030 Jan 01</div>
         <div id="current-container">Dashboard</div>
     </div>
@@ -52,13 +52,12 @@
     <!-- https://keenthemes.com/metronic/preview/demo1/index.html -->
     <div id="content">
         <div class="container cont-dashboard">
-            <div class="dash-box"></div>
-            <div class="dash-box"></div>
-            <div class="dash-box"></div>
+            <div class="dash-box">Sales</div>
+            <div class="dash-box dash-box2">Profits</div>
+            <div class="dash-box dash-box3">Complaints</div>
         </div>
 
-        <div class="container cont-users">
-            <div class="users-title">Users</div>
+        <div class="container cont-users">           
             <table id="users-table">
                 <tr>
                     <th>ID:</th>
@@ -69,9 +68,7 @@
             </table>
         </div>
 
-        <div class="container cont-vendors">
-            <div class="vendor-title">Vendors</div>
-            <i onclick="loadCont('edit');" class="fa fa-plus"></i>
+        <div class="container cont-vendors">           
             <table id="vendor-table">
                 <tr>
                     <th>ID:</th>
@@ -80,11 +77,11 @@
                     <th>Phone:</th>
                 </tr>
             </table>
+            <i onclick="loadCont('edit');" class="fa fa-plus"> Add User</i>
+
         </div>
 
-        <div class="container cont-edit">
-            <div class="edit-title">Edit</div>
-            <i onclick="addNewUserModal();" class="fa fa-plus"></i>
+        <div class="container cont-edit">           
             <table id="edit-table">
                 <tr>
                     <th>ID:</th>
@@ -94,11 +91,11 @@
                     <th>-</th>
                 </tr>
             </table>
+            <i onclick="addNewUserModal();" class="fa fa-plus"> Add User</i>
+
         </div>
 
-        <div class="container cont-inbox">
-            <div class="inbox-title">Inbox</div>
-            <i onclick="sendMailModal();" class="fa fa-plus"></i>
+        <div class="container cont-inbox">          
             <table id="inbox-table">
                 <tr>
                     <th>From:</th>
@@ -106,6 +103,7 @@
                     <th>-</th>
                 </tr>
             </table>
+            <i onclick="sendMailModal();" class="sendm"> Send Message</i>
         </div>
     </div>
 

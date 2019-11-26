@@ -142,6 +142,8 @@ function renderAbout(items) {
 // ********************Special offers start******************
 function renderSpecial(specialList) {
     let HTML = '';
+    let hidtru = ['truck1', 'truck2', 'truck3'];
+    let hidtru2 = ['HotDishes', 'Burgers', 'Sushi'];
     for (let i = 0; i < specialList.length; i++) {
         const meniu = specialList[i]
         HTML += `<div class="meniu">
@@ -151,8 +153,8 @@ function renderSpecial(specialList) {
             <p class="special">${meniu.special1}</p>
             <p class="special">${meniu.special2}</p>
             <p class="special">${meniu.special3}</p>
-            <input type="buttom" onclick="showHiddenMenu();" class='btn-main btn-ice' value=' Order Now'${meniu.input}>
-            <a class="fullmeniu" onclick="showHiddenMenu();"> ${meniu.FullMeniu}</a>
+            <input type="button" onclick="showHiddenMenu();" class='btn-main btn-ice' value=' Order Now'${meniu.input}>
+            <a class="fullmeniu" onclick="showHiddenMenu(); renderMenu('${hidtru[i]}', '${hidtru2[i]}'); hiddenFunction(${i + 1}); genMenuTruckContacts(${i})"> ${meniu.FullMeniu}</a>
             </div>`;
     }
     return document.querySelector('#specialOffers').innerHTML = HTML;
@@ -315,7 +317,7 @@ function renderMenu(truck, cat) {
     if (truck === 'truck1' && cat === 'HotDishes') {
         for (var i = 0; i < hiddenMenu.FoodTruck1.HotDishes.length; i++) {
             HTML += `<div class='hiddenClass'>
-            <div class='menuImg' ><img class='imgsize' src="${hiddenMenu.FoodTruck1.HotDishes[i].img}"></div>
+            <div class='menuImg' onclick="addToCart('${truck}', '${cat}', '${i}');" ><img class='imgsize' src="${hiddenMenu.FoodTruck1.HotDishes[i].img}"></div>
             <div class='menuName' >${hiddenMenu.FoodTruck1.HotDishes[i].pav}</div>
             <div class='menuPrices'>${hiddenMenu.FoodTruck1.HotDishes[i].price}</div>
             </div>`;
@@ -324,7 +326,7 @@ function renderMenu(truck, cat) {
     } else if (truck === 'truck1' && cat === 'Tacos') {
         for (var i = 0; i < hiddenMenu.FoodTruck1.Tacos.length; i++) {
             HTML += `<div class='hiddenClass'>
-            <div class='menuImg' ><img class='imgsize' src="${hiddenMenu.FoodTruck1.Tacos[i].img}"></div>
+            <div class='menuImg' onclick="addToCart('${truck}', '${cat}', '${i}');" ><img class='imgsize' src="${hiddenMenu.FoodTruck1.Tacos[i].img}"></div>
             <div class='menuName' >${hiddenMenu.FoodTruck1.Tacos[i].pav}</div>
             <div class='menuPrices'>${hiddenMenu.FoodTruck1.Tacos[i].price}</div>
             </div>`;
@@ -332,7 +334,7 @@ function renderMenu(truck, cat) {
     } else if (truck === 'truck1' && cat === 'Drinks') {
         for (var i = 0; i < hiddenMenu.FoodTruck1.Drinks.length; i++) {
             HTML += `<div class='hiddenClass'>
-            <div class='menuImg' ><img class='imgsize' src="${hiddenMenu.FoodTruck1.Drinks[i].img}"></div>
+            <div class='menuImg' onclick="addToCart('${truck}', '${cat}', '${i}');" ><img class='imgsize' src="${hiddenMenu.FoodTruck1.Drinks[i].img}"></div>
             <div class='menuName' >${hiddenMenu.FoodTruck1.Drinks[i].pav}</div>
             <div class='menuPrices'>${hiddenMenu.FoodTruck1.Drinks[i].price}</div>
             </div>`;
@@ -340,7 +342,7 @@ function renderMenu(truck, cat) {
     } else if (truck === 'truck2' && cat === 'Burgers') {
         for (var i = 0; i < hiddenMenu.FoodTruck2.Burgers.length; i++) {
             HTML += `<div class='hiddenClass'>
-            <div class='menuImg' ><img class='imgsize' src="${hiddenMenu.FoodTruck2.Burgers[i].img}"></div>
+            <div class='menuImg' onclick="addToCart('${truck}', '${cat}', '${i}');" ><img class='imgsize' src="${hiddenMenu.FoodTruck2.Burgers[i].img}"></div>
             <div class='menuName' >${hiddenMenu.FoodTruck2.Burgers[i].pav}</div>   
             <div class='menuPrices'>${hiddenMenu.FoodTruck2.Burgers[i].price}</div>
             </div>`;
@@ -348,7 +350,7 @@ function renderMenu(truck, cat) {
     } else if (truck === 'truck2' && cat === 'Snacks') {
         for (var i = 0; i < hiddenMenu.FoodTruck2.Snacks.length; i++) {
             HTML += `<div class='hiddenClass'>
-            <div class='menuImg'><img class='imgsize' src='${hiddenMenu.FoodTruck2.Snacks[i].img}'></div>
+            <div class='menuImg' onclick="addToCart('${truck}', '${cat}', '${i}');"><img class='imgsize' src='${hiddenMenu.FoodTruck2.Snacks[i].img}'></div>
             <div class='menuName' >${hiddenMenu.FoodTruck2.Snacks[i].pav}</div>
             <div class='menuPrices'>${hiddenMenu.FoodTruck2.Snacks[i].price}</div>
             </div>`;
@@ -356,7 +358,7 @@ function renderMenu(truck, cat) {
     } else if (truck === 'truck2' && cat === 'Drinks') {
         for (var i = 0; i < hiddenMenu.FoodTruck2.Drinks.length; i++) {
             HTML += `<div class='hiddenClass'>
-            <div class='menuImg'><img class='imgsize' src="${hiddenMenu.FoodTruck2.Drinks[i].img}"></div>
+            <div class='menuImg' onclick="addToCart('${truck}', '${cat}', '${i}');"><img class='imgsize' src="${hiddenMenu.FoodTruck2.Drinks[i].img}"></div>
             <div class='menuName' >${hiddenMenu.FoodTruck2.Drinks[i].pav}</div>
             <div class='menuPrices'>${hiddenMenu.FoodTruck2.Drinks[i].price}</div>
             </div>`;
@@ -364,7 +366,7 @@ function renderMenu(truck, cat) {
     } else if (truck === 'truck3' && cat === 'Sushi') {
         for (var i = 0; i < hiddenMenu.FoodTruck3.Sushi.length; i++) {
             HTML += `<div class='hiddenClass'>
-            <div class='menuImg' ><img class='imgsize' src='${hiddenMenu.FoodTruck3.Sushi[i].img}'></div>
+            <div class='menuImg' onclick="addToCart('${truck}', '${cat}', '${i}');" ><img class='imgsize' src='${hiddenMenu.FoodTruck3.Sushi[i].img}'></div>
             <div class='menuName' >${hiddenMenu.FoodTruck3.Sushi[i].pav}</div>
             <div class='menuPrices'>${hiddenMenu.FoodTruck3.Sushi[i].price}</div>
             </div>`;
@@ -372,7 +374,7 @@ function renderMenu(truck, cat) {
     } else if (truck === 'truck3' && cat === 'Soups') {
         for (var i = 0; i < hiddenMenu.FoodTruck3.Soups.length; i++) {
             HTML += `<div class='hiddenClass'>
-            <div class='menuImg' ><img class='imgsize' src='${hiddenMenu.FoodTruck3.Soups[i].img}'></div>
+            <div class='menuImg' onclick="addToCart('${truck}', '${cat}', '${i}');" ><img class='imgsize' src='${hiddenMenu.FoodTruck3.Soups[i].img}'></div>
             <div class='menuName' >${hiddenMenu.FoodTruck3.Soups[i].pav}</div>
             <div class='menuPrices'>${hiddenMenu.FoodTruck3.Soups[i].price}</div>
             </div>`;
@@ -380,7 +382,7 @@ function renderMenu(truck, cat) {
     } else if (truck === 'truck3' && cat === 'Drinks') {
         for (var i = 0; i < hiddenMenu.FoodTruck3.Drinks.length; i++) {
             HTML += `<div class='hiddenClass'>
-            <div class='menuImg' ><img class='imgsize' src='${hiddenMenu.FoodTruck3.Drinks[i].img}'></div>
+            <div class='menuImg' onclick="addToCart('${truck}', '${cat}', '${i}');" ><img class='imgsize' src='${hiddenMenu.FoodTruck3.Drinks[i].img}'></div>
             <div class='menuName' >${hiddenMenu.FoodTruck3.Drinks[i].pav}</div>
             <div class='menuPrices'>${hiddenMenu.FoodTruck3.Drinks[i].price}</div>
             </div>`;
@@ -390,15 +392,123 @@ function renderMenu(truck, cat) {
     document.querySelector('#left-menu').innerHTML = HTML;
 }
 
+var totalCart = [];
+function addToCart(truck, cat, index) {
+    let item;
+    switch (truck) {
+        case 'truck1':
+            switch (cat) {
+                case 'HotDishes':
+                    item = hiddenMenu.FoodTruck1.HotDishes;
+                    break;
+                case 'Tacos':
+                    item = hiddenMenu.FoodTruck1.Tacos;
+                    break;
+                case 'Drinks':
+                    item = hiddenMenu.FoodTruck1.Drinks;
+                    break;
+            }
+            break;
+        case 'truck2':
+            switch (cat) {
+                case 'Burgers':
+                    item = hiddenMenu.FoodTruck2.Burgers;
+                    break;
+                case 'Snacks':
+                    item = hiddenMenu.FoodTruck2.Snacks;
+                    break;
+                case 'Drinks':
+                    item = hiddenMenu.FoodTruck2.Drinks;
+                    break;
+            }
+            break;
+        case 'truck3':
+            switch (cat) {
+                case 'Sushi':
+                    item = hiddenMenu.FoodTruck3.Sushi;
+                    break;
+                case 'Soups':
+                    item = hiddenMenu.FoodTruck3.Soups;
+                    break;
+                case 'Drinks':
+                    item = hiddenMenu.FoodTruck3.Drinks;
+                    break;
+            }
+            break;
+    }
+
+    let intPrice = item[index].price;
+    intPrice.replace('€', '');
+    intPrice = parseFloat(intPrice);
+
+    if (!checkCartObj(item, index, intPrice)) {
+        totalCart.push({ item: item[index].pav, count: 1, price: intPrice });
+    }
+    updateCheckout();
+}
+
+function checkCartObj(item, index, intPrice) {
+
+    for (let i = 0; i < totalCart.length; i++) {
+        if (item[index].pav == totalCart[i].item) {
+            totalCart[i].count++;
+            totalCart[i].price += intPrice;
+            return true;
+        }
+    }
+    return false;
+}
+
+function updateCheckout() {
+    let display = document.getElementById('shopCart');
+    let totalPriceDiv = document.getElementById('total');
+    let totalPrice = 0;
+    let HTML = `<div class="hd-line">Orderd Items:</div>`;
+    for (var i = 0; i < totalCart.length; i++) {
+        HTML += `<div class="total-item">
+        <span>${totalCart[i].item}</span>
+        <span>${totalCart[i].count}x</span>
+        <span>${totalCart[i].price.toFixed(2)}€</span>
+        <span><input class='btn-removeItem' type='button' value='x' onclick='removeCart("${totalCart[i].item}")'></span>
+        </div>`;
+        totalPrice += totalCart[i].price;
+    }
+    display.innerHTML = HTML;
+    totalPriceDiv.innerHTML = 'Total: '+totalPrice.toFixed(2)+'€';
+}
+
+function removeCart(item) {
+    for (let i = 0; i < totalCart.length; i++) {
+        if (totalCart[i].item == item) {
+            totalCart.splice(i, 1);
+            updateCheckout();
+        }
+    }
+}
+
 function genMenuTruckContacts(i) {
     let contacts = document.getElementById('truckMenu1');
     let HTML = '';
 
     HTML += `<div class="truck-info">
-        <img src="${specialOffers[i].img}" alt="Logo">
-        <h5>${trucks[i].name}</h5> 
-        <p>${trucks[i].tel}</p> 
-        <p>${trucks[i].email}</p></div>`;
+        <img class='ContLogo' src="${specialOffers[i].img}" alt="Logo">
+        <h5 class='ContName'>${trucks[i].name}</h5> 
+        <p class='ContTel'>${trucks[i].tel}</p> 
+        <p class='ContEmail'>${trucks[i].email}</p></div>`;
 
     contacts.innerHTML = HTML;
+}
+
+function checkout() {
+    id = Math.floor(Math.random() * 1000);
+    status = Math.floor(Math.random() * 4);
+
+    if (id <= 9) {
+        id = '00' + id;
+    }
+    else if (id <= 99) {
+        id = '0' + id;
+    }
+
+    window.location.replace('/Receipt/Receipt.html#' + id + '&' + status);
 }

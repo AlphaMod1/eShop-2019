@@ -41,8 +41,8 @@
             <a class="link-item" href="index.html#meniuId">Meniu</a>
             <a class="link-item" href="index.html#mapId">Map</a>
             <a class="link-item" href="index.html#about-cont">About us</a>
-            <a class="link-item" href="#">Career</a>
-            <a class="link-item" href="#">Contacts</a>
+            <a class="link-item" href="index.html#career-cont">Career</a>
+            <a class="link-item" href="index.html#contacts">Contacts</a>
             <a class="link-item" href="login/login.html">Log in</a>
         </nav>
     </header>
@@ -80,25 +80,25 @@
 
         <div class="hidden-left">
             <div class="hidden-navigation">
-                <div onclick="hiddenFunction(1); genMenuTruckContacts(0)" class="hidden-btn menubtn1">FoodTruck1
+                <div onclick="hiddenFunction(1); genMenuTruckContacts(0)" class="hd-transition hidden-btn menubtn1">Burito Republic
                     <div id="hid1" class="menu-dropdown">
-                        <a onclick="renderMenu('truck1', 'HotDishes')">Hot Dishes</a>
-                        <a onclick="renderMenu('truck1', 'Tacos')">Tacos</a>
-                        <a onclick="renderMenu('truck1', 'Drinks')">Drinks</a>
+                        <a class="hd-transition" onclick="renderMenu('truck1', 'HotDishes')">Hot Dishes</a>
+                        <a class="hd-transition" onclick="renderMenu('truck1', 'Tacos')">Tacos</a>
+                        <a class="hd-transition" onclick="renderMenu('truck1', 'Drinks')">Drinks</a>
                     </div>
                 </div>
-                <div onclick="hiddenFunction(2); genMenuTruckContacts(1)" class="hidden-btn menubtn2">FoodTruck2
+                <div onclick="hiddenFunction(2); genMenuTruckContacts(1)" class="hd-transition hidden-btn menubtn2">John's burgers
                     <div id="hid2" class="menu-dropdown">
-                        <a onclick="renderMenu('truck2', 'Burgers')">Burgers</a>
-                        <a onclick="renderMenu('truck2', 'Snacks')">Snacks</a>
-                        <a onclick="renderMenu('truck2', 'Drinks')">Drinks</a>
+                        <a class="hd-transition" onclick="renderMenu('truck2', 'Burgers')">Burgers</a>
+                        <a class="hd-transition" onclick="renderMenu('truck2', 'Snacks')">Snacks</a>
+                        <a class="hd-transition" onclick="renderMenu('truck2', 'Drinks')">Drinks</a>
                     </div>
                 </div>
-                <div onclick="hiddenFunction(3); genMenuTruckContacts(2)" class="hidden-btn menubtn3">FoodTruck3
+                <div onclick="hiddenFunction(3); genMenuTruckContacts(2)" class="hd-transition hidden-btn menubtn3">Yoko sushi
                     <div id="hid3" class="menu-dropdown">
-                        <a onclick="renderMenu('truck3', 'Sushi')">Sushi</a>
-                        <a onclick="renderMenu('truck3', 'Soups')">Soups</a>
-                        <a onclick="renderMenu('truck3', 'Drinks')">Drinks</a>
+                        <a class="hd-transition" onclick="renderMenu('truck3', 'Sushi')">Sushi</a>
+                        <a class="hd-transition" onclick="renderMenu('truck3', 'Soups')">Soups</a>
+                        <a class="hd-transition" onclick="renderMenu('truck3', 'Drinks')">Drinks</a>
                     </div>
                 </div>
                 <div id="left-menu"></div>
@@ -111,10 +111,14 @@
             <div class='rightTop'>
                 <div class="menuContacts">Contacts</div>
                 <div class="rightPosition">
-                    <div id='truckMenu1'> </div>
+                    <div id="truckMenu1"> </div>
                 </div>
             </div>
-            <div class='rightBottom'>ShopingCart</div>
+            <div class='rightBottom'>
+                <div id="shopCart"></div>
+                <div id="total">Total:</div>
+                <input class='btn-main shopPlace' type="button" value="Order now" onclick="checkout();">
+            </div>
         </div>
     </div>
     <!-- ******************** MAP ******************** -->
@@ -167,7 +171,6 @@
         <div class="container-career">
             <div class="column circle circle1">
                 <p>Join with your Food Truck</p>
-                <!-- <p>You could be one of us</p> -->
             </div>
             <div class="column">
                 <form>
@@ -196,20 +199,20 @@
                 <p>Join us!!!</p>
                 <p>We are waiting You!</p>
             </div>
-            <!-- <div class="careerSlideshow"> -->
+        </div>
+        <div class="cars">
             <img id='car0' src="./img/trucks/t1.png" alt="Truck">
             <img id='car1' src="./img/trucks/t2.png" alt="Truck">
             <img id='car2' src="./img/trucks/t3.png" alt="Truck">
             <img id='car3' src="./img/trucks/t4.png" alt="Truck">
             <img id='car4' src="./img/trucks/t5.png" alt="Truck">
             <img id='car5' src="./img/trucks/t6.png" alt="Truck">
-            <!-- </div> -->
         </div>
     </div>
 
     <!--******************** CONTACTS ********************-->
 
-    <div class="contacts">
+    <div id="contacts" class="contacts">
         <div class="titleCon">
             <h1>Contacts</h1>
         </div>
@@ -235,7 +238,7 @@
             <p>Įm.kodas: 302964057 PVM Kodas: LT100008128215</p>
         </div>
         <div class="copyright">
-            <p>&copy Muškienininkai</p>
+            <p>&copy; Muškienininkai</p>
         </div>
     </div>
 

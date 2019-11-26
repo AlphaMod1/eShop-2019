@@ -1,8 +1,8 @@
 .career{
-    background-color: #302E31;
+    background-color: #131114;
     position: relative;
     height: unset;
-    min-height: 700px;
+    min-height: calc(100vh + 80px);
     overflow: hidden;
     padding-top: 30px;
 }
@@ -19,18 +19,18 @@ h3.title-career {
     display: inline-block;
     width: 100%;
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 .column {
     display: inline-block;
-    background-color: #fff;
+    background-color: #000;
     padding: 30px;
     border-radius: 20px;
 }
 
 .form-row {
-    color: #000;
+    color: #fff;
     font-size: 20px;
     line-height: 30p;
     display: flex;
@@ -45,6 +45,7 @@ h3.title-career {
 
 .form-row > input, .form-row > textarea {
     border: none;
+    color: #fff;
     width: 300px;
     height: 50px ;
     font-size: 16px;
@@ -61,6 +62,7 @@ h3.title-career {
 }
 
 .form-row > textarea {
+    color: #fff;
     margin-right: 0px;
 }
 
@@ -96,7 +98,7 @@ textarea {
     animation-duration: 3s;
     animation-iteration-count: infinite;
     background-color: transparent;
-    box-shadow: inset 0px 0px 50px #fff;
+    box-shadow: inset 0px 0px 50px #000;
     color:#fff;
 }
 
@@ -111,9 +113,10 @@ textarea {
     animation-duration: 3s;
     animation-iteration-count: infinite;
     background-color: transparent;
-    box-shadow: inset 0px 0px 50px #fff;
+    box-shadow: inset 0px 0px 50px #000;
 }
-#career-cont img {
+
+.cars img {
     width: 100px;
     height: 60px;
     position: absolute;
@@ -123,6 +126,10 @@ textarea {
     opacity: 0;
     transition: 8s;
 }
+
+.cars {
+    height: 100px;
+} 
 
 
 
@@ -166,4 +173,108 @@ textarea {
         border-bottom-right-radius: 50%;
         border-top-left-radius: 50%;
     }
+}
+
+@media all and (max-width: 1000px) {
+
+    .container-career {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h3.title-career {
+        padding-bottom: 0px;
+    }
+
+    .circle  { 
+        margin: 30px 0;
+    } 
+
+    .cars {
+        height: 100px;
+    } 
+
+/* 
+    
+
+    .column {
+        padding: 0px;
+    }
+ 
+    .form-row {
+        width: 300px;
+    }
+
+    .form-row > label {
+        width: 70px;
+        margin-right: 8px;
+    }
+    
+    .form-row > input, .form-row > textarea {
+        width: 200px;
+        height: 50px ;
+        font-size: 14px;
+        line-height: 16px;
+        margin: 8px 0px;
+    }
+
+    textarea {
+        min-width: 200px;
+    }
+
+    #submit-career {
+        margin-right: 160px;
+    }
+    
+    
+
+    */
+
+}
+
+@media all and (max-width: 600px) {
+
+    .container-career {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .column {
+        display: block;
+        padding: 8px;
+    }
+
+    .form-row {
+            width: 300px;
+    }
+
+    .form-row > label {
+        width: 70px;
+        margin-right: 8px;
+    }
+    
+    .form-row > input, .form-row > textarea {
+        width: 200px;
+        height: 50px ;
+        font-size: 14px;
+        line-height: 16px;
+        margin: 8px 0px;
+    }
+
+    textarea {
+        min-width: 200px;
+    }
+
+    #submit-career {
+        margin-right: 160px;
+    }
+    
+    .circle  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }  
+
 }
