@@ -140,13 +140,14 @@
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     overflow: hidden;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .hidden-navigation {
     display: inline-block;
     width: 730px;
     height: 70px;
-    background-color: cornsilk;
+    background-color: #ddd;
     position: relative;
     z-index: 1;
 }
@@ -160,7 +161,7 @@
     border: 1px solid black;
     border-radius: 15px;
     position: absolute;
-    top: 7px;
+    top: 5px;
     cursor: pointer;
 }
 
@@ -178,19 +179,19 @@
 
 #hid1 {
     position: absolute;
-    top: 60px;
+    top: 64px;
     left: -50px;
 }
 
 #hid2 {
     position: absolute;
-    top: 60px;
+    top: 64px;
     left: -305px;
 }
 
 #hid3 {
     position: absolute;
-    top: 60px;
+    top: 64px;
     left: -560px;
 }
 
@@ -211,7 +212,7 @@
 .menu-dropdown {
     display: none;
     position: absolute;
-    background-color: black;
+    background-color: #555;
     min-width: 730px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.685);
     z-index: 1;
@@ -227,7 +228,7 @@
 
 .hidden a:hover {
     color: white;
-    background-color: #ccc;
+    background-color: #000;
 }
 
 .menu-show {
@@ -296,12 +297,15 @@
     height: 150px;
     width: 100%;
     color: white;
+    background-color: rgba(0,0,0,0.5);
+    border-bottom: 1px #fff solid;
 }
 
 .rightBottom {
-    background-color: violet;
+    background-color: rgba(0,0,0,0.5);
     height: 450px;
     position: relative;
+    color:#fff;
 }
 
 .menuContacts {
@@ -357,8 +361,26 @@
                 1px 1px 0 #000;
 }
 
+.hd-line{
+    border-bottom: 1px solid #fff;
+}
+
+.total-item{
+    margin-top: 3px;
+}
+
+#total{
+    position: absolute;
+    bottom: 60px;
+    font-size: 24px;
+}
+
 .shopPlace {
+    background-color: rgb(38, 77, 136);
+    color:#fff;
     width: 100%;
+    height: 54px;
+    font-size: 32px;
     overflow: hidden;
     position:absolute;
     bottom: 0;
@@ -371,4 +393,19 @@
       font-size: 32px;
       margin-top: -50px;
     }
+}
+
+.hd-transition{
+    transition: 0.3s;
+}
+
+.btn-removeItem{
+    padding: 0px 7px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(182, 0, 0);
+    background-color: transparent;
+    font-size: 30px;
+    line-height: 24px;
+    margin-top: -6px;
 }
