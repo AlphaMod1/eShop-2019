@@ -169,19 +169,19 @@
 
 #hid1 {
     position: absolute;
-    top: 60px;
+    top: 64px;
     left: -50px;
 }
 
 #hid2 {
     position: absolute;
-    top: 60px;
+    top: 64px;
     left: -305px;
 }
 
 #hid3 {
     position: absolute;
-    top: 60px;
+    top: 64px;
     left: -560px;
 }
 
@@ -375,6 +375,10 @@
     position:absolute;
     bottom: 0;
     padding: 5px 0px;
+}
+
+.hd-transition{
+    transition: 0.3s;
 }
 
 .btn-removeItem{
