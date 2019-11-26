@@ -364,3 +364,11 @@
     bottom: 0;
     padding: 5px 0px;
 }
+
+@media all and (max-width: 400px) {
+
+    .meniu_row>h3 {
+      font-size: 32px;
+      margin-top: -50px;
+    }
+}
