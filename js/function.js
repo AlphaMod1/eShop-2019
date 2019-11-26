@@ -461,21 +461,20 @@ function checkCartObj(item, index, intPrice) {
 
 function updateCheckout() {
     let display = document.getElementById('shopCart');
-    let HTML = `<div>
-    <span>Item:</span>
-    <span>Count:</span>
-    <span>Price:</span>
-    <span></span>
-    </div>`;
+    let totalPriceDiv = document.getElementById('total');
+    let totalPrice = 0;
+    let HTML = `<div>Orderd Items</div>`;
     for (var i = 0; i < totalCart.length; i++) {
         HTML += `<div>
         <span>${totalCart[i].item}</span>
-        <span>${totalCart[i].count}</span>
+        <span>${totalCart[i].count}x</span>
         <span>${totalCart[i].price.toFixed(2)}€</span>
-        <span><input type='button' value='x' onclick='removeCart("${totalCart[i].item}")'></span>
-        </div>`
+        <span><input class='btn-removeItem' type='button' value='x' onclick='removeCart("${totalCart[i].item}")'></span>
+        </div>`;
+        totalPrice += totalCart[i].price;
     }
     display.innerHTML = HTML;
+    totalPriceDiv.innerHTML = 'Total: '+totalPrice.toFixed(2)+'€';
 }
 
 function removeCart(item) {
