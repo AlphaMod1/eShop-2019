@@ -20,6 +20,7 @@ h3 {
     color: #fff;
     text-shadow:1px 1px 10px black;
 }
+
 .gmap {
     width: 800px;
     height: 490px;
@@ -118,11 +119,13 @@ span > img {
         display: inline-block;
         margin-left: calc((100% - 400px) / 2)
       }
+
     h3 {
       font-size: 22px;
       margin-top: 60px;
     }
   }
+
   @media all and (max-width: 500px) {
 
     .map {
@@ -130,21 +133,32 @@ span > img {
       margin-left: calc((100% - 300px) / 2);
       min-height: 400px;
     }
-        .pin1 {display: none;}
-        .pin2 {display: none;}
-        .pin3 {display: none;}
+
+        .pin1 {
+        display: none;
+        }
+
+        .pin2 {
+          display: none;
+        }
+
+        .pin3 {
+          display: none;
+        }
      
         .gmap {
           display: none;
         }
+
         .mobileMap {
           display: inline-block;
           width: 100%;
           height: auto;
           margin-left: calc((100% - 300px) / 2)
         }
+
       h3 {
-        font-size: 18px;
+        font-size: 19px;
         margin-top: 60px;
       }
     }
@@ -166,7 +180,6 @@ span > img {
 
     .gmap {
       display: none;
-
     }
 
     h3 {

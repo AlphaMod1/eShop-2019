@@ -1,11 +1,9 @@
-
-
 .contacts {
     width: 800px;
     color: white;
     margin: 0 calc(( 100% - 800px) / 2);
     height: unset;
-    min-height: 400px;
+    /* min-height: 400px; */ /* Nes pasidaro didelis tarpas esant desktopo rezoliucijoje */  
 }
 
 .contacts>.titleCon {
@@ -80,6 +78,14 @@
     .contacts {
         width: 300px;
         margin: 0 calc( (50% - 150px));
+    }
+    .contacts>.contactsCon>.truck-info {
+        width: 100%;
+        margin: 0px 0px;
+        padding: 10px 0px;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 15px;
+        box-shadow: black 0px 0px 10px;
     }
 }
 
