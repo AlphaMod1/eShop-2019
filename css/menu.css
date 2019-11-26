@@ -32,6 +32,17 @@
     transition: 0.3s;
 }
 
+@media all and (max-width:900px){
+    .meniu{
+        display: block;
+        margin-left: calc(50% - 150px);
+    }
+    .menu{
+        height: unset;
+        min-height: 400px;
+    }
+}
+
 .meniu:hover {
     box-shadow: inset 0px 0px 50px #fff;
 }
@@ -84,8 +95,7 @@
 
 .meniu input {
     margin: 10px;
-    padding: 10px;
-    
+    padding: 10px 30px;
 }
 
 
