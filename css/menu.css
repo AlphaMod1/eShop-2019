@@ -151,7 +151,7 @@
     border: 1px solid black;
     border-radius: 15px;
     position: absolute;
-    top: 7px;
+    top: 5px;
     cursor: pointer;
 }
 
@@ -288,6 +288,7 @@
     width: 100%;
     color: white;
     background-color: rgba(0,0,0,0.5);
+    border-bottom: 1px #fff solid;
 }
 
 .rightBottom {
@@ -348,6 +349,14 @@
                 1px -1px 0 #000, 
                 -1px 1px 0 #000, 
                 1px 1px 0 #000;
+}
+
+.hd-line{
+    border-bottom: 1px solid #fff;
+}
+
+.total-item{
+    margin-top: 3px;
 }
 
 #total{

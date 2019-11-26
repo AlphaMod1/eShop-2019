@@ -463,9 +463,9 @@ function updateCheckout() {
     let display = document.getElementById('shopCart');
     let totalPriceDiv = document.getElementById('total');
     let totalPrice = 0;
-    let HTML = `<div>Orderd Items</div>`;
+    let HTML = `<div class="hd-line">Orderd Items:</div>`;
     for (var i = 0; i < totalCart.length; i++) {
-        HTML += `<div>
+        HTML += `<div class="total-item">
         <span>${totalCart[i].item}</span>
         <span>${totalCart[i].count}x</span>
         <span>${totalCart[i].price.toFixed(2)}€</span>
