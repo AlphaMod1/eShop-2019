@@ -80,6 +80,10 @@ span > img {
     animation: fadeIn 1s;
   }
 
+  .mobileMap {
+    display: none;
+  }
+
   @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -98,36 +102,62 @@ span > img {
 
   @media all and (max-width: 700px) {
 
-    .gmap {
-      display: none;
-
-    }
-    .map {
-      background-image: url(../img/MobileMap.png);
-      background-repeat: no-repeat;  
-      background-position: center;
-
-    }
+  .map {
+    width: 500px;
+    margin-left: calc((100% - 500px) / 2);
+    min-height: 500px;
+  }
+      .pin1 {display: none;}
+      .pin2 {display: none;}
+      .pin3 {display: none;}
+   
+      .gmap {
+        display: none;
+      }
+      .mobileMap {
+        display: inline-block;
+        margin-left: calc((100% - 400px) / 2)
+      }
     h3 {
       font-size: 22px;
       margin-top: 90px;
     }
   }
-
   @media all and (max-width: 500px) {
+
+    .map {
+      width: 300px;
+      margin-left: calc((100% - 300px) / 2);
+      min-height: 400px;
+    }
+        .pin1 {display: none;}
+        .pin2 {display: none;}
+        .pin3 {display: none;}
+     
+        .gmap {
+          display: none;
+        }
+        .mobileMap {
+          display: inline-block;
+          width: 100%;
+          height: auto;
+          margin-left: calc((100% - 300px) / 2)
+        }
+      h3 {
+        font-size: 16px;
+        margin-top: 90px;
+      }
+    }
+  
+  @media all and (max-width: 300px) {
 
     .gmap {
       display: none;
 
     }
-    .map {
-      background-image: url(../img/MobileMap.png);
-      background-repeat: no-repeat;  
-      background-position: center;
 
-    }
     h3 {
-      font-size: 16px;
+      font-size: 12px;
       margin-top: 90px;
     }
   }

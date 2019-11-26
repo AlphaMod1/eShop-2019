@@ -1,7 +1,11 @@
+
+
 .contacts {
     width: 800px;
     color: white;
     margin: 0 calc(( 100% - 800px) / 2);
+    height: unset;
+    min-height: 400px;
 }
 
 .contacts>.titleCon {
@@ -74,8 +78,14 @@
 
 @media (max-width: 500px) {
     .contacts {
-        width: 400px;
+        width: 300px;
         margin: 0 calc( (50% - 200px));
-        /* height: 500px; */
+    }
+}
+
+@media (max-width: 300px) {
+    .contacts {
+        width: 200px;
+        margin: 0 calc( (50% - 200px));
     }
 }
