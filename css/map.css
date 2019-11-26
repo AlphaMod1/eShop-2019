@@ -84,3 +84,50 @@ span > img {
     from {opacity: 0;}
     to {opacity: 1;}
   }
+
+  @media all and (max-width: 900px) {
+
+    .map {
+      width: 700px;
+      margin-left: calc((100% - 700px) / 2);
+    }
+    h3 {
+      font-size: 36px;
+    }
+  }
+
+  @media all and (max-width: 700px) {
+
+    .gmap {
+      display: none;
+
+    }
+    .map {
+      background-image: url(../img/MobileMap.png);
+      background-repeat: no-repeat;  
+      background-position: center;
+
+    }
+    h3 {
+      font-size: 22px;
+      margin-top: 90px;
+    }
+  }
+
+  @media all and (max-width: 500px) {
+
+    .gmap {
+      display: none;
+
+    }
+    .map {
+      background-image: url(../img/MobileMap.png);
+      background-repeat: no-repeat;  
+      background-position: center;
+
+    }
+    h3 {
+      font-size: 16px;
+      margin-top: 90px;
+    }
+  }
