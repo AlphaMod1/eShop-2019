@@ -79,13 +79,13 @@
 @media (max-width: 500px) {
     .contacts {
         width: 300px;
-        margin: 0 calc( (50% - 200px));
+        margin: 0 calc( (50% - 150px));
     }
 }
 
 @media (max-width: 300px) {
     .contacts {
         width: 200px;
-        margin: 0 calc( (50% - 200px));
+        margin: 0 calc( (50% - 100px));
     }
 }

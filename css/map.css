@@ -144,7 +144,7 @@ span > img {
           margin-left: calc((100% - 300px) / 2)
         }
       h3 {
-        font-size: 16px;
+        font-size: 18px;
         margin-top: 60px;
       }
     }
@@ -157,7 +157,20 @@ span > img {
     }
 
     h3 {
-      font-size: 12px;
+      font-size: 18px;
+      margin-top: 60px;
+    }
+  }
+  
+  @media all and (max-width: 200px) {
+
+    .gmap {
+      display: none;
+
+    }
+
+    h3 {
+      font-size: 18px;
       margin-top: 60px;
     }
   }
