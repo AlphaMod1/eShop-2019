@@ -29,10 +29,10 @@ function renderError() {
 function renderTable(userid) {
     let HTML = `<tr>
                     <th>Order</th>
-                    <th>Laikas</th>
-                    <th>Vardas</th> 
-                    <th>Telefonas</th> 
-                    <th>Statusas</th> 
+                    <th>Time</th>
+                    <th>Name</th> 
+                    <th>Phone</th> 
+                    <th>Status</th> 
                 </tr>`;
     for (let i = 0; i < orders.length; i++) {
         if (orders[i].id == userid) {
@@ -63,8 +63,8 @@ function renderModal(id) {
     const contItem = document.querySelector('#item');
     const contMsg = document.querySelector('#msg');
 
-    let kiekisHTML = '<p>Amount:</p>'
-    let itemHTML = '<span onclick="closeModal();">X</span><p>Item:</p>'
+    let kiekisHTML = '<p class="amount-title" >Amount:</p>'
+    let itemHTML = '<span onclick="closeModal();">X</span><p class="item-title">Item:</p>'
     let msgHTML = '<p class="msg-p">';
 
     for (let i = 0; i < orders.length; i++) {
@@ -72,7 +72,7 @@ function renderModal(id) {
             for (let j = 0; j < orders[i].item.length; j++) {
                 let temp = orders[i].item[j].split('|');
                 kiekisHTML += `<p>${temp[0]}</p>`;
-                itemHTML += `<p>${temp[1]}</p>`;
+                itemHTML += `<p class="item-item">${temp[1]}</p>`;
             }
             msgHTML += orders[i].msg;
             contKiekis.innerHTML = kiekisHTML;

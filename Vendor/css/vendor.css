@@ -71,7 +71,10 @@ nav {
     height: 400px;
     display: none;
     z-index: 3;
-    background-color: white;
+    background-color: #e9d8d8;
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
     -webkit-box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.75);
     box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.75);
@@ -91,7 +94,8 @@ nav {
     width: 20%;
     height: 60%;
     border-right: dashed black 1px;
-    padding: 5px;
+    padding: 10px 5px;
+    text-align: center;
 }
 
 #item {
@@ -100,7 +104,17 @@ nav {
     float: left;
     width: 80%;
     height: 60%;
-    padding: 5px;
+    padding: 10px 5px 15px;
+    text-align: center;
+}
+
+.amount-title, .item-title {
+    font-weight: 900;
+    padding-bottom: 5px;
+}
+
+.item-item {
+    text-align: left;
 }
 
 #msg {
@@ -110,6 +124,9 @@ nav {
     height: 40%;
     border-top: solid black 1px;
     padding: 5px;
+    background-color: #131114;
+    color: #fff;
+    padding-left: 10px;
 }
 
 .btn-main {
