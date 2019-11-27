@@ -153,8 +153,8 @@ function renderSpecial(specialList) {
             <p class="special">${meniu.special1}</p>
             <p class="special">${meniu.special2}</p>
             <p class="special">${meniu.special3}</p>
-            <input type="button" onclick="showHiddenMenu();" class='btn-main btn-ice' value=' Order Now'${meniu.input}>
-            <a class="fullmeniu" onclick="showHiddenMenu(); renderMenu('${hidtru[i]}', '${hidtru2[i]}'); hiddenFunction(${i + 1}); genMenuTruckContacts(${i})"> ${meniu.FullMeniu}</a>
+            <input type="button" onclick="showHiddenMenu(); hiddenFunction(${i + 1}); genMenuTruckContacts(${i}); renderMenu('${hidtru[i]}', '${hidtru2[i]}');" class='btn-main btn-ice' value=' Order Now'${meniu.input}>
+            <a class="fullmeniu" onclick="showHiddenMenu(); hiddenFunction(${i + 1}); genMenuTruckContacts(${i}); renderMenu('${hidtru[i]}', '${hidtru2[i]}');"> ${meniu.FullMeniu}</a>
             </div>`;
     }
     return document.querySelector('#specialOffers').innerHTML = HTML;

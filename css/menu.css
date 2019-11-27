@@ -278,6 +278,7 @@
 .hiddenClass .imgsize {
     width: 180px;
     height: 120px;
+    cursor: pointer;
 }
 
 .hiddenClass {
@@ -366,7 +367,10 @@
 }
 
 .total-item{
-    margin-top: 3px;
+    margin: 10px 10px;
+    font-size: 20px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid white;
 }
 
 #total{
@@ -400,7 +404,7 @@
 }
 
 .btn-removeItem{
-    padding: 0px 7px;
+    padding: 3px 7px;
     border-radius: 50%;
     border: none;
     color: rgb(182, 0, 0);
@@ -408,4 +412,29 @@
     font-size: 30px;
     line-height: 24px;
     margin-top: -6px;
+    cursor: pointer;
+    float: right;
+}
+
+@media  all and  (max-width: 1000px) {
+    .hidden > .hidden-left {
+    display: block;
+    float: left;
+    width: 1000px;
+    height: 600px;
+    border: white 1px solid;
+    background-color: rgba(0,0,0,0.5);
+}
+    .hidden-navigation {
+        width: 1000px;
+    }
+
+    .menubtn3 {
+        left: 80%;
+    }
+
+    .hidden-right {
+        width: 100%;
+        display: block;
+    }
 }
