@@ -152,12 +152,35 @@ function renderSpecial(specialList) {
             <p class="price">${meniu.price} </p>
             <p class="special">${meniu.special1}</p>
             <p class="special">${meniu.special2}</p>
-            <p class="special">${meniu.special3}</p>
-            <input type="button" onclick="showHiddenMenu(); hiddenFunction(${i + 1}); genMenuTruckContacts(${i}); renderMenu('${hidtru[i]}', '${hidtru2[i]}');" class='btn-main btn-ice' value=' Order Now'${meniu.input}>
+            <input type="button" onclick="destroyCart(); showHiddenMenu(); hiddenFunction(${i + 1}); genMenuTruckContacts(${i}); renderMenu('${hidtru[i]}', '${hidtru2[i]}'); specialPack(${i})" class='btn-main btn-ice' value=' Order Now'${meniu.input}>
             <a class="fullmeniu" onclick="showHiddenMenu(); hiddenFunction(${i + 1}); genMenuTruckContacts(${i}); renderMenu('${hidtru[i]}', '${hidtru2[i]}');"> ${meniu.FullMeniu}</a>
             </div>`;
     }
     return document.querySelector('#specialOffers').innerHTML = HTML;
+}
+
+function specialPack(index) {
+
+    switch (index) {
+        case 0:
+            addToCart('truck1', 'HotDishes', '0');
+            addToCart('truck1', 'HotDishes', '0');
+            addToCart('truck1', 'Drinks', '2');
+            addToCart('truck1', 'Drinks', '2');
+            break;
+        case 1:
+            addToCart('truck2', 'Burgers', '0');
+            addToCart('truck2', 'Burgers', '0');
+            addToCart('truck2', 'Drinks', '1');
+            addToCart('truck2', 'Drinks', '1');
+            break;
+        case 2:
+            addToCart('truck3', 'Sushi', '1');
+            addToCart('truck3', 'Sushi', '1');
+            addToCart('truck3', 'Drinks', '1');
+            addToCart('truck3', 'Drinks', '1');
+            break;
+    }
 }
 
 // ********************Special offers end********************
@@ -310,6 +333,10 @@ function hiddenFunction(nav) {
     }
     catch  { }
     dropdown.classList.add('menu-show');
+}
+
+function destroyCart(){
+    totalCart = [];
 }
 
 function renderMenu(truck, cat) {
@@ -474,7 +501,7 @@ function updateCheckout() {
         totalPrice += totalCart[i].price;
     }
     display.innerHTML = HTML;
-    totalPriceDiv.innerHTML = 'Total: '+totalPrice.toFixed(2)+'€';
+    totalPriceDiv.innerHTML = 'Total: ' + totalPrice.toFixed(2) + '€';
 }
 
 function removeCart(item) {

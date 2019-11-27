@@ -202,7 +202,7 @@ const specialOffers = [
     {
         img: './img/BuritoLogo.png',
         name: 'Burito',
-        price: '9.99 €',
+        price: '10.40 €',
         special1: '2 x Buritos',
         special2: '2 x 0,33L Coca-Cola',
         special3: '2 x Desserts',
@@ -212,8 +212,8 @@ const specialOffers = [
     {
         img: './img/BurgerLogo.png',
         name: 'Burger',
-        price: '8.99 €',
-        special1: '2 x Burgers',
+        price: '9.60 €',
+        special1: '2 x Firminis burger',
         special2: '2 x 0,33L Coca-Cola',
         special3: '2 x Desserts',
         input: 'Order Now',
@@ -222,8 +222,8 @@ const specialOffers = [
     {
         img: './img/sushilogo.png',
         name: 'Sushi',
-        price: '12.99 €',
-        special1: '20 x Sushi',
+        price: '8.60 €',
+        special1: '2 x Yoko Simple',
         special2: '2 x 0,33L Coca-Cola',
         special3: '2 x Desserts',
         input: 'Order Now',

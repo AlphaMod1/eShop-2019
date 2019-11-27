@@ -60,12 +60,12 @@ function login() {
     const passwordF = document.querySelector('#password').value;
 
     if (emailF == 'admin@admin.com' && base64salt(passwordF) == 'YWRtaW4rKys=') {
-        location.replace('../admin/admin.html');
+        return location.replace('../admin/admin.html');
     }
 
     for (let i = 0; i < login_info.length; i++) {
         if (login_info[i].email == emailF && login_info[i].password == base64salt(passwordF)) {
-            location.replace('../Vendor/vendor.html#' + login_info[i].id);
+            return location.replace('../Vendor/vendor.html#' + login_info[i].id);
         }
     }
     return showError(4);
@@ -78,4 +78,17 @@ function validateEmail(email) {
 
 function base64salt(string) {
     return btoa(string + '+++');
+}
+
+function hoverHelp(val) {
+    let el = document.querySelector('.help-text');
+    switch (val) {
+        case 0:
+            el.style.display = 'inline-block';
+            break;
+        case 1:
+            el.style.display = 'none';
+            break;
+    }
+
 }
