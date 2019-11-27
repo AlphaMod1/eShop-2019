@@ -4,7 +4,7 @@
     height: unset;
     min-height: calc(100vh + 80px);
     overflow: hidden;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .container-career {
@@ -58,7 +58,7 @@ h3.title-career {
     margin: 8px 0px;
     outline: none;
     background-color: transparent;
-    box-shadow: inset 0px 0px 50px #302E31;
+    box-shadow: inset 0px 0px 50px rgb(133, 129, 134);
 }
 
 .form-row > textarea {
@@ -84,6 +84,7 @@ textarea {
     min-width: 300px;
     font-size: 16px;
     line-height: 20px;
+    resize: vertical;
 }
 
 
@@ -193,46 +194,14 @@ textarea {
     .cars {
         height: 100px;
     } 
-
-/* 
-    
-
-    .column {
-        padding: 0px;
-    }
- 
-    .form-row {
-        width: 300px;
-    }
-
-    .form-row > label {
-        width: 70px;
-        margin-right: 8px;
-    }
-    
-    .form-row > input, .form-row > textarea {
-        width: 200px;
-        height: 50px ;
-        font-size: 14px;
-        line-height: 16px;
-        margin: 8px 0px;
-    }
-
-    textarea {
-        min-width: 200px;
-    }
-
-    #submit-career {
-        margin-right: 160px;
-    }
-    
-    
-
-    */
-
 }
 
 @media all and (max-width: 600px) {
+
+    .career{
+        padding-top: 10px;
+    }
+
 
     .container-career {
         flex-direction: column;

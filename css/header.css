@@ -105,6 +105,35 @@ nav {
 }
 
 @media all and (max-width: 900px) {
+    .link-item {
+        font-size: 14px;
+        line-height: 26px;
+        color: #5d615d;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 900;
+        margin-right: 15px;
+        background-color: rgb(241, 235, 235);
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: right;
+    }
+
+    .main-nav {
+        position: relative;
+    }
+    
+    #dropdown-trucks {
+        position: absolute;
+        left: -120px;
+        top: -0px;
+    }
+
+    .link-item:first-child {
+        padding-right: 2px;
+        padding-top: 5px;
+    }
     header {
         height: 50px;
         display: grid;
