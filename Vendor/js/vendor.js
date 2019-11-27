@@ -63,7 +63,7 @@ function renderModal(id) {
     const contItem = document.querySelector('#item');
     const contMsg = document.querySelector('#msg');
 
-    let kiekisHTML = '<p class="amount-title" >Amount:</p>'
+    let kiekisHTML = '<p class="amount-title" >Quantity:</p>'
     let itemHTML = '<span onclick="closeModal();">X</span><p class="item-title">Item:</p>'
     let msgHTML = '<p class="msg-p">';
 

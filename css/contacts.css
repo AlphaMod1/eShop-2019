@@ -40,6 +40,14 @@
     text-transform: uppercase;
 }
 
+.contactsCon a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+}
+
 @media (max-width: 1000px) {
     .contacts {
         width: 600px;

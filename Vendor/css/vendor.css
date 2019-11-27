@@ -71,9 +71,8 @@ nav {
     height: 400px;
     display: none;
     z-index: 3;
-    background-color: #e9d8d8;
-    border-radius: 20px;
-    border: none;
+    border-radius: 10px;
+    border:none;
     overflow: hidden;
     -webkit-box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.75);
@@ -96,6 +95,7 @@ nav {
     border-right: dashed black 1px;
     padding: 10px 5px;
     text-align: center;
+    background-color: #e9d8d8;
 }
 
 #item {
@@ -106,6 +106,7 @@ nav {
     height: 60%;
     padding: 10px 5px 15px;
     text-align: center;
+    background-color: #e9d8d8;
 }
 
 .amount-title, .item-title {
