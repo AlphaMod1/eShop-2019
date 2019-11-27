@@ -8,13 +8,23 @@
     <link rel='shortcut icon' type='image/x-icon' href='../img/favicon.ico' />
     <title>Document</title>
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/button.css">
     <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
     <div class="form">
-        <h1><a href="../index.html">LOGO</a></h1>
+        <h1><a href="../index.html">Login</a></h1>
+        <div class="help">
+            <i class="fa fa-question-circle" onmouseover="hoverHelp(0);"></i>
+            <div class="help-text" onmouseout="hoverHelp(1);">
+                <p>It looks like you forgot your password.</p>
+                <p>Don't worry, here are some accounts for you:</p>
+                <p>admin@admin.com | admin</p>
+                <p>vendort1@mail.com | password</p>
+            </div>
+        </div>
         <span>E-mail:</span>
         <input id="email" placeholder="Enter your email..." type="email">
         <span>Password:</span>
