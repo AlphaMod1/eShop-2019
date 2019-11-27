@@ -499,3 +499,58 @@
         padding: 0px 10px;
     }
 }
+
+/*  
+@media all and (max-width: 400px) {              Reikia nuspresti kaip daryti ar is eiles vienas po kitu ar kaip stulpelius du
+
+    #left-menu {
+        top: 170px;
+   }
+    .hidden {
+        width: 1000px;
+    }
+        .hidden>.hidden-left {
+            display: inline-block;
+            height: 620px;
+            border: white 1px solid;
+            margin-left: 135px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+     }
+
+     .menuName {
+         font-size: 25px;
+         margin-bottom: 10px;
+     }
+
+     .hidden>.hidden-right {
+        display: grid;
+        grid-template-areas: " rightTop rightBottom";
+        height: 400px;
+        float: center;
+        border: white 1px solid;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        font-size: 30px;
+        width: 730px;
+        margin-right: 135px;
+        
+  } 
+
+    .rightTop {
+        height: 100%;
+        width: 200px;
+    }
+
+    .rightBottom {
+        height: 400px;
+        border-left: white 1px solid;
+        width: 530px;
+    }  
+
+    .btn-removeItem {
+        float: right;
+        margin-right: 10px;
+        padding: 0px 10px;
+    }
+} */
