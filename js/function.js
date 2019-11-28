@@ -77,8 +77,8 @@ function genFooterTruckContacts() {
         HTML += `<div class="truck-info">
         <img src="${specialOffers[i].img}" alt="Logo">
         <h5>${trucks[i].name}</h5> 
-        <p>${trucks[i].tel}</p> 
-        <p>${trucks[i].email}</p></div>`;
+        <p><a href="tel: ${trucks[i].tel}">${trucks[i].tel}</a></p> 
+        <p><a href="mailto:${trucks[i].email}" target="_blank">${trucks[i].email}</a></p></div>`;
     }
     contacts.innerHTML = HTML;
 }
