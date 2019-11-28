@@ -22,7 +22,7 @@
         <div id="current-container">Dashboard</div>
     </div>
 
-    <div class="nav left-menu" id="left-menu">
+    <div onclick="closeModal();" class="nav left-menu" id="left-menu">
         <div class="left_list-logo">
             <i class="fa fa-truck"></i>
             <span>Food Trucks</span>
@@ -48,7 +48,7 @@
             <span>Inbox</span>
         </div>
 
-<!-- \\\\\\\\\\\\FOOTER//////////// -->
+        <!-- \\\\\\\\\\\\FOOTER//////////// -->
         <div class="foot">
             <div class="fcontacts">
                 <h4>UAB "Maisto furgonai"</h4>
@@ -69,7 +69,7 @@
             <div class="dash-box dash-box3">Complaints</div>
         </div>
 
-        <div class="container cont-users">           
+        <div class="container cont-users">
             <table id="users-table">
                 <tr>
                     <th>ID:</th>
@@ -80,7 +80,7 @@
             </table>
         </div>
 
-        <div class="container cont-vendors">           
+        <div class="container cont-vendors">
             <table id="vendor-table">
                 <tr>
                     <th>ID:</th>
@@ -93,7 +93,7 @@
 
         </div>
 
-        <div class="container cont-edit">           
+        <div class="container cont-edit">
             <table id="edit-table">
                 <tr>
                     <th>ID:</th>
@@ -107,7 +107,7 @@
 
         </div>
 
-        <div class="container cont-inbox">          
+        <div class="container cont-inbox">
             <table id="inbox-table">
                 <tr>
                     <th>From:</th>
@@ -116,6 +116,43 @@
                 </tr>
             </table>
             <i onclick="sendMailModal();" class="sendm"> Send Message</i>
+        </div>
+    </div>
+
+
+    <!-- modals -->
+
+    <div class="lightbox" onclick="closeModal();" id="lightbox-adduser"></div>
+    <div class="modal" id="modal-adduser">
+        <div>
+            <p>Name:</p>
+            <input type="text">
+        </div>
+        <div>
+            <p>Email:</p>
+            <input type="text">
+        </div>
+        <div>
+            <p>Phone:</p>
+            <input type="text">
+        </div>
+        <div>
+            <input class='btn-main' type="button" onclick="closeModal();" value="Add vendor">
+        </div>
+    </div>
+
+    <div class="lightbox" onclick="closeModal();" id="lightbox-sendmail"></div>
+    <div class="modal" id="modal-sendmail">
+        <div>
+            <p>Email:</p>
+            <input type="text">
+        </div>
+        <div>
+            <p>Message:</p>
+            <textarea name="" id="msg-area" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input class='btn-main' type="button" onclick="closeModal();" value="Send Message">
         </div>
     </div>
 

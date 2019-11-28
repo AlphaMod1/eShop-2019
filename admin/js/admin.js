@@ -143,10 +143,22 @@ function renderFor_inbox() {
     }
 }
 
-function addNewUserModal(){
-
+function addNewUserModal() {
+    document.querySelector('#modal-adduser').style.display = 'block';
+    document.querySelector('#lightbox-adduser').style.display = 'block';
+    // document.querySelector('#left-menu').style.position = 'unset';
 }
 
-function sendMailModal(){
+function sendMailModal() {
+    document.querySelector('#modal-sendmail').style.display = 'block';
+    document.querySelector('#lightbox-sendmail').style.display = 'block';
+    // document.querySelector('#left-menu').style.position = 'unset';
+}
 
+function closeModal(){
+    document.querySelector('#modal-adduser').style.display = 'none';
+    document.querySelector('#lightbox-adduser').style.display = 'none';
+    document.querySelector('#modal-sendmail').style.display = 'none';
+    document.querySelector('#lightbox-sendmail').style.display = 'none';
+    // document.querySelector('#left-menu').style.position = 'fixed';
 }

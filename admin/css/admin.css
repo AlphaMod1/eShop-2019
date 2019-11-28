@@ -75,7 +75,7 @@ span {
     height: 60px;
     background-color: #4a516b;
     padding-left: 10px;
-    color:#ffffff;
+    color: #ffffff;
 }
 
 .left_list-logo, .left_list-logo * {
@@ -83,11 +83,11 @@ span {
 }
 
 .left_list-logo span {
-    font-size: 35px;
+    font-size: 20px;
     line-height: 55px;
 }
 
-.left_list-logo > .fa {
+.left_list-logo>.fa {
     font-size: 35px;
     line-height: 50px;
 }
@@ -114,31 +114,32 @@ span {
 
 .left_list-item-active {
     background: #545f8c;
-    color:#ffffff;
+    color: #ffffff;
 }
 
-.left_list-item:hover{
+.left_list-item:hover {
     background: #545f8c;
-    color:#ffffff;
+    color: #ffffff;
 }
 
-.container{
+.container {
     display: none;
 }
 
-.show-container{
+.show-container {
     display: inline-block!important;
 }
 
-.fa-plus{
+.fa-plus {
     cursor: pointer;
     font-size: 24px;
 }
+
 /* Tables*/
 
 .cont-users {
-width: 100%;
-padding: 20px;
+    width: 100%;
+    padding: 20px;
 }
 
 th {
@@ -154,7 +155,7 @@ td {
     border-bottom: solid 1px #000;
 }
 
-.cont-vendors > .fa-plus {
+.cont-vendors>.fa-plus {
     text-transform: uppercase;
     padding: 10px;
     margin: 20px 290px;
@@ -168,7 +169,7 @@ td {
     padding: 20px;
 }
 
-.cont-edit > .fa-plus {
+.cont-edit>.fa-plus {
     text-transform: uppercase;
     padding: 10px;
     text-align: center;
@@ -182,7 +183,7 @@ td {
     padding: 30px;
 }
 
-.cont-inbox > .sendm {
+.cont-inbox>.sendm {
     display: inline-block;
     text-transform: uppercase;
     text-align: center;
@@ -203,19 +204,19 @@ td {
 
 /* Footer */
 
-.foot{
+.foot {
     margin: 250px 0;
     width: 100%;
 }
 
-.foot > .fcontacts {
+.foot>.fcontacts {
     border-top: solid 1px #000000;
-    color:#fff;
+    color: #fff;
 }
 
 /* Content */
 
-.dash-box{
+.dash-box {
     display: inline-block;
     text-align: center;
     font-size: 30px;
@@ -223,7 +224,7 @@ td {
     background-color: #fff;
     background-image: url(../../img/chart.png);
     border-radius: 10px;
-    border: 2px solid #ccc;    
+    border: 2px solid #ccc;
     width: 300px;
     height: 500px;
     margin: 50px 0px 50px 90px;
@@ -236,7 +237,6 @@ td {
 .dash-box3 {
     background-image: url(../../img/chart3.png);
 }
-
 
 /* /////////////// Buttons \\\\\\\\\\\\\ */
 
@@ -262,37 +262,38 @@ td {
 
 /* /////////////// Buttons End \\\\\\\\\\\\\ */
 
-@media (max-width: 850px){
-    th {font-size: 20px;}
-    td {font-size: 20px;}
-
-.cont-vendors > .fa-plus {
-    margin: 20px 90px;
-    font-size: 15px;
-}
-.cont-edit > .fa-plus {
-    margin: 20px 90px;
-    font-size: 15px;
-}
+@media (max-width: 850px) {
+    th {
+        font-size: 20px;
+    }
+    td {
+        font-size: 20px;
+    }
+    .cont-vendors>.fa-plus {
+        margin: 20px 90px;
+        font-size: 15px;
+    }
+    .cont-edit>.fa-plus {
+        margin: 20px 90px;
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 750px) {
     body {
         padding-left: 120px;
     }
-
     th {
         font-size: 15px;
         margin: 3px 10px;
         padding: 5px 5px;
     }
-        td {
+    td {
         font-size: 15px;
         padding: 3px 10px;
         margin: 0px 10px;
         border-bottom: solid 1px #000;
     }
-
     #today {
         display: none;
     }
@@ -301,11 +302,10 @@ td {
         width: 150px;
         color: #888888;
     }
-
     .left_list-logo span {
         display: none;
     }
-    .dash-box{
+    .dash-box {
         margin: 50px 0px 50px 0px;
     }
     .foot {
@@ -313,8 +313,7 @@ td {
         font-size: 12px;
         margin: 220px 0;
         width: 100%;
-        
-      }
+    }
     .top-menu {
         padding-top: 10px;
         padding-right: 200px;
@@ -325,7 +324,6 @@ td {
         height: 60px;
         width: 100%;
     }
-
     .btn-logout {
         font-weight: bold;
         font-size: 10px;
@@ -333,35 +331,78 @@ td {
         border-radius: 10px;
         float: right;
     }
-
     .btn-delete {
         font-size: 10px;
     }
-    
     .btn-open {
-       font-size: 10px;
+        font-size: 10px;
     }
-
-    .cont-inbox > .sendm {
+    .cont-inbox>.sendm {
         padding: 5px;
         margin-top: 10px;
         margin-left: 30px;
         font-size: 15px;
         font-weight: bold;
         border-radius: 15px;
-        }
-    
+    }
     #current-container {
         font-size: 10px;
         margin: 0 0;
-        }
-    
-    .cont-vendors > .fa-plus {
-            margin: 20px 90px;
-            font-size: 15px;
-        }
-    .cont-edit > .fa-plus {
-            margin: 20px 90px;
-            font-size: 15px;
-        }
+    }
+    .cont-vendors>.fa-plus {
+        margin: 20px 90px;
+        font-size: 15px;
+    }
+    .cont-edit>.fa-plus {
+        margin: 20px 90px;
+        font-size: 15px;
+    }
+}
+
+.lightbox {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 250px);
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+.modal {
+    padding: 20px;
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: calc(50% + (250px / 4));
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    display: none;
+    z-index: 3;
+    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+    -webkit-box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.75);
+}
+
+.modal .btn-main {
+    background: #545f8c;
+    color: #fff;
+}
+
+#modal-adduser .btn-main {
+    margin-top: 200px;
+    margin-left:240px;
+}
+
+#modal-sendmail .btn-main {
+    margin-top: 100px;
+    margin-left:240px;
+}
+
+#msg-area {
+    resize: none;
 }
