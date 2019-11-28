@@ -278,6 +278,7 @@
 .hiddenClass .imgsize {
     width: 180px;
     height: 120px;
+    cursor: pointer;
 }
 
 .hiddenClass {
@@ -366,7 +367,10 @@
 }
 
 .total-item{
-    margin-top: 3px;
+    margin: 10px 10px;
+    font-size: 20px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid white;
 }
 
 #total{
@@ -387,25 +391,437 @@
     padding: 5px 0px;
 }
 
-@media all and (max-width: 400px) {
-
-    .meniu_row>h3 {
-      font-size: 32px;
-      margin-top: -50px;
+@media all and (max-width: 950px) {
+   
+   .hidden {
+       zoom: 70%;
+    }
+    .hidden-btn {
+        display: inline-block;
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 15px;
+        position: absolute;
+        top: 5px;
+        cursor: pointer;
     }
 }
 
-.hd-transition{
-    transition: 0.3s;
+@media all and (max-width: 750px) {
+   
+    .hidden {
+        margin: 0 calc((100% - 1000px) / 2) 50px;
+        zoom: 60%;
+     }
+     .hidden-btn {
+        display: inline-block;
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 15px;
+        position: absolute;
+        top: 5px;
+        cursor: pointer;
+    }
+ }
+
+ @media all and (max-width: 650px) {
+    .hidden {
+        margin: 0 calc((100% - 1000px) / 2) 50px;
+        zoom: 50%;
+     }
+     .hidden-btn {
+        display: inline-block;
+        padding: 16px;
+        font-size: 26px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 15px;
+        position: absolute;
+        top: 5px;
+        cursor: pointer;
+    }
+    .ContTel {
+        font-size: 26px;
+    }
+ }
+
+ @media all and (max-width: 530px) {
+
+    #left-menu {
+        top: 180px;
+        left: 150px;
+   }
+    .hidden {
+        width: 100%;
+    }
+        .hidden>.hidden-left {
+            width:85%;
+            display: inline-block;
+            height: 620px;
+            border: white 1px solid;
+            margin-left: 7.5%;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+     }
+     .hidden-navigation {
+        min-width: 845px;
+     }
+
+     .menuName {
+         font-size: 25px;
+         margin-bottom: 10px;
+     }
+
+     .hidden>.hidden-right {
+        display: grid;
+        grid-template-areas: " rightTop 
+        rightBottom"
+        ;
+
+        width: 85%;
+        height: 585px;
+        float: center;
+        border: white 1px solid;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        font-size: 30px;
+        margin: 0 7.5%;
+        
+  } 
+
+    .rightTop {
+        height: 100%;
+    }
+
+    .rightBottom {
+        height: 430px;
+        border-left: white 1px solid;
+    }  
+
+    .btn-removeItem {
+        float: right;
+        margin-right: 10px;
+        padding: 0px 10px;
+    }
+    .menubtn1 {
+        margin-left: 45px;
+    }
+    .menubtn2 {
+        margin-left: 45px;
+    }
+    .menubtn3 {
+        margin-left: 45px;
+    }
 }
 
-.btn-removeItem{
-    padding: 0px 7px;
-    border-radius: 50%;
-    border: none;
-    color: rgb(182, 0, 0);
-    background-color: transparent;
-    font-size: 30px;
-    line-height: 24px;
-    margin-top: -6px;
+
+
+
+@media all and (max-width: 500px) {
+
+    #left-menu {
+        top: 180px;
+        left: 120px;
+   }
+    .hidden {
+        width: 100%;
+    }
+        .hidden>.hidden-left {
+            width:85%;
+            display: inline-block;
+            height: 620px;
+            border: white 1px solid;
+            margin-left: 7.5%;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+     }
+     .hidden-navigation {
+        min-width: 845px;
+     }
+
+     .menuName {
+         font-size: 25px;
+         margin-bottom: 10px;
+     }
+
+     .hidden>.hidden-right {
+        display: grid;
+        grid-template-areas: " rightTop 
+        rightBottom"
+        ;
+
+        width: 85%;
+        height: 585px;
+        float: center;
+        border: white 1px solid;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        font-size: 30px;
+        margin: 0 7.5%;
+        
+  } 
+
+    .rightTop {
+        height: 100%;
+    }
+
+    .rightBottom {
+        height: 430px;
+        border-left: white 1px solid;
+    }  
+
+    .btn-removeItem {
+        float: right;
+        margin-right: 10px;
+        padding: 0px 10px;
+    }
+    .menubtn1 {
+        margin-left: 20px;
+    }
+    .menubtn2 {
+        margin-left: 20px;
+    }
+    .menubtn3 {
+        margin-left: 20px;
+    }
+}
+
+
+
+@media all and (max-width: 470px) {
+
+    #left-menu {
+        top: 180px;
+        left: 120px;
+   }
+    .hidden {
+        width: 100%;
+    }
+        .hidden>.hidden-left {
+            width:85%;
+            display: inline-block;
+            height: 620px;
+            border: white 1px solid;
+            margin-left: 12.5%;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+     }
+     .hidden-navigation {
+        min-width: 845px;
+     }
+
+     .menuName {
+         font-size: 25px;
+         margin-bottom: 10px;
+     }
+
+     .hidden>.hidden-right {
+        display: grid;
+        grid-template-areas: " rightTop 
+        rightBottom"
+        ;
+
+        width: 85%;
+        height: 585px;
+        float: center;
+        border: white 1px solid;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        font-size: 30px;
+        margin: 0 2.5%;
+    
+        
+  } 
+
+    .rightTop {
+        height: 100%;
+    }
+
+    .rightBottom {
+        height: 430px;
+        border-left: white 1px solid;
+    }  
+
+    .btn-removeItem {
+        float: right;
+        margin-right: 10px;
+        padding: 0px 10px;
+    }
+    .menubtn1 {
+        margin-left: 20px;
+    }
+    .menubtn2 {
+        margin-left: 20px;
+    }
+    .menubtn3 {
+        margin-left: 20px;
+    }
+}
+
+
+@media all and (max-width: 440px) {
+
+    #left-menu {
+        top: 180px;
+        left: 100px;
+   }
+    .hidden {
+        width: 100%;
+        margin-left: -4.5%;
+
+    }
+        .hidden>.hidden-left {
+            width:85%;
+            display: inline-block;
+            height: 620px;
+            border: white 1px solid;
+            margin-left: 12.5%;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+     }
+     .hidden-navigation {
+        left: -30px;
+     }
+
+     .menuName {
+         font-size: 25px;
+         margin-bottom: 10px;
+     }
+
+     .hidden>.hidden-right {
+        display: grid;
+        grid-template-areas: " rightTop 
+        rightBottom"
+        ;
+
+        width: 85%;
+        height: 585px;
+        float: center;
+        border: white 1px solid;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        font-size: 30px;
+        margin: 0 2.5%;
+    
+        
+  } 
+
+    .rightTop {
+        height: 100%;
+    }
+
+    .rightBottom {
+        height: 430px;
+        border-left: white 1px solid;
+    }  
+
+    .btn-removeItem {
+        float: right;
+        margin-right: 10px;
+        padding: 0px 10px;
+    }
+    .menubtn1 {
+        margin-left: 20px;
+    }
+    .menubtn2 {
+        margin-left: 20px;
+    }
+    .menubtn3 {
+        margin-left: 20px;
+    }
+}
+
+
+@media all and (max-width: 440px) {
+
+    #hid {
+        
+    }
+
+    #left-menu {
+        top: 180px;
+        left: 35px;
+   }
+    .hidden {
+        width: 100%;
+        margin-left: -4.5%;
+
+    }
+        .hidden>.hidden-left {
+            width:85%;
+            display: inline-block;
+            height: 620px;
+            border: white 1px solid;
+            margin-left: 12.5%;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+     }
+     .hidden-navigation {
+        left: -30px;
+     }
+
+     .menuName {
+         font-size: 25px;
+         margin-bottom: 10px;
+     }
+
+     .hidden>.hidden-right {
+        display: grid;
+        grid-template-areas: " rightTop 
+        rightBottom"
+        ;
+
+        width: 85%;
+        height: 585px;
+        float: center;
+        border: white 1px solid;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        font-size: 30px;
+        margin: 0 2.5%;
+    
+  } 
+
+  .menu-dropdown {
+      padding: 0px;
+      margin-left: 0px;
+  }
+
+  .menu-dropdown > a {
+      width: 15%;
+  }
+
+    .rightTop {
+        height: 100%;
+    }
+
+    .rightBottom {
+        height: 430px;
+        border-left: white 1px solid;
+    }  
+
+    .btn-removeItem {
+        float: right;
+        margin-right: 10px;
+        padding: 0px 10px;
+    }
+    .menubtn1 {
+        margin-left: -15px;
+        font-size: 20px;
+    }
+    .menubtn2 {
+        margin-left: -55px;
+        font-size: 20px;
+    }
+    .menubtn3 {
+        margin-left: -115px;
+        font-size: 20px;
+    }
+    .imgsize {
+        width: 170px!important;
+    }
 }

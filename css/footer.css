@@ -32,6 +32,11 @@
     padding: 20px;
 }
 
+.fcontacts a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .foot p {
     padding: 3px 0;
 }

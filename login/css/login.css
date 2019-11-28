@@ -41,7 +41,7 @@ body {
     font-size: 18px;
 }
 
-.form>div {
+.form>.login-bottom {
     margin-top: 20px;
 }
 
@@ -67,6 +67,29 @@ body {
     float: left;
     font-size: 15px;
 }
+
+.help{
+    position: relative;
+    float: right;
+    display: inline-block;
+    margin-top: -30px;
+    margin-right: -5px;
+    color: #013A6B;
+    font-size: 18px;
+}
+
+.help-text{
+    display: none;
+    position: absolute;
+    left: -5px;
+    top: -115px;
+    width: 320px;
+    color: #013A6B;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+}
+
 
 /* 
 @media only screen and (max-width: 400px) {

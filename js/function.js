@@ -13,7 +13,7 @@ function genHeaderDropdownTrucks() {
     let dropdown = document.getElementById('dropdown-trucks');
     let HTML = '';
     for (let i = 0; i < trucks.length; i++) {
-        HTML += `<a href="#">${trucks[i].name}</a>`;
+        HTML += `<a href="../index.html#dropdownToSpecialOffers">${trucks[i].name}</a>`;
     }
     dropdown.innerHTML = HTML;
 }
@@ -77,8 +77,8 @@ function genFooterTruckContacts() {
         HTML += `<div class="truck-info">
         <img src="${specialOffers[i].img}" alt="Logo">
         <h5>${trucks[i].name}</h5> 
-        <p>${trucks[i].tel}</p> 
-        <p>${trucks[i].email}</p></div>`;
+        <p><a href="tel: ${trucks[i].tel}">${trucks[i].tel}</a></p> 
+        <p><a href="mailto:${trucks[i].email}" target="_blank">${trucks[i].email}</a></p></div>`;
     }
     contacts.innerHTML = HTML;
 }
@@ -152,12 +152,35 @@ function renderSpecial(specialList) {
             <p class="price">${meniu.price} </p>
             <p class="special">${meniu.special1}</p>
             <p class="special">${meniu.special2}</p>
-            <p class="special">${meniu.special3}</p>
-            <input type="button" onclick="showHiddenMenu();" class='btn-main btn-ice' value=' Order Now'${meniu.input}>
-            <a class="fullmeniu" onclick="showHiddenMenu(); renderMenu('${hidtru[i]}', '${hidtru2[i]}'); hiddenFunction(${i + 1}); genMenuTruckContacts(${i})"> ${meniu.FullMeniu}</a>
+            <input type="button" onclick="destroyCart(); showHiddenMenu(); hiddenFunction(${i + 1}); genMenuTruckContacts(${i}); renderMenu('${hidtru[i]}', '${hidtru2[i]}'); specialPack(${i})" class='btn-main btn-ice' value=' Order Now'${meniu.input}>
+            <a class="fullmeniu" onclick="showHiddenMenu(); hiddenFunction(${i + 1}); genMenuTruckContacts(${i}); renderMenu('${hidtru[i]}', '${hidtru2[i]}');"> ${meniu.FullMeniu}</a>
             </div>`;
     }
     return document.querySelector('#specialOffers').innerHTML = HTML;
+}
+
+function specialPack(index) {
+
+    switch (index) {
+        case 0:
+            addToCart('truck1', 'HotDishes', '0');
+            addToCart('truck1', 'HotDishes', '0');
+            addToCart('truck1', 'Drinks', '2');
+            addToCart('truck1', 'Drinks', '2');
+            break;
+        case 1:
+            addToCart('truck2', 'Burgers', '0');
+            addToCart('truck2', 'Burgers', '0');
+            addToCart('truck2', 'Drinks', '1');
+            addToCart('truck2', 'Drinks', '1');
+            break;
+        case 2:
+            addToCart('truck3', 'Sushi', '1');
+            addToCart('truck3', 'Sushi', '1');
+            addToCart('truck3', 'Drinks', '1');
+            addToCart('truck3', 'Drinks', '1');
+            break;
+    }
 }
 
 // ********************Special offers end********************
@@ -310,6 +333,10 @@ function hiddenFunction(nav) {
     }
     catch  { }
     dropdown.classList.add('menu-show');
+}
+
+function destroyCart(){
+    totalCart = [];
 }
 
 function renderMenu(truck, cat) {
@@ -474,7 +501,7 @@ function updateCheckout() {
         totalPrice += totalCart[i].price;
     }
     display.innerHTML = HTML;
-    totalPriceDiv.innerHTML = 'Total: '+totalPrice.toFixed(2)+'€';
+    totalPriceDiv.innerHTML = 'Total: ' + totalPrice.toFixed(2) + '€';
 }
 
 function removeCart(item) {
