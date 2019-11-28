@@ -391,50 +391,166 @@
     padding: 5px 0px;
 }
 
-@media all and (max-width: 400px) {
-
-    .meniu_row>h3 {
-      font-size: 32px;
-      margin-top: -50px;
+@media all and (max-width: 950px) {
+   
+   .hidden {
+       zoom: 70%;
+    }
+    .hidden-btn {
+        display: inline-block;
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 15px;
+        position: absolute;
+        top: 5px;
+        cursor: pointer;
     }
 }
 
-.hd-transition{
-    transition: 0.3s;
-}
+@media all and (max-width: 750px) {
+   
+    .hidden {
+        margin: 0 calc((100% - 1000px) / 2) 50px;
+        zoom: 60%;
+     }
+     .hidden-btn {
+        display: inline-block;
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 15px;
+        position: absolute;
+        top: 5px;
+        cursor: pointer;
+    }
+ }
 
-.btn-removeItem{
-    padding: 3px 7px;
-    border-radius: 50%;
-    border: none;
-    color: rgb(182, 0, 0);
-    background-color: transparent;
-    font-size: 30px;
-    line-height: 24px;
-    margin-top: -6px;
-    cursor: pointer;
-    float: right;
-}
+ @media all and (max-width: 650px) {
+    .hidden {
+        margin: 0 calc((100% - 1000px) / 2) 50px;
+        zoom: 50%;
+     }
+     .hidden-btn {
+        display: inline-block;
+        padding: 16px;
+        font-size: 26px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 15px;
+        position: absolute;
+        top: 5px;
+        cursor: pointer;
+    }
+    .ContTel {
+        font-size: 26px;
+    }
+ }
 
-@media  all and  (max-width: 1000px) {
-    .hidden > .hidden-left {
-    display: block;
-    float: left;
-    width: 1000px;
-    height: 600px;
-    border: white 1px solid;
-    background-color: rgba(0,0,0,0.5);
-}
-    .hidden-navigation {
+ @media all and (max-width: 530px) {
+
+    #left-menu {
+        top: 170px;
+   }
+    .hidden {
         width: 1000px;
     }
+        .hidden>.hidden-left {
+            display: inline-block;
+            height: 620px;
+            border: white 1px solid;
+            margin-left: calc((100% - 750px) / 2);
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+     }
 
-    .menubtn3 {
-        left: 80%;
+     .menuName {
+         font-size: 25px;
+         margin-bottom: 10px;
+     }
+
+     .hidden>.hidden-right {
+        display: grid;
+        grid-template-areas: " rightTop rightBottom";
+        width: 100%;
+        height: 620px;
+        float: center;
+        border: white 1px solid;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        font-size: 30px;
+        
+  } 
+
+    .rightTop {
+        height: 100%;
     }
 
-    .hidden-right {
-        width: 100%;
-        display: block;
+    .rightBottom {
+        height: 610px;
+        border-left: white 1px solid;
+    }  
+
+    .btn-removeItem {
+        float: right;
+        margin-right: 10px;
+        padding: 0px 10px;
     }
 }
+
+/*  
+@media all and (max-width: 400px) {              Reikia nuspresti kaip daryti ar is eiles vienas po kitu ar kaip stulpelius du
+
+    #left-menu {
+        top: 170px;
+   }
+    .hidden {
+        width: 1000px;
+    }
+        .hidden>.hidden-left {
+            display: inline-block;
+            height: 620px;
+            border: white 1px solid;
+            margin-left: 135px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+     }
+
+     .menuName {
+         font-size: 25px;
+         margin-bottom: 10px;
+     }
+
+     .hidden>.hidden-right {
+        display: grid;
+        grid-template-areas: " rightTop rightBottom";
+        height: 400px;
+        float: center;
+        border: white 1px solid;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        font-size: 30px;
+        width: 730px;
+        margin-right: 135px;
+        
+  } 
+
+    .rightTop {
+        height: 100%;
+        width: 200px;
+    }
+
+    .rightBottom {
+        height: 400px;
+        border-left: white 1px solid;
+        width: 530px;
+    }  
+
+    .btn-removeItem {
+        float: right;
+        margin-right: 10px;
+        padding: 0px 10px;
+    }
+} */

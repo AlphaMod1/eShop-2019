@@ -109,6 +109,7 @@ span > img {
     width: 500px;
     margin-left: calc((100% - 500px) / 2);
     min-height: 500px;
+    padding: 0px 0;
   }
       .pin1 {display: none;}
       .pin2 {display: none;}
