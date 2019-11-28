@@ -452,18 +452,23 @@
  @media all and (max-width: 530px) {
 
     #left-menu {
-        top: 170px;
+        top: 180px;
+        left: 150px;
    }
     .hidden {
-        width: 1000px;
+        width: 100%;
     }
         .hidden>.hidden-left {
+            width:85%;
             display: inline-block;
             height: 620px;
             border: white 1px solid;
-            margin-left: calc((100% - 750px) / 2);
+            margin-left: 7.5%;
             border-top-left-radius: 0px;
             border-bottom-left-radius: 0px;
+     }
+     .hidden-navigation {
+        min-width: 845px;
      }
 
      .menuName {
@@ -473,14 +478,18 @@
 
      .hidden>.hidden-right {
         display: grid;
-        grid-template-areas: " rightTop rightBottom";
-        width: 100%;
-        height: 620px;
+        grid-template-areas: " rightTop 
+        rightBottom"
+        ;
+
+        width: 85%;
+        height: 585px;
         float: center;
         border: white 1px solid;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
         font-size: 30px;
+        margin: 0 7.5%;
         
   } 
 
@@ -489,7 +498,7 @@
     }
 
     .rightBottom {
-        height: 610px;
+        height: 430px;
         border-left: white 1px solid;
     }  
 
@@ -497,25 +506,41 @@
         float: right;
         margin-right: 10px;
         padding: 0px 10px;
+    }
+    .menubtn1 {
+        margin-left: 45px;
+    }
+    .menubtn2 {
+        margin-left: 45px;
+    }
+    .menubtn3 {
+        margin-left: 45px;
     }
 }
 
-/*  
-@media all and (max-width: 400px) {              Reikia nuspresti kaip daryti ar is eiles vienas po kitu ar kaip stulpelius du
+
+
+
+@media all and (max-width: 500px) {
 
     #left-menu {
-        top: 170px;
+        top: 180px;
+        left: 120px;
    }
     .hidden {
-        width: 1000px;
+        width: 100%;
     }
         .hidden>.hidden-left {
+            width:85%;
             display: inline-block;
             height: 620px;
             border: white 1px solid;
-            margin-left: 135px;
+            margin-left: 7.5%;
             border-top-left-radius: 0px;
             border-bottom-left-radius: 0px;
+     }
+     .hidden-navigation {
+        min-width: 845px;
      }
 
      .menuName {
@@ -525,27 +550,28 @@
 
      .hidden>.hidden-right {
         display: grid;
-        grid-template-areas: " rightTop rightBottom";
-        height: 400px;
+        grid-template-areas: " rightTop 
+        rightBottom"
+        ;
+
+        width: 85%;
+        height: 585px;
         float: center;
         border: white 1px solid;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
         font-size: 30px;
-        width: 730px;
-        margin-right: 135px;
+        margin: 0 7.5%;
         
   } 
 
     .rightTop {
         height: 100%;
-        width: 200px;
     }
 
     .rightBottom {
-        height: 400px;
+        height: 430px;
         border-left: white 1px solid;
-        width: 530px;
     }  
 
     .btn-removeItem {
@@ -553,4 +579,249 @@
         margin-right: 10px;
         padding: 0px 10px;
     }
-} */
+    .menubtn1 {
+        margin-left: 20px;
+    }
+    .menubtn2 {
+        margin-left: 20px;
+    }
+    .menubtn3 {
+        margin-left: 20px;
+    }
+}
+
+
+
+@media all and (max-width: 470px) {
+
+    #left-menu {
+        top: 180px;
+        left: 120px;
+   }
+    .hidden {
+        width: 100%;
+    }
+        .hidden>.hidden-left {
+            width:85%;
+            display: inline-block;
+            height: 620px;
+            border: white 1px solid;
+            margin-left: 12.5%;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+     }
+     .hidden-navigation {
+        min-width: 845px;
+     }
+
+     .menuName {
+         font-size: 25px;
+         margin-bottom: 10px;
+     }
+
+     .hidden>.hidden-right {
+        display: grid;
+        grid-template-areas: " rightTop 
+        rightBottom"
+        ;
+
+        width: 85%;
+        height: 585px;
+        float: center;
+        border: white 1px solid;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        font-size: 30px;
+        margin: 0 2.5%;
+    
+        
+  } 
+
+    .rightTop {
+        height: 100%;
+    }
+
+    .rightBottom {
+        height: 430px;
+        border-left: white 1px solid;
+    }  
+
+    .btn-removeItem {
+        float: right;
+        margin-right: 10px;
+        padding: 0px 10px;
+    }
+    .menubtn1 {
+        margin-left: 20px;
+    }
+    .menubtn2 {
+        margin-left: 20px;
+    }
+    .menubtn3 {
+        margin-left: 20px;
+    }
+}
+
+
+@media all and (max-width: 440px) {
+
+    #left-menu {
+        top: 180px;
+        left: 100px;
+   }
+    .hidden {
+        width: 100%;
+        margin-left: -4.5%;
+
+    }
+        .hidden>.hidden-left {
+            width:85%;
+            display: inline-block;
+            height: 620px;
+            border: white 1px solid;
+            margin-left: 12.5%;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+     }
+     .hidden-navigation {
+        left: -30px;
+     }
+
+     .menuName {
+         font-size: 25px;
+         margin-bottom: 10px;
+     }
+
+     .hidden>.hidden-right {
+        display: grid;
+        grid-template-areas: " rightTop 
+        rightBottom"
+        ;
+
+        width: 85%;
+        height: 585px;
+        float: center;
+        border: white 1px solid;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        font-size: 30px;
+        margin: 0 2.5%;
+    
+        
+  } 
+
+    .rightTop {
+        height: 100%;
+    }
+
+    .rightBottom {
+        height: 430px;
+        border-left: white 1px solid;
+    }  
+
+    .btn-removeItem {
+        float: right;
+        margin-right: 10px;
+        padding: 0px 10px;
+    }
+    .menubtn1 {
+        margin-left: 20px;
+    }
+    .menubtn2 {
+        margin-left: 20px;
+    }
+    .menubtn3 {
+        margin-left: 20px;
+    }
+}
+
+
+@media all and (max-width: 440px) {
+
+    #hid {
+        
+    }
+
+    #left-menu {
+        top: 180px;
+        left: 35px;
+   }
+    .hidden {
+        width: 100%;
+        margin-left: -4.5%;
+
+    }
+        .hidden>.hidden-left {
+            width:85%;
+            display: inline-block;
+            height: 620px;
+            border: white 1px solid;
+            margin-left: 12.5%;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+     }
+     .hidden-navigation {
+        left: -30px;
+     }
+
+     .menuName {
+         font-size: 25px;
+         margin-bottom: 10px;
+     }
+
+     .hidden>.hidden-right {
+        display: grid;
+        grid-template-areas: " rightTop 
+        rightBottom"
+        ;
+
+        width: 85%;
+        height: 585px;
+        float: center;
+        border: white 1px solid;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        font-size: 30px;
+        margin: 0 2.5%;
+    
+  } 
+
+  .menu-dropdown {
+      padding: 0px;
+      margin-left: 0px;
+  }
+
+  .menu-dropdown > a {
+      width: 15%;
+  }
+
+    .rightTop {
+        height: 100%;
+    }
+
+    .rightBottom {
+        height: 430px;
+        border-left: white 1px solid;
+    }  
+
+    .btn-removeItem {
+        float: right;
+        margin-right: 10px;
+        padding: 0px 10px;
+    }
+    .menubtn1 {
+        margin-left: -15px;
+        font-size: 20px;
+    }
+    .menubtn2 {
+        margin-left: -55px;
+        font-size: 20px;
+    }
+    .menubtn3 {
+        margin-left: -115px;
+        font-size: 20px;
+    }
+    .imgsize {
+        width: 170px!important;
+    }
+}
